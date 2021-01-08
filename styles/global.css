@@ -26,20 +26,29 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   }
 
   .newclass {
-    background-color: #ec0000;
+    background-color: #12262D;
     border-radius: 50%;
     padding: 5px;
     margin:20px 12px 0px 0px;
     cursor:pointer;
   }
   
+  @media screen and (max-width:400px){
+    .newclass, .burger{
+      margin:0px 12px 0px 0px;
+    }
+  }
   
-  .burger div, .newclass div {
+  .burger div{
     background-color: #191820;
     margin: 5px;
     transition: all 0.3s ease;
   }
-
+  .newclass div {
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
   .burger .line1 , .newclass .line1 {
     width: 20px;
     height: 2px;

@@ -1,10 +1,13 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Style from '../styles/index.module.css'
+import React, { useState } from "react";
 
 
 
 export default function SamInfo() {
+     const [menuIsOpen, setMenuIsOpen] = useState(false);
+    const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
   return (
     <div>
         <Head>
@@ -17,29 +20,36 @@ export default function SamInfo() {
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         </Head>
 
-        <div className="w3-top">
-            <div className="w3-bar w3-black w3-card" id="myNavbar">
+        <div className="w3-top bg-gray-200">
+            <div className="w3-bar bg-gray-200" id="myNavbar">
             
-            
-                <div className="w3-right w3-hide-small">
-                    <Link href="#"><a  className="w3-bar-item w3-button xee"> Home</a></Link>
-                    <Link href="#"><a  className="w3-bar-item w3-button xee"> Programs</a></Link>
-                    <Link href="#"><a  className="w3-bar-item w3-button xee"> Blog</a></Link>
-                    <Link href="#"><a  className="w3-bar-item w3-button xee"> Gallery</a></Link>
-
-                    <a href="#" className="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium betty">
-                        <i className="fa fa-bars text-color-white"></i>
-                    </a>
+                <div className = {Style.fulldiv} style = {{paddingTop:'10px'}}>
+                    <img className = {Style.pub} src = "images/loog2.png" />
                 </div>
+                <div className="w3-right w3-hide-small">
+                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Home</a></Link>
+                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Programs</a></Link>
+                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Blog</a></Link>
+                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Gallery</a></Link>
+                </div>
+
+                <span className="w3-bar-item w3-right w3-hide-large w3-hide-medium free" onClick={toggleMenu}>
+                    <div className={`${menuIsOpen ? "burger" : "newclass"} ...rest`}>
+                    <div className="line1"></div>
+                    <div className="line2"></div>
+                    <div className="line3"></div>
+                </div>
+                </span>
             
-                <nav className="w3-sidebar w3-bar-block w3-white w3-animate-left w3-hide-medium w3-hide-large w3-center" id="mySidebar">
-                    <a href="javascript:void(0)" onclick="w3_close()" className="w3-bar-item w3-button "><h2 id = "xee">X</h2></a>
-                    <Link href="index.js"><a  onclick="w3_close()" className="w3-button w3-hover-black w-full" ><p>Home</p></a></Link>
-                    <Link href="#"><a  onclick="w3_close()" className="w3-button w3-hover-black w-full" ><p>Programs</p></a></Link><br />
-                    <Link href="#"><a  onclick="w3_close()" className="w3-button w3-hover-black w-full" ><p>Blog</p></a></Link><br />
-                    <Link href="#"><a  onclick="w3_close()" className="w3-button w3-hover-black w-full" ><p>Gallery</p></a></Link><br />
-                  
-                </nav>
+                <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
+                    <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
+                    
+                        <Link href="#"><a  onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a></Link>
+                        <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a></Link><br />
+                        <Link href="#photos"><a onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a></Link><br />
+                        <Link href="#photos"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a></Link><br />
+                    </nav>
+                </span>
             </div>
         </div>
 
@@ -137,6 +147,16 @@ export default function SamInfo() {
                 padding: 10px 50px 0px 0px;
             }
         }
+        @media screen and (min-width: 600px) {
+            .w3-hide-large{display:none!important}.
+           
+        }
+        @media screen and (max-width:400px){
+            .newclass, .burger{
+              margin:0px 12px 0px 0px;
+            }
+          }
+          
         div.PD{
             margin-bottom: -9px;
         }
