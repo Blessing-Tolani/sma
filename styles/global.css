@@ -33,11 +33,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     cursor:pointer;
   }
   
-  @media screen and (max-width:400px){
-    .newclass, .burger{
-      margin:0px 12px 0px 0px;
-    }
-  }
+ 
   
   .burger div{
     background-color: #191820;
