@@ -23,7 +23,7 @@ export default function DoyinInfo() {
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         </Head>
 
-        <div className="w3-top bg-gray-200">
+        <div className="w3-top bg-gray-200" id = "home">
             <div className="w3-bar bg-gray-200" id="myNavbar">
             
                 <div className = {Style.fulldiv} style = {{paddingTop:'10px'}}>
