@@ -1,9 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Style from '../styles/index.module.css'
+import React, { useState } from "react";
 
 
 export default function Fullpage() {
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+
+  const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
+  
+
+  
   return (
     <div className = "body">
     <Head>
@@ -27,7 +35,7 @@ export default function Fullpage() {
               <p>Everyone has potentials for influence and it can be developed under the right atmosphere</p>
             </div>
           </div>
-        
+       
           <div className="w3-right w3-hide-small" style = {{padding:"10px 80px 0px 0px;"}}>
           <Link href="#"><a  className="w3-bar-item w3-button xee"> Home</a></Link>
             <Link href="#about"><a  className="w3-bar-item w3-button  xee"> About</a></Link>
@@ -38,21 +46,28 @@ export default function Fullpage() {
             <Link href="#contact"><a  className="w3-bar-item w3-button xee">Contact</a></Link>
           </div>
 
-          <a href="javascript:void(0)" className="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onCglick="w3_open()">
-            <i className="fa fa-bars " style = {{color:"white"}}></i>
-          </a>
+          <span className="w3-bar-item w3-right w3-hide-large w3-hide-medium free" onClick={toggleMenu}>
+            <div className={`${menuIsOpen ? "newclass" : "burger"} ...rest`}>
+              <div className="line1"></div>
+              <div className="line2"></div>
+              <div className="line3"></div>
+            </div>
+          </span>
         </div>
-    
-        <nav class="w3-sidebar fro w3-bar-block w3-white w3-animate-left w3-hide-medium w3-hide-large w3-center" style={{display:"none"}} className="mySidebar">
-          <a href="javascript:void(0)" onclick="w3_close()" className="w3-bar-item w3-button "><h2 id = "xee">X</h2></a>
-          <Link href="#"><a  onclick="w3_close()" className="w3-button w3-hover-black" style ={{width:"100%"}}><p>Home</p></a></Link>
-          <Link href="#about"><a  onclick="w3_close()" className="w3-button w3-hover-black" style ={{width:"100%"}}><p> About</p></a></Link><br />
-          <Link href="#about"><a  onclick="w3_close()" className="w3-button w3-hover-black" style ={{width:"100%"}}><p>Programs</p></a></Link><br />
-          <Link href="#photos"><a  onclick="w3_close()" className="w3-button w3-hover-black" style ={{width:"100%"}}><p>Blog</p></a></Link><br />
-          <Link href="#photos"><a  onclick="w3_close()" className="w3-button w3-hover-black" style ={{width:"100%"}}><p>Gallery</p></a></Link><br />
-          <Link href="#donate"><a onclick="w3_close()" className="w3-button w3-hover-black" style ={{width:"100%"}}><p>Donate</p></a></Link><br />
-          <Link href="#contact"><a  onclick="w3_close()" className="w3-button  w3-hover-black" style ={{width:"100%"}}><p>Contact</p></a></Link>
-        </nav>
+
+        <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
+          <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
+           
+            <Link href="#"><a  onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a></Link>
+            <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p> About</p></a></Link><br />
+            <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a></Link><br />
+            <Link href="#photos"><a onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a></Link><br />
+            <Link href="#photos"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a></Link><br />
+            <Link href="#donate"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Donate</p></a></Link><br />
+            <Link href="#contact"><a onClick={toggleMenu} className="w3-button  w3-hover-white" style ={{width:"100%", color:"white"}}><p>Contact</p></a></Link>
+          </nav>
+        </span>
+        
 </div>
 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" style = {{backgroundImage:"url('images/women.jpg')"}}>
@@ -418,9 +433,11 @@ export default function Fullpage() {
       }
 
   }
+ 
   .w3-card{
     box-shadow:0 10px 10px -5px rgba(0,0,0,0.16);
   }
+   
   .h4{
     margin-bottom:5px;
   }
@@ -432,6 +449,7 @@ export default function Fullpage() {
       margin:10px 10px 0px;
       
     }
+  
     .mug{
       border-radius:50%;
       padding:8px 16px;

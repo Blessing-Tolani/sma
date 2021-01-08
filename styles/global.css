@@ -7,6 +7,55 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
   }
+  .open{
+    display:block;
+  }
+   .closed{
+     display:none;
+   }
+   .fro{
+    margin-top:70px;
+   
+   }
+  .burger {
+    background-color: #e8e8e8;
+    border-radius: 50%;
+    padding: 5px;
+    margin:20px 12px 0px 0px;
+    cursor:pointer;
+  }
+
+  .newclass {
+    background-color: #ec0000;
+    border-radius: 50%;
+    padding: 5px;
+    margin:20px 12px 0px 0px;
+    cursor:pointer;
+  }
+  
+  
+  .burger div, .newclass div {
+    background-color: #191820;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .burger .line1 , .newclass .line1 {
+    width: 20px;
+    height: 2px;
+    margin-left: 8px;
+  }
+
+  .burger .line2, .newclass .line2 {
+    width: 25px;
+    height: 2px;
+  }
+
+  .burger .line3, .newclass .line3 {
+    width: 17px;
+    height: 2px;
+    margin-left: 10px;
+  }
  
   .bioimage1{
     width :700px ;
@@ -122,9 +171,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
     font-size: 20px;
   }
   
-  .fro {
-    top: 0;
-  }
+ 
   .article {
     padding: 50px 0px;
   }
@@ -218,7 +265,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
 .w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px}
-.w3-sidebar{height:80%;width:250px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.w3-sidebar{height:70%;width:250px;background-color:#12262D; color:white; position:fixed!important;z-index:1;overflow:auto}
 .w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
