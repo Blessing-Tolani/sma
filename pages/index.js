@@ -413,7 +413,9 @@ export default function Fullpage() {
         float:none;
         margin:0 auto;
       }
- 
+      .mission{
+        padding-top:20px;
+      }
 
   }
   .w3-card{
