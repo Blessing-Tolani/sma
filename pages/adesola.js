@@ -29,10 +29,10 @@ export default function AdesolaInfo() {
                     <img className = {Style.pub} src = "images/loog2.png" />
                 </div>
                 <div className="w3-right w3-hide-small">
-                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Home</a></Link>
-                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Programs</a></Link>
-                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Blog</a></Link>
-                    <Link href="#"><a  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Gallery</a></Link>
+                    <a  href="/" className="w3-bar-item w3-button xee" style = {{color:'black'}}> Home</a>
+                    <a href="/programs" className="w3-bar-item w3-button xee" style = {{color:'black'}}> Programs</a>
+                    <a   href="/blog"className="w3-bar-item w3-button xee" style = {{color:'black'}}> Blog</a>
+                    <a href="/gallery"  className="w3-bar-item w3-button xee" style = {{color:'black'}}> Gallery</a>
                 </div>
 
                 <span className="w3-bar-item w3-right w3-hide-large w3-hide-medium " onClick={toggleMenu}>
@@ -46,10 +46,10 @@ export default function AdesolaInfo() {
                 <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
                     <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
                     
-                        <Link href="#"><a  onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a></Link>
-                        <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a></Link><br />
-                        <Link href="#photos"><a onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a></Link><br />
-                        <Link href="#photos"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a></Link><br />
+                        <a href="/" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a>
+                        <a href="/programs" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a><br />
+                        <a href="/blog" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a><br />
+                       <a  href="/gallery" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a><br />
                     </nav>
                 </span>
             </div>

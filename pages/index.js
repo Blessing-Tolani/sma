@@ -37,13 +37,13 @@ export default function Fullpage() {
           </div>
        
           <div className="w3-right w3-hide-small" style = {{padding:"10px 80px 0px 0px;"}}>
-          <Link href="#"><a  className="w3-bar-item w3-button xee"> Home</a></Link>
-            <Link href="#about"><a  className="w3-bar-item w3-button  xee"> About</a></Link>
-            <Link href="#work"><a  className="w3-bar-item w3-button xee"> Programs</a></Link>
-            <Link href="#work"><a  className="w3-bar-item w3-button xee"> Blog</a></Link>
-            <Link href="#work"><a  className="w3-bar-item w3-button xee"> Gallery</a></Link>
-            <Link href="#donate"><a  className="w3-bar-item w3-button xee"> Donate</a></Link>
-            <Link href="#contact"><a  className="w3-bar-item w3-button xee">Contact</a></Link>
+            <a href="#" className="w3-bar-item w3-button xee"> Home</a>
+            <a href="#about" className="w3-bar-item w3-button  xee"> About</a>
+            <a  href="#work" className="w3-bar-item w3-button xee"> Programs</a>
+              <a href="#work" className="w3-bar-item w3-button xee"> Blog</a>
+              <a href="#work" className="w3-bar-item w3-button xee"> Gallery</a>
+              <a href="#donate" className="w3-bar-item w3-button xee"> Donate</a>
+              <a href="#contact" className="w3-bar-item w3-button xee">Contact</a>
           </div>
 
           <span className="w3-bar-item w3-right w3-hide-large w3-hide-medium free" onClick={toggleMenu}>
@@ -58,13 +58,13 @@ export default function Fullpage() {
         <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
           <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
            
-            <Link href="#"><a  onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a></Link>
-            <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p> About</p></a></Link><br />
-            <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a></Link><br />
-            <Link href="#photos"><a onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a></Link><br />
-            <Link href="#photos"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a></Link><br />
-            <Link href="#donate"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Donate</p></a></Link><br />
-            <Link href="#contact"><a onClick={toggleMenu} className="w3-button  w3-hover-white" style ={{width:"100%", color:"white"}}><p>Contact</p></a></Link>
+            <a href="#" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a>
+            <a href="#about" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p> About</p></a><br />
+            <a href="#about" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a><br />
+            <a href="#photos" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a><br />
+           <a href="#photos" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a><br />
+            <a href="#donate" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Donate</p></a><br />
+            <a href="#contact" onClick={toggleMenu} className="w3-button  w3-hover-white" style ={{width:"100%", color:"white"}}><p>Contact</p></a>
           </nav>
         </span>
         
@@ -217,7 +217,7 @@ export default function Fullpage() {
     <div className="w3-row-padding people" style= {{marginTop:"64px"}}>
     {/* Information on Marvellous */}
       <div className="w3-col l3 m6 w3-margin-bottom ">
-        <Link href = "/marvellous"><a >
+        <a href = "/marvellous">
             <div className="w3-card whole ">
               <img className = "img" src="images/marvy.jpg" alt="" />
               <div className="w3-container text">
@@ -226,12 +226,12 @@ export default function Fullpage() {
                 
               </div>
             </div>
-        </a></Link>
+        </a>
       </div>
                  
     {/* Information on Testimony */}
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <Link href = "/testimony"><a >
+       <a href = "/testimony">
             <div className="w3-card whole">
               <img className = "img" src="images/test.jpg" alt="" />
               <div className="w3-container text">
@@ -240,12 +240,12 @@ export default function Fullpage() {
               
               </div>
             </div>
-        </a></Link>
+        </a>
       </div>
 
     {/* Info for Eniola */}
       <div className="w3-col l3 m6 w3-margin-bottom">
-          <Link href = "/eniola"><a >
+         <a  href = "/eniola" >
               <div className="w3-card whole">
                 <img className = "img" src="images/eniola.jpg" alt="" />
                 <div className="w3-container text">
@@ -254,13 +254,13 @@ export default function Fullpage() {
                  
                 </div>
               </div>
-          </a></Link>
+          </a>
       </div>
 
 
     {/* Info for sam */}
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <Link href = "/sam"><a> 
+        <a href = "/sam"> 
           <div className="w3-card whole">
             <img className = "img" src="images/sam.jpg" alt="" />
             <div className="w3-container text">
@@ -269,12 +269,12 @@ export default function Fullpage() {
              
             </div>
           </div>
-          </a></Link>
+          </a>
       </div>
 
     {/* Information on damilola daniel */}
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <Link href = "/damilola"><a >
+       <a  href = "/damilola">
             <div className="w3-card whole">
               <img className = "img" src="images/st.jpeg" alt="" />
               <div className="w3-container text">
@@ -283,12 +283,12 @@ export default function Fullpage() {
               
               </div>
             </div>
-        </a></Link>
+        </a>
       </div>
 
     {/* Information on doyinsolami */}
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <Link href = "/doyin"><a >
+       <a href = "/doyin" >
             <div className="w3-card whole">
               <img className = "img" src="images/doyin.jpg" alt="" />
               <div className="w3-container text">
@@ -297,12 +297,12 @@ export default function Fullpage() {
              
               </div>
             </div>
-          </a></Link>
+          </a>
       </div>
 
     {/* Information on adesola oyewole */}
       <div className="w3-col l3 m6 w3-margin-bottom">
-        <Link href = "/adesola"><a >
+      <a href = "/adesola">
             <div className="w3-card whole">
               <img className = "img" src="images/adesola.jpg" alt="" />
               <div className="w3-container text">
@@ -311,7 +311,7 @@ export default function Fullpage() {
               
               </div>
             </div>
-        </a></Link>
+        </a>
       </div>
 
     </div>
