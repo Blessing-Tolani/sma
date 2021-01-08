@@ -85,7 +85,7 @@ export default function Fullpage() {
      
     </div>
     <div className="w3-col m6 pause ">
-      <img className="w3-image w3-round-large bioimage1" src="Images/teamwork.jpg" alt="Director" />
+      <img className="w3-image w3-round-large bioimage1" src="images/teamwork.jpg" alt="" />
     </div>
   </div>
 </div>
@@ -204,7 +204,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom ">
         <Link href = "/marvellous"><a >
             <div className="w3-card whole ">
-              <img className = "img" src="Images/marvy.jpg" alt="" />
+              <img className = "img" src="images/marvy.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4"> Marvellous Sunmiboye</h4>
                 <p className="w3-center">Director</p>
@@ -218,7 +218,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom">
         <Link href = "/testimony"><a >
             <div className="w3-card whole">
-              <img className = "img" src="Images/test.jpg" alt="" />
+              <img className = "img" src="images/test.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Testimony Adebiyi</h4>
                 <p className="w3-center">Administrator</p>
@@ -232,7 +232,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom">
           <Link href = "/eniola"><a >
               <div className="w3-card whole">
-                <img className = "img" src="Images/eniola.jpg" alt="" />
+                <img className = "img" src="images/eniola.jpg" alt="" />
                 <div className="w3-container text">
                   <h4 className="w3-center un4">Eniola Olasogba</h4>
                   <p className="w3-center">HEAD, Contents and Communications</p>
@@ -247,7 +247,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom">
         <Link href = "/sam"><a> 
           <div className="w3-card whole">
-            <img className = "img" src="Images/sam.jpg" alt="" />
+            <img className = "img" src="images/sam.jpg" alt="" />
             <div className="w3-container text">
               <h4 className="w3-center un4">Samuel Adekunle</h4>
               <p className="w3-center">HEAD, Strategy and Logistics</p>
@@ -261,7 +261,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom">
         <Link href = "/damilola"><a >
             <div className="w3-card whole">
-              <img className = "img" src="Images/st.jpeg" alt="" />
+              <img className = "img" src="images/st.jpeg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Damilola Daniel</h4>
                 <p className="w3-center">HEAD, Media</p>
@@ -275,7 +275,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom">
         <Link href = "/doyin"><a >
             <div className="w3-card whole">
-              <img className = "img" src="Images/doyin.jpg" alt="" />
+              <img className = "img" src="images/doyin.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Doyinsolami Olatunji</h4>
                 <p className="w3-center">Deputy Head, Strategy and Logistics</p>
@@ -289,7 +289,7 @@ export default function Fullpage() {
       <div className="w3-col l3 m6 w3-margin-bottom">
         <Link href = "/adesola"><a >
             <div className="w3-card whole">
-              <img className = "img" src="Images/adesola.jpg" alt="" />
+              <img className = "img" src="images/adesola.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Adesola Oyewole</h4>
                 <p className="w3-center">Head, Finance</p>
