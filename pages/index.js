@@ -98,14 +98,14 @@ export default function Fullpage() {
       <div className="container" style= {{marginTop:"64px"}}>
         <div className="row">
           <div className="col-sm-6 vision" style={{textAlign:"center"}}>
-          <i className="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style= {{color:"#EC0000;"}}></i>
+          <i className="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style= {{color:"#FED700;"}}></i>
           <p className="w3-large un1" >Vision</p>
           <p  className = "un2"> To see a community, nation, world where every young person finds their place and begin to influence their 
           environment positively.</p>   
           </div>
   
           <div className="col-sm-6 mission" style = {{textAlign:"center"}}>
-          <i className="fa fa-heart w3-margin-bottom w3-jumbo" style= {{color: "#EC0000" }}></i>
+          <i className="fa fa-heart w3-margin-bottom w3-jumbo" style= {{color: "#FED700" }}></i>
           <p className="w3-large" style={{color:"white"}}>Mission</p>
           <p className = "un2"> To build, challenge, enlighten and equip young people to become the best they can through strategic programs
           and platforms that impact would no longer be a scarce thing in a generation.</p>
