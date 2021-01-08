@@ -416,6 +416,9 @@ export default function Fullpage() {
  
 
   }
+  .w3-card{
+    box-shadow:0 10px 10px -5px rgba(0,0,0,0.16);
+  }
   .h4{
     margin-bottom:5px;
   }
@@ -437,6 +440,7 @@ export default function Fullpage() {
       }
     .img{
       width:100%;
+      border-radius:50% 50% 0% 0%;
     }
     .values {
       padding: 35px 0px 20px;
