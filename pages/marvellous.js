@@ -154,7 +154,7 @@ export default function MarvyInfo() {
         }
         @media screen and (max-width:400px){
             .newclass, .burger{
-              margin:0px 12px 0px 0px;
+              margin:0px -40px 0px 0px;
             }
           }
         div.PD{

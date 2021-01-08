@@ -42,7 +42,7 @@ export default function TestInfo() {
                 </span>
             
                 <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
-                    <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
+                    <nav class="w3-sidebar  w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
                     
                         <Link href="#"><a  onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a></Link>
                         <Link href="#about"><a onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a></Link><br />
@@ -154,7 +154,7 @@ export default function TestInfo() {
         }
         @media screen and (max-width:400px){
             .newclass, .burger{
-              margin:0px 12px 0px 0px;
+              margin:0px -40px 0px 0px;
             }
           }
         div.PD{
