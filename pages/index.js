@@ -39,7 +39,7 @@ export default function Fullpage() {
           <div className="w3-right w3-hide-small" style = {{padding:"10px 80px 0px 0px;"}}>
             <a href="#" className="w3-bar-item w3-button xee"> Home</a>
             <a href="#about" className="w3-bar-item w3-button  xee"> About</a>
-            <a  href="#work" className="w3-bar-item w3-button xee"> Programs</a>
+            <a  href="/programs" className="w3-bar-item w3-button xee"> Programs</a>
               <a href="#work" className="w3-bar-item w3-button xee"> Blog</a>
               <a href="#work" className="w3-bar-item w3-button xee"> Gallery</a>
               <a href="#donate" className="w3-bar-item w3-button xee"> Donate</a>
@@ -60,7 +60,7 @@ export default function Fullpage() {
            
             <a href="#" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a>
             <a href="#about" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p> About</p></a><br />
-            <a href="#about" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a><br />
+            <a href="/programs" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a><br />
             <a href="#photos" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a><br />
            <a href="#photos" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a><br />
             <a href="#donate" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Donate</p></a><br />
@@ -70,7 +70,7 @@ export default function Fullpage() {
         
 </div>
 
-<header class="bgimg-1 w3-display-container w3-grayscale-min" style = {{backgroundImage:"url('images/women.jpg')"}}>
+<header className="bgimg-1 w3-display-container w3-grayscale-min" style = {{backgroundImage:"url('images/women.jpg')"}}>
 
 </header>
 
@@ -450,11 +450,7 @@ export default function Fullpage() {
       
     }
   
-    .mug{
-      border-radius:50%;
-      padding:8px 16px;
- 
-    }
+  
      div.PD{
       margin-bottom: -9px;
       }
@@ -524,10 +520,6 @@ export default function Fullpage() {
        color:white;
        margin-left:30px;
        
-     }
-     
-     a:hover{
-       text-decoration: none;
      }
     
      .xee,.w3-button{
