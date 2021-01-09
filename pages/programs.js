@@ -65,7 +65,7 @@ export default function Program() {
         </div>
 
         <header className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full ">
-            <img className = "star " src = "images/star.svg" />
+            <img className = "star " src = "images/Star.svg" />
         </header>
         <div className="w3-container" > 
             <div className = "fix  w-full">
