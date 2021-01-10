@@ -202,6 +202,7 @@ export default function AdesolaInfo() {
               margin:0px -40px 0px 0px;
             }
           }
+        
 
         `}</style>
     </div>
