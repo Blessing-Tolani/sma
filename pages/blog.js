@@ -30,7 +30,7 @@ export default function Program() {
                 <div className = "w3-left bg-white md:pl-4" style = {{paddingTop:'0px'}}>
                     <img className = "pub" src = "images/loog2.png" />
                 </div>
-                <div className="w3-right w3-hide-small topdiv flex sm:flex-row items-center" style = {{ display:'block !important'}}>
+                <div className="w3-right w3-hide-small topdiv flex sm:flex-row items-center" style = {{ display:'flex !important'}}>
                    
                     <a  href="/" className="w3-bar-item w3-button xee" > Home</a>
                     <a href="/programs" className="w3-bar-item w3-button xee" > Programs</a>
@@ -243,7 +243,7 @@ export default function Program() {
             font-family: 'Bodoni Moda', serif;
             font-size: calc(20px + 5*(100vw - 400px)/1000);
         }
-        .blogp{
+        .blog p{
             font-family: 'ABeeZee', sans-serif;
         }
         .w3-col.s3{width:30%;}
