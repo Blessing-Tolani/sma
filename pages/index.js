@@ -402,7 +402,7 @@ export default function Fullpage() {
 </footer>
 <div className = {Style.lil}>
   <a href="#home" className="mug w3-button" style = {{backgroundColor:"#5e0505;"}}><i className=" fa fa-arrow-up" style = {{color:"white"}}></i></a>
-   <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2020, SMA Impact Network</span></p>
+   <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2021, SMA Impact Network</span></p>
 </div>
  
 

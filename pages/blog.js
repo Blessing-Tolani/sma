@@ -30,7 +30,7 @@ export default function Program() {
                 <div className = "w3-left bg-white md:pl-4" style = {{paddingTop:'0px'}}>
                     <img className = "pub" src = "images/loog2.png" />
                 </div>
-                <div className="w3-right w3-hide-small topdiv flex sm:flex-row items-center">
+                <div className="w3-right w3-hide-small topdiv flex sm:flex-row items-center" style = {{ display:'block !important'}}>
                    
                     <a  href="/" className="w3-bar-item w3-button xee" > Home</a>
                     <a href="/programs" className="w3-bar-item w3-button xee" > Programs</a>
@@ -187,10 +187,13 @@ export default function Program() {
             </footer>
             <div className = {Style.lil}>
             <a href="#home" className="mug w3-button" style = {{backgroundColor:"#5e0505;"}}><i className=" fa fa-arrow-up" style = {{color:"white"}}></i></a>
-            <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2020, SMA Impact Network</span></p>
+            <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2021, SMA Impact Network</span></p>
             </div>
             
         <style jsx>{`
+        .w3-hide-large{
+            display:none;
+        }
          div.PD{
             margin-bottom: -9px;
         }
@@ -276,22 +279,47 @@ export default function Program() {
         @media screen and (max-width: 600px){
             .w3-col.s3{width:80%;}
             .blog{
-                margin:2% 10% 8% 10%;
+                margin:5% 10% 8% 10%;
               
             }
             .blog-title{
                 margin-left:10% !important;
             }
+            .xee{
+                margin-left:10px;
+            }
+            }
+            @media screen and (max-width: 500px){
+                .xee{
+                    margin-left:0px;
+                    font-size:15px !important;
+                }
             }
         @media screen and (max-width: 400px){
             .w3-col.s3{width:90%;}
             .blog{
-                margin:2% 5% 8% 4%;
+                margin:5% 5% 8% 4%;
                 
+            }
+            .xee{
+                font-size:14px !important;
+            }
+            .topdiv {
+                padding-right: 0px;
             }
             .blog-title{
                 margin-left:5% !important;
             }
+            }
+            @media screen and (max-width: 330px){
+            .pub {
+                width: 40px ;
+                height: 40px;
+               
+                }
+                .topdiv {
+                    height:40px;
+                }
             }
         `}</style>
     </div>
