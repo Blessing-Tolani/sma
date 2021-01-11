@@ -62,17 +62,18 @@ export default function Volunteer() {
             {/* Volunteer form */}
             <div className = "w3-container  cont flex items-center ">
                 <div className = "w3-col s6  formdiv flex "> 
-                  
-                    <form className = " formhead " method = "POST" data-netlify = "true">
-                        <input type="text" placeholder="Name" required="" className = "input"/> 
-                        <input className = "input" type="email" id="email" name="email" placeholder="Email Address" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
-                        <input className = "input" type="text" placeholder="Location(City and Country)" required /> 
-                        <input className = "input" type="number" placeholder="Phone Number(Whatsapp)" required/> <br className = "br" />
+                   
+                    <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteering Form">
+                        <input type = "hidden" name = "form-name" value ="Volunteering Form" />
+                        <input type="text" name = "First Surname" placeholder="First Surname" required="" className = "input"/> 
+                        <input className = "input" type="email" id="email" name="Email Address" placeholder="Email Address" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
+                        <input className = "input" type="text" name = "Address" placeholder="Location (City and Country)" required /> 
+                        <input className = "input" type="number" name = "Whatsapp Number "placeholder="Phone Number (Whatsapp)" required/> <br className = "br" />
 
-                        <textarea placeholder="What are your strengths ?" id="strength" required></textarea> 
-                        <textarea placeholder="What do you consider to be your weakness(es) ?" id="weakness(es)"required ></textarea> <br className = "br" />                        
-                        <textarea placeholder="Why wil you like to volunteer with us ?" id="Reason" required></textarea> 
-                        <textarea placeholder="What skills do you have ?" id="Skills" required></textarea>  <br className = "br" />
+                        <textarea placeholder="What are your strengths ?" name = "Strengths" id="strength" required></textarea> 
+                        <textarea placeholder="What do you consider to be your weakness(es) ?" name = "Weakness(es)" id="weakness(es)"required ></textarea> <br className = "br" />                        
+                        <textarea placeholder="Why wil you like to volunteer with us ?" name = "Reason for Volunteering" id="Reason" required></textarea> 
+                        <textarea placeholder="What skills do you have ?" name = "Skills" id="Skills" required></textarea>  <br className = "br" />
 
                         <div className = "inline special">
                             <p>Gender</p>
