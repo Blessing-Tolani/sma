@@ -171,7 +171,7 @@ export default function Fullpage() {
                 <i>"Alone we can do so little; together we can do so much"</i>
 
               </p>
-              <a href = "#" className = {Style.helplink} >Volunteer</a>
+              <a href = "/volunteer" className = {Style.helplink} >Volunteer</a>
             </div>
           </div>
   
