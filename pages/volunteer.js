@@ -66,46 +66,46 @@ export default function Volunteer() {
                     <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteering Form">
                         <input type = "hidden" name = "form-name" value ="Volunteering Form" />
                         <input type="text" name = "First Surname" placeholder="First Surname" required="" className = "input"/> 
-                        <input className = "input" type="email" id="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
+                        <input className = "input" type="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
                         <input className = "input" type="text" name = "Address" placeholder="Location (City and Country)" required /> 
                         <input className = "input" type="number" name = "Whatsapp Number "placeholder="Phone Number (Whatsapp)" required/> <br className = "br" />
 
-                        <textarea placeholder="What are your strengths ?" name = "Strengths" id="strength" required></textarea> 
-                        <textarea placeholder="What do you consider to be your weakness(es) ?" name = "Weakness(es)" id="weakness(es)"required ></textarea> <br className = "br" />                        
-                        <textarea placeholder="Why wil you like to volunteer with us ?" name = "Reason for Volunteering" id="Reason" required></textarea> 
-                        <textarea placeholder="What skills do you have ?" name = "Skills" id="Skills" required></textarea>  <br className = "br" />
+                        <textarea placeholder="What are your strengths ?" name = "Strengths"  required></textarea> 
+                        <textarea placeholder="What do you consider to be your weakness(es) ?" name = "Weakness(es)" required ></textarea> <br className = "br" />                        
+                        <textarea placeholder="Why wil you like to volunteer with us ?" name = "Reason for Volunteering"  required></textarea> 
+                        <textarea placeholder="What skills do you have ?" name = "Skills"  required></textarea>  <br className = "br" />
 
                         <div className = "inline special">
                             <p>Gender</p>
-                            <input type="radio" id="male" name="Gender" value="male" />
+                            <input type="radio" name="Gender" value="Male" />
                             <label for="male"> Male</label><br />
-                            <input type="radio" id="female" name="Gender" value="female" />
+                            <input type="radio" name="Gender" value="Female" />
                             <label for="female"> Female</label><br />
                         </div>
 
                         <div className = "inline ">
                             <p>Have you volunteered in an organization before ? </p>
-                            <input type="radio" id="yes" name="Volunteered before" value="Yes" />
+                            <input type="radio"name="Volunteered before" value="Yes" />
                             <label for="yes"> Yes</label><br />
-                            <input type="radio" id="no" name="Volunteered before" value="No" />
+                            <input type="radio"  name="Volunteered before" value="No" />
                             <label for="no"> No</label><br />
                         </div>
                         <div className = "flex bow ">
                         <div className = " inline but">
                             <p> What department will you like to volunteer with?</p>
-                            <input type="radio" id="department1" name="Department" value="Content and Communications" />
+                            <input type="radio"  name="Department" value="Content and Communications" />
                             <label for="department1"> Content and Communications</label><br />
-                            <input type="radio" id="department2" name="Department" value="Strategy and Logistics" />
+                            <input type="radio"  name="Department" value="Strategy and Logistics" />
                             <label for="department2"> Strategy and Logistics</label><br />
-                            <input type="radio" id="department3" name="Department" value="Media" />
+                            <input type="radio"  name="Department" value="Media" />
                             <label for="department3"> Media</label><br />
                         </div>
 
                         <div className = "inline but">
                             <p>How long will you like to volunteer with us ?</p>
-                            <input type="radio" id="duration1" name="Duration" value="3 Months" />
+                            <input type="radio"  name="Duration" value="3 Months" />
                             <label for="duration1"> 3 Months</label><br />
-                            <input type="radio" id="duration2" name="Duration" value="6 Months" />
+                            <input type="radio"  name="Duration" value="6 Months" />
                             <label for="duration2"> 6 Months</label><br />
                         </div>
                         </div>
