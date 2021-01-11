@@ -1,10 +1,9 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Style from '../styles/index.module.css'
 import React, { useState } from "react";
 
 
-export default function Blog() {
+export default function Gallery() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
 
@@ -15,7 +14,7 @@ export default function Blog() {
   return (
     <div className = "body">
         <Head>
-            <title>Blogs</title>
+            <title>Gallery</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
            
             <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Bodoni+Moda&family=Noto+Serif+JP&family=Amaranth&family=Source+Sans+Pro&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -34,8 +33,8 @@ export default function Blog() {
                    
                     <a  href="/" className="w3-bar-item w3-button xee" > Home</a>
                     <a href="/programs" className="w3-bar-item w3-button xee" > Programs</a>
-                    <a   href="#"className="w3-bar-item w3-button xee"> Blog</a>
-                    <a href="/gallery"  className="w3-bar-item w3-button xee" > Gallery</a>
+                    <a   href="/blog"className="w3-bar-item w3-button xee"> Blog</a>
+                    <a href="#"  className="w3-bar-item w3-button xee" > Gallery</a>
                 </div>
 
                 <span className="w3-bar-item w3-right w3-hide-large w3-hide-medium " onClick={toggleMenu}>
@@ -51,96 +50,37 @@ export default function Blog() {
                     
                         <a href="/" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a>
                         <a href="/programs" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a><br />
-                        <a href="#" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a><br />
-                       <a  href="/gallery" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a><br />
+                        <a href="/blog" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a><br />
+                       <a  href="#" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a><br />
                     </nav>
                 </span>
             </div>
         </div>
 
         {/* Blog Section */}
-        <div class = "w3-container">
+        <div className = "w3-container">
             <div className = "blog-title-head">
-                <h1 className = "blog-title text-gray-800">Our Latest Blogs</h1>
+                <h1 className = "blog-title text-gray-800">Image Gallery</h1>
             </div>
             <div className = "blog-container">
             <div className="w3-col s3 blog" >
-                    <div><img src = "images/pic1.jpg" alt = "Blog 1" /></div>
-                    <div>
-                        <h2>Blog Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ac nibh tempus, dignissim mi vel, suscipit sem. 
-                        Sed posuere vitae ligula vitae imperdiet. Mauris eget erat blandit,
-                        vulputate nunc eget, auctor nisi. Nullam ut feugiat metus.
-                        Ultrices at odio quis, condimentum hendrerit purus
-                        </p>
-                    </div>
+                    <div><img src = "images/hangout1.jpg" alt = "" /></div>
+                    <div><h2>SMA Network Hangout</h2></div>
                 </div>
                 <div className="w3-col s3 blog" >
-                    <div><img src = "images/pic2.jpg" alt = "Blog 2" /></div>
-                    <div>
-                        <h2>Blog Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ac nibh tempus, dignissim mi vel, suscipit sem. 
-                        Sed posuere vitae ligula vitae imperdiet. Mauris eget erat blandit,
-                        vulputate nunc eget, auctor nisi. Nullam ut feugiat metus.
-                        Ultrices at odio quis, condimentum hendrerit purus
-                        </p>
-                    </div>
+                    <div><img src = "images/hangout2.jpg" alt = "" /></div>
+                    <div><h2>SMA Network Hangout</h2></div>
                 </div>
                 <div className="w3-col s3 blog" >
-                    <div><img src = "images/pic3.jpg" alt = "Blog 3" /></div>
-                    <div>
-                        <h2>Blog Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ac nibh tempus, dignissim mi vel, suscipit sem. 
-                        Sed posuere vitae ligula vitae imperdiet. Mauris eget erat blandit,
-                        vulputate nunc eget, auctor nisi. Nullam ut feugiat metus.
-                        Ultrices at odio quis, condimentum hendrerit purus
-                        </p>
-                    </div>
+                    <div><img src = "images/hangout3.jpg" alt = "" /></div>
+                    <div><h2>SMA Network Hangout</h2></div>
                 </div>
-                <div className="w3-col s3 blog" >
-                    <div><img src = "images/pic4.jpg" alt = "Blog 4" /></div>
-                    <div>
-                        <h2>Blog Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ac nibh tempus, dignissim mi vel, suscipit sem. 
-                        Sed posuere vitae ligula vitae imperdiet. Mauris eget erat blandit,
-                        vulputate nunc eget, auctor nisi. Nullam ut feugiat metus.
-                        Ultrices at odio quis, condimentum hendrerit purus
-                        </p>
-                    </div>
-                </div>
-                <div className="w3-col s3 blog" >
-                    <div><img src = "images/pic5.jpg" alt = "Blog 5" /></div>
-                    <div>
-                        <h2>Blog Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ac nibh tempus, dignissim mi vel, suscipit sem. 
-                        Sed posuere vitae ligula vitae imperdiet. Mauris eget erat blandit,
-                        vulputate nunc eget, auctor nisi. Nullam ut feugiat metus.
-                        Ultrices at odio quis, condimentum hendrerit purus
-                        </p>
-                    </div>
-                </div>
-                <div className="w3-col s3 blog" >
-                    <div><img src = "images/pic6.jpg" alt = "Blog 6" /></div>
-                    <div>
-                        <h2>Blog Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Proin ac nibh tempus, dignissim mi vel, suscipit sem. 
-                        Sed posuere vitae ligula vitae imperdiet. Mauris eget erat blandit,
-                        vulputate nunc eget, auctor nisi. Nullam ut feugiat metus.
-                        Ultrices at odio quis, condimentum hendrerit purus
-                        </p>
-                    </div>
-                </div>
+               
             </div>
         </div>
 
         {/* Footer   */}
-        <div className="PD ">
+            <div className="PD ">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path fill="" fill-opacity="1" d="M0,192L80,213.3C160,235,320,277,480,272C640,267,800,213,960,213.3C1120,213,1280,267,1360,
                 293.3L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z" 
@@ -233,8 +173,9 @@ export default function Blog() {
             margin-left:1.666% !important;
         }
         .blog{
-            margin:1.666%;
-            height:40%;
+            margin:1.66%;
+            height:50%;
+         
         }
         .blog-title{
             padding-top:10px;
@@ -248,7 +189,8 @@ export default function Blog() {
         }
         .w3-col.s3{width:30%;}
         img{
-            height:250px;
+            width:100%;
+            height:500px;
         }
         @media screen and (min-width: 600px){
         .blog-title {
@@ -261,6 +203,9 @@ export default function Blog() {
         .blog{
             margin:4%;
           
+        }
+        img{
+            height:400px;
         }
         .blog-container{
             margin-left:4% !important;
@@ -275,12 +220,27 @@ export default function Blog() {
             .blog-container{
                 margin-left:3% !important;
             }
+            img{
+                height:400px;
             }
+            }
+            @media screen and (max-width: 650px){
+                
+                img{
+                    height:350px;
+                }
+                }
         @media screen and (max-width: 600px){
             .w3-col.s3{width:80%;}
+            .blog-container{
+                margin-left:1% !important;
+            }
             .blog{
                 margin:5% 10% 8% 10%;
               
+            }
+            img{
+                height:500px;
             }
             .blog-title{
                 margin-left:10% !important;
@@ -293,6 +253,9 @@ export default function Blog() {
                 .xee{
                     margin-left:0px;
                     font-size:15px !important;
+                }
+                img{
+                    height:400px;
                 }
             }
         @media screen and (max-width: 400px){

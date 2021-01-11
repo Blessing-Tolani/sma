@@ -2,7 +2,14 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Style from '../styles/index.module.css'
 import React, { useState } from "react";
+import Carousel from "react-elastic-carousel";
 
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 1, itemsToScroll: 1 },
+  { width: 768, itemsToShow: 3 , itemsToScroll: 2},
+  { width: 1200, itemsToShow: 4, itemsToScroll: 2 }
+];
 
 export default function Fullpage() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -210,19 +217,20 @@ export default function Fullpage() {
 
 
 
+
 {/* Board Section */}
-<section className="Waves" style = {{backgroundColor:"#e6eaf3"}}>
-  <div className="w3-container" style= {{padding:"80px 16px 120px"}} id="team"> 
-    <h3 className="w3-center un3">The Board</h3>
-    <div className="w3-row-padding people" style= {{marginTop:"64px"}}>
-    {/* Information on Marvellous */}
-      <div className="w3-col l3 m6 w3-margin-bottom ">
+<div className="w3-container" style = {{backgroundColor:"#e6eaf3"}}>
+  <div>
+    <h2 className = "text-center pt-4">Board</h2>
+  </div>
+  <Carousel breakPoints={breakPoints} className = "py-14">
+  <div className='imgdiv'>
         <a href = "/marvellous">
             <div className="w3-card whole ">
               <img className = "img" src="images/marvy.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4"> Marvellous Sunmiboye</h4>
-                <p className="w3-center">Director</p>
+                <p className="w3-center un5">Director</p>
                 
               </div>
             </div>
@@ -230,13 +238,13 @@ export default function Fullpage() {
       </div>
                  
     {/* Information on Testimony */}
-      <div className="w3-col l3 m6 w3-margin-bottom">
+      <div className='imgdiv'>
        <a href = "/testimony">
             <div className="w3-card whole">
               <img className = "img" src="images/test.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Testimony Adebiyi</h4>
-                <p className="w3-center">Administrator</p>
+                <p className="w3-center un5">Administrator</p>
               
               </div>
             </div>
@@ -244,13 +252,13 @@ export default function Fullpage() {
       </div>
 
     {/* Info for Eniola */}
-      <div className="w3-col l3 m6 w3-margin-bottom">
+      <div className='imgdiv'>
          <a  href = "/eniola" >
               <div className="w3-card whole">
                 <img className = "img" src="images/eniola.jpg" alt="" />
                 <div className="w3-container text">
                   <h4 className="w3-center un4">Eniola Olasogba</h4>
-                  <p className="w3-center">HEAD, Contents and Communications</p>
+                  <p className="w3-center un5">Head, Contents and Communications</p>
                  
                 </div>
               </div>
@@ -259,13 +267,13 @@ export default function Fullpage() {
 
 
     {/* Info for sam */}
-      <div className="w3-col l3 m6 w3-margin-bottom">
+      <div className='imgdiv'>
         <a href = "/sam"> 
           <div className="w3-card whole">
             <img className = "img" src="images/sam.jpg" alt="" />
             <div className="w3-container text">
               <h4 className="w3-center un4">Samuel Adekunle</h4>
-              <p className="w3-center">HEAD, Strategy and Logistics</p>
+              <p className="w3-center un5">Head, Strategy and Logistics</p>
              
             </div>
           </div>
@@ -273,13 +281,13 @@ export default function Fullpage() {
       </div>
 
     {/* Information on damilola daniel */}
-      <div className="w3-col l3 m6 w3-margin-bottom">
+      <div className='imgdiv'>
        <a  href = "/damilola">
             <div className="w3-card whole">
               <img className = "img" src="images/st.jpeg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Damilola Daniel</h4>
-                <p className="w3-center">HEAD, Media</p>
+                <p className="w3-center un5">Head, Media</p>
               
               </div>
             </div>
@@ -287,37 +295,32 @@ export default function Fullpage() {
       </div>
 
     {/* Information on doyinsolami */}
-      <div className="w3-col l3 m6 w3-margin-bottom">
+      <div className='imgdiv'>
        <a href = "/doyin" >
             <div className="w3-card whole">
               <img className = "img" src="images/doyin.jpg" alt="" />
               <div className="w3-container text">
                 <h4 className="w3-center un4">Doyinsolami Olatunji</h4>
-                <p className="w3-center">Deputy Head, Strategy and Logistics</p>
+                <p className="w3-center un5">Deputy Head, Strategy and Logistics</p>
              
               </div>
             </div>
           </a>
       </div>
-
-    {/* Information on adesola oyewole */}
-      <div className="w3-col l3 m6 w3-margin-bottom">
-      <a href = "/adesola">
-            <div className="w3-card whole">
-              <img className = "img" src="images/adesola.jpg" alt="" />
-              <div className="w3-container text">
-                <h4 className="w3-center un4">Adesola Oyewole</h4>
-                <p className="w3-center">Head, Finance</p>
-              
-              </div>
-            </div>
-        </a>
-      </div>
-
-    </div>
+  <div className='imgdiv'>
+    <a href = "/adesola">
+        <div className="w3-card whole">
+          <img className = "img" src="images/adesola.jpg" alt="" />
+          <div className="w3-container text">
+            <h4 className="w3-center un4">Adesola Oyewole</h4>
+            <p className="w3-center un5">Head, Finance</p>
+          
+          </div>
+        </div>
+    </a>
   </div>
-</section>
- 
+  </Carousel>
+</div>
   
 
  {/* Contact Section  */}
@@ -408,6 +411,27 @@ export default function Fullpage() {
 
 
     <style jsx>{`
+     input{
+      width:500px;
+      height:40px;
+      border:1px solid #f3f3f3;
+      background-color: #f3f3f3;
+      border-radius: 0.6em;
+      padding:20px;
+    
+     
+      font-weight:900;
+      font-size: 14px;
+      color:#053d59;
+    
+      
+    }
+    .imgdiv{
+      width:80%;
+    }
+    .whole{
+      width:100%;
+    }
     @media screen and (max-width:900px){
         .w3-hide-small{
           display:none;
@@ -420,7 +444,10 @@ export default function Fullpage() {
         float:none;
         margin:0 auto;
       }
- 
+      input{
+        width:80%;
+       
+      }
 
   }
     @media screen and (max-width:600px){
@@ -449,6 +476,7 @@ export default function Fullpage() {
       margin:10px 10px 0px;
       
     }
+    
   
   
      div.PD{
@@ -534,7 +562,16 @@ export default function Fullpage() {
        margin-top:20px;
      }
      }
-    
+     @media screen and (max-width:400px){
+      .imgdiv{
+        width:100%;
+      }
+      .un4, .un5{
+       
+        font-size:15px;
+        
+      }
+    }
      
     `}</style>
     </div>
