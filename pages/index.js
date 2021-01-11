@@ -120,7 +120,7 @@ export default function Fullpage() {
       <div className="container" style= {{marginTop:"64px"}}>
         <div className="row">
           <div className="col-sm-6 vision" style={{textAlign:"center"}}>
-          <i className="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style= {{color:"#FED700;"}}></i>
+          <i className="fa fa-desktop w3-margin-bottom w3-jumbo w3-center" style= {{color:"#FED700"}}></i>
           <p className="w3-large un1" >Vision</p>
           <p  className = "un2"> To see a community, nation, world where every young person finds their place and begin to influence their 
           environment positively.</p>   
@@ -162,7 +162,7 @@ export default function Fullpage() {
             <div>
               <div className = "helpline">
                 <i className="far fa-hand-paper w3-margin-bottom iconv"></i>
-                <div style = {{lineHeight:" 0.5;"}}>
+                <div style = {{lineHeight:" 0.5"}}>
                   <h3>Volunteering</h3>
                 </div>
               </div>
