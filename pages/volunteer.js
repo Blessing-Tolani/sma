@@ -66,7 +66,7 @@ export default function Volunteer() {
                     <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteering Form">
                         <input type = "hidden" name = "form-name" value ="Volunteering Form" />
                         <input type="text" name = "First Surname" placeholder="First Surname" required="" className = "input"/> 
-                        <input className = "input" type="email" id="email" name="Email Address" placeholder="Email Address" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
+                        <input className = "input" type="email" id="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
                         <input className = "input" type="text" name = "Address" placeholder="Location (City and Country)" required /> 
                         <input className = "input" type="number" name = "Whatsapp Number "placeholder="Phone Number (Whatsapp)" required/> <br className = "br" />
 
@@ -77,40 +77,40 @@ export default function Volunteer() {
 
                         <div className = "inline special">
                             <p>Gender</p>
-                            <input type="radio" id="male" name="gender" value="male" />
+                            <input type="radio" id="male" name="Gender" value="male" />
                             <label for="male"> Male</label><br />
-                            <input type="radio" id="female" name="gender" value="female" />
+                            <input type="radio" id="female" name="Gender" value="female" />
                             <label for="female"> Female</label><br />
                         </div>
 
                         <div className = "inline ">
                             <p>Have you volunteered in an organization before ? </p>
-                            <input type="radio" id="yes" name="answer" value="Yes" />
+                            <input type="radio" id="yes" name="Volunteered before" value="Yes" />
                             <label for="yes"> Yes</label><br />
-                            <input type="radio" id="no" name="answer" value="No" />
+                            <input type="radio" id="no" name="Volunteered before" value="No" />
                             <label for="no"> No</label><br />
                         </div>
                         <div className = "flex bow ">
                         <div className = " inline but">
                             <p> What department will you like to volunteer with?</p>
-                            <input type="radio" id="department1" name="department" value="Content and Communications" />
+                            <input type="radio" id="department1" name="Department" value="Content and Communications" />
                             <label for="department1"> Content and Communications</label><br />
-                            <input type="radio" id="department2" name="department" value="Strategy and Logistics" />
+                            <input type="radio" id="department2" name="Department" value="Strategy and Logistics" />
                             <label for="department2"> Strategy and Logistics</label><br />
-                            <input type="radio" id="department3" name="department" value="Media" />
+                            <input type="radio" id="department3" name="Department" value="Media" />
                             <label for="department3"> Media</label><br />
                         </div>
 
                         <div className = "inline but">
                             <p>How long will you like to volunteer with us ?</p>
-                            <input type="radio" id="duration1" name="duration" value="3 Months" />
+                            <input type="radio" id="duration1" name="Duration" value="3 Months" />
                             <label for="duration1"> 3 Months</label><br />
-                            <input type="radio" id="duration2" name="duration" value="6 Months" />
+                            <input type="radio" id="duration2" name="Duration" value="6 Months" />
                             <label for="duration2"> 6 Months</label><br />
                         </div>
                         </div>
                         <div className = "text-center">
-                        <button type="submit" id="button" className = "onebutton">Submit<i class="far fa-arrow-alt-circle-right" aria-hidden="true"></i></button>
+                        <button type="submit" id="button" className = "onebutton">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -340,6 +340,9 @@ export default function Volunteer() {
                 .xee{
                     margin-left:0px;
                     font-size:15px !important;
+                }
+                .special{
+                    width:100%;
                 }
                 #touch{
                    
