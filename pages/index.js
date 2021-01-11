@@ -48,7 +48,7 @@ export default function Fullpage() {
             <a href="#about" className="w3-bar-item w3-button  xee"> About</a>
             <a  href="/programs" className="w3-bar-item w3-button xee"> Programs</a>
               <a href="/blog" className="w3-bar-item w3-button xee"> Blog</a>
-              <a href="#work" className="w3-bar-item w3-button xee"> Gallery</a>
+              <a href="/gallery" className="w3-bar-item w3-button xee"> Gallery</a>
               <a href="#donate" className="w3-bar-item w3-button xee"> Donate</a>
               <a href="#contact" className="w3-bar-item w3-button xee">Contact</a>
           </div>
@@ -63,14 +63,14 @@ export default function Fullpage() {
         </div>
 
         <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
-          <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
+          <nav class="w3-sidebar fro w3-bar-block w3-animate-left flex flex-col justify-around w3-hide-medium w3-hide-large w3-center">
            
             <a href="#" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Home</p></a>
-            <a href="#about" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p> About</p></a><br />
-            <a href="/programs" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a><br />
-            <a href="/blog" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a><br />
-           <a href="#photos" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a><br />
-            <a href="#donate" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Donate</p></a><br />
+            <a href="#about" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p> About</p></a>
+            <a href="/programs" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Programs</p></a>
+            <a href="/blog" onClick={toggleMenu}  className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Blog</p></a>
+           <a href="/gallery" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Gallery</p></a>
+            <a href="#donate" onClick={toggleMenu} className="w3-button w3-hover-white" style ={{width:"100%", color:"white"}}><p>Donate</p></a>
             <a href="#contact" onClick={toggleMenu} className="w3-button  w3-hover-white" style ={{width:"100%", color:"white"}}><p>Contact</p></a>
           </nav>
         </span>
@@ -204,7 +204,7 @@ export default function Fullpage() {
                 place in the world which brings the transformation we want.<br />
                 <i>"Unity is strength; when there is partnership, we can achieve uncommon results"</i>
               </p>
-              <a href = "#" className =  {Style.helplink }>Partner</a>
+              <a href = "/partnership" className =  {Style.helplink }>Partner</a>
             </div>
           </div>
 

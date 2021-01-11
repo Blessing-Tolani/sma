@@ -8,11 +8,12 @@
   
  
   .helplink {
-    border-bottom: 2px solid #EC0000;
+    border-bottom: 2px solid black;
   }
   
-  .helplink:hover {
-    border-bottom: 2px solid #5b5bda;
+  .helplink:hover, .helplink:focus {
+    border-bottom: 2px solid #808080;
+    color:#808080;
   }
   
  

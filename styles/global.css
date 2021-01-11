@@ -4,6 +4,9 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
   background-color:#5e0505 !important;
   color:white !important;
 }
+.rec .rec-arrow{
+  background-color:#e6eaf3;
+}
 .rec .rec-dot_active{
   box-shadow: 0 0 1px 3px #5e0505 !important;
 }

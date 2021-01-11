@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Style from '../styles/index.module.css'
 import React, { useState } from "react";
 
-export default function Volunteer() {
+export default function Partner() {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
   
   
@@ -13,7 +13,7 @@ export default function Volunteer() {
     return (
         <div className = "body">
             <Head>
-              <title>Volunteer with us</title>
+              <title>Partner with us</title>
               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
              
               <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Bodoni+Moda&family=Noto+Serif+JP&family=Amaranth&family=Source+Sans+Pro&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
@@ -57,65 +57,34 @@ export default function Volunteer() {
             </div>
 
             <div className = "w3-container ">
-                <h2 id = "touch" className = "text-center">Volunteer with us</h2>
+                <h2 id = "touch" className = "text-center">Partner with our Vision</h2>
             </div>
             {/* Volunteer form */}
             <div className = "w3-container  cont flex items-center ">
                 <div className = "w3-col s6  formdiv flex "> 
                    
-                    <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteering Form">
-                        <input type = "hidden" name = "form-name" value ="Volunteering Form" />
+                    <form className = " formhead " method = "POST" data-netlify = "true" name ="Partnership Form">
+                        <input type = "hidden" name = "form-name" value ="Partnership Form" />
                         <input type="text" name = "Firstname Surname" placeholder="Firstname Surname" required="" className = "input"/> 
                         <input className = "input" type="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
                         <input className = "input" type="text" name = "Location" placeholder="Location (City and Country)" required /> 
-                        <input className = "input" type="number" name = "Whatsapp Number "placeholder="Phone Number (Whatsapp)" required/> <br className = "br" />
+                        <input className = "input" type="number" name = "Phone Number "placeholder="Phone Number" required/> <br className = "br" />
+                        <textarea placeholder="Type of Partnership - Organization or Personal?" name = "Type of Organization ?" required ></textarea>    
+                       
+                       
+                        <textarea placeholder="Name of Organization" name = "Name of Organization"  ></textarea> <br className = "br" />                        
+                        <textarea placeholder="Vision of Organization" name = "Vision of Organization"  ></textarea> 
+                        <textarea placeholder="Brief Details about Partnership" name = "Brief Details about Partnership"  required></textarea> <br className = "br" /> 
+                        <textarea className = "special" placeholder="Purpose of Partnership" name = "Brief Details about Partnership"  required></textarea>  <br className = "br" />
 
-                        <textarea placeholder="What are your strengths ?" name = "Strengths"  required></textarea> 
-                        <textarea placeholder="What do you consider to be your weakness(es) ?" name = "Weakness(es)" required ></textarea> <br className = "br" />                        
-                        <textarea placeholder="Why wil you like to volunteer with us ?" name = "Reason for Volunteering"  required></textarea> 
-                        <textarea placeholder="What skills do you have ?" name = "Skills"  required></textarea>  <br className = "br" />
-
-                        <div className = "inline special">
-                            <p>Gender</p>
-                            <input type="radio" name="Gender" value="Male" />
-                            <label for="male"> Male</label><br />
-                            <input type="radio" name="Gender" value="Female" />
-                            <label for="female"> Female</label><br />
-                        </div>
-
-                        <div className = "inline ">
-                            <p>Have you volunteered in an organization before ? </p>
-                            <input type="radio"name="Volunteered before" value="Yes" />
-                            <label for="yes"> Yes</label><br />
-                            <input type="radio"  name="Volunteered before" value="No" />
-                            <label for="no"> No</label><br />
-                        </div>
-                        <div className = "flex bow ">
-                        <div className = " inline but">
-                            <p> What department will you like to volunteer with?</p>
-                            <input type="radio"  name="Department" value="Content and Communications" />
-                            <label for="department1"> Content and Communications</label><br />
-                            <input type="radio"  name="Department" value="Strategy and Logistics" />
-                            <label for="department2"> Strategy and Logistics</label><br />
-                            <input type="radio"  name="Department" value="Media" />
-                            <label for="department3"> Media</label><br />
-                        </div>
-
-                        <div className = "inline but">
-                            <p>How long will you like to volunteer with us ?</p>
-                            <input type="radio"  name="Duration" value="3 Months" />
-                            <label for="duration1"> 3 Months</label><br />
-                            <input type="radio"  name="Duration" value="6 Months" />
-                            <label for="duration2"> 6 Months</label><br />
-                        </div>
-                        </div>
+                        
                         <div className = "text-center">
                         <button type="submit" id="button" className = "onebutton">Submit</button>
                         </div>
                     </form>
                 </div>
                 <div className = "w3-col s6 flex items-center order">
-                    <img src = "images/volunteer.jpg" alt = ""/>
+                    <img src = "images/partner.jpg" alt = ""/>
                 </div>
             </div>
 
@@ -196,18 +165,12 @@ export default function Volunteer() {
             border-bottom:1px solid #808080;
             color:#808080;
         }
-        .inline{
-            display:inline-block;
-          
-        }
-        .inline, .but{
-            margin:10px 2.5%;
-            font-family: 'ABeeZee';
-            font-size: 14px;
-            color:#053d59;
-        }
+      
+       
         .special{
-            width:20%;
+            width:95%;
+            margin-bottom:15px;
+           
         }
 
         .formdiv{
@@ -314,6 +277,12 @@ export default function Volunteer() {
             width:48%;
             margin:10px 1%;
             }
+            .special{
+                width:101%;
+             
+               
+            }
+            }
         }
         @media screen and (max-width: 768px){
             .formdiv{
@@ -326,6 +295,11 @@ export default function Volunteer() {
                 padding:20px;
                 width:90%;
                 margin:15px 0%;
+            }
+            .special{
+                width:90%;
+                margin-bottom:15px;
+               
             }
             .br{
                 display:none;
@@ -342,9 +316,7 @@ export default function Volunteer() {
                     margin-left:0px;
                     font-size:15px !important;
                 }
-                .special{
-                    width:100%;
-                }
+            
                 #touch{
                    
                     font-size:25px;
@@ -353,6 +325,11 @@ export default function Volunteer() {
         @media screen and (max-width: 400px){
             .input ,textarea{
                 width:100%;
+               
+            }
+            .special{
+                width:100%;
+                margin-bottom:15px;
                
             }
             
