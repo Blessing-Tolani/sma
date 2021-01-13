@@ -19,9 +19,8 @@ export default function Fullpage() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
 
-
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const toggleModal= () => setModalIsOpen(!modalIsOpen);
+  const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
   const headerRef = useRef(null);
   const image1Ref = useRef(null);
@@ -369,7 +368,7 @@ export default function Fullpage() {
             className="w3-right w3-hide-small"
             style={{ padding: "10px 80px 0px 0px;" }}
           >
-            <a href="#" className="w3-bar-item w3-button xee bg-gray-300" >
+            <a href="#" className="w3-bar-item w3-button xee bg-gray-300">
               {" "}
               Home
             </a>
@@ -691,159 +690,178 @@ export default function Fullpage() {
             Board
           </h2>
         </div>
-      
-          <Carousel breakPoints={breakPoints} className="py-14">
-            <div className="imgdiv">
-              <a href="/marvellous">
-                <div className="w3-card whole ">
-                  <img className="img" src="images/marvy.jpg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4"> Marvellous Sunmiboye</h4>
-                    <p className="w3-center un5">Director</p>
-                  </div>
-                </div>
-              </a>
-            </div>
 
-            {/* Information on Testimony */}
-            <div className="imgdiv">
-              <a href="/testimony">
-                <div className="w3-card whole">
-                  <img className="img" src="images/test.jpg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4">Testimony Adebiyi</h4>
-                    <p className="w3-center un5">Administrator</p>
-                  </div>
+        <Carousel breakPoints={breakPoints} className="py-14">
+          <div className="imgdiv">
+            <a href="/marvellous">
+              <div className="w3-card whole ">
+                <img className="img" src="images/marvy.jpg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4"> Marvellous Sunmiboye</h4>
+                  <p className="w3-center un5">Director</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            {/* Info for Eniola */}
-            <div className="imgdiv">
-              <a href="/eniola">
-                <div className="w3-card whole">
-                  <img className="img" src="images/eniola.jpg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4">Eniola Olasogba</h4>
-                    <p className="w3-center un5">
-                      Head, Contents and Communications
-                    </p>
-                  </div>
+          {/* Information on Testimony */}
+          <div className="imgdiv">
+            <a href="/testimony">
+              <div className="w3-card whole">
+                <img className="img" src="images/test.jpg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4">Testimony Adebiyi</h4>
+                  <p className="w3-center un5">Administrator</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            {/* Info for sam */}
-            <div className="imgdiv">
-              <a href="/sam">
-                <div className="w3-card whole">
-                  <img className="img" src="images/sam.jpg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4">Samuel Adekunle</h4>
-                    <p className="w3-center un5">
-                      Head, Strategy and Logistics
-                    </p>
-                  </div>
+          {/* Info for Eniola */}
+          <div className="imgdiv">
+            <a href="/eniola">
+              <div className="w3-card whole">
+                <img className="img" src="images/eniola.jpg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4">Eniola Olasogba</h4>
+                  <p className="w3-center un5">
+                    Head, Contents and Communications
+                  </p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            {/* Information on damilola daniel */}
-            <div className="imgdiv">
-              <a href="/damilola">
-                <div className="w3-card whole">
-                  <img className="img" src="images/st.jpeg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4">Damilola Daniel</h4>
-                    <p className="w3-center un5">Head, Media</p>
-                  </div>
+          {/* Info for sam */}
+          <div className="imgdiv">
+            <a href="/sam">
+              <div className="w3-card whole">
+                <img className="img" src="images/sam.jpg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4">Samuel Adekunle</h4>
+                  <p className="w3-center un5">Head, Strategy and Logistics</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+          </div>
 
-            {/* Information on doyinsolami */}
-            <div className="imgdiv">
-              <a href="/doyin">
-                <div className="w3-card whole">
-                  <img className="img" src="images/doyin.jpg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4">Doyinsolami Olatunji</h4>
-                    <p className="w3-center un5">
-                      Deputy Head, Strategy and Logistics
-                    </p>
-                  </div>
+          {/* Information on damilola daniel */}
+          <div className="imgdiv">
+            <a href="/damilola">
+              <div className="w3-card whole">
+                <img className="img" src="images/st.jpeg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4">Damilola Daniel</h4>
+                  <p className="w3-center un5">Head, Media</p>
                 </div>
-              </a>
-            </div>
-            <div className="imgdiv">
-              <a href="/adesola">
-                <div className="w3-card whole">
-                  <img className="img" src="images/adesola.jpg" alt="" />
-                  <div className="w3-container text">
-                    <h4 className="w3-center un4">Adesola Oyewole</h4>
-                    <p className="w3-center un5">Head, Finance</p>
-                  </div>
+              </div>
+            </a>
+          </div>
+
+          {/* Information on doyinsolami */}
+          <div className="imgdiv">
+            <a href="/doyin">
+              <div className="w3-card whole">
+                <img className="img" src="images/doyin.jpg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4">Doyinsolami Olatunji</h4>
+                  <p className="w3-center un5">
+                    Deputy Head, Strategy and Logistics
+                  </p>
                 </div>
-              </a>
-            </div>
-          </Carousel>
-      
+              </div>
+            </a>
+          </div>
+          <div className="imgdiv">
+            <a href="/adesola">
+              <div className="w3-card whole">
+                <img className="img" src="images/adesola.jpg" alt="" />
+                <div className="w3-container text">
+                  <h4 className="w3-center un4">Adesola Oyewole</h4>
+                  <p className="w3-center un5">Head, Finance</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </Carousel>
       </div>
 
       {/* Contact Section  */}
-     
+
       <div className="w3-container " id="contact" ref={contactRef}>
         <div className={Style.cont} ref={slimRef} id="gome">
           <h2 className="greet">Lets get in touch</h2>
-          <button className="come greet" onClick ={toggleModal}>Say Hello</button>
+          <button className="come greet" onClick={toggleModal}>
+            Say Hello
+          </button>
         </div>
 
         {/* Register Modal  */}
         <div className={`${modalIsOpen ? "open" : "closed"} ...rest`}>
-        <div className={Style.contact1} className="w3-modal">
-          <div className="w3-modal-content w3-animate-zoom allow">
-            <div className="w3-container us">
-              <span className="w3-button w3-display-topright w3-large">
-                <h2 id="xee" style = {{color:"maroon"}} onClick ={toggleModal}>X</h2>
-              </span>
-              <h1 style={{ color: "maroon", textAlign:'center' }}>Contact Us</h1>
-            </div>
-            <div id="formdiv">
-              <form  method = "POST" data-netlify = "true" name = "Contact Form">
-              <input type = "hidden" name = "form-name" value = "Contact Form" />
-                <input
-                  className=" in w3-padding-16 w3-border"
-                  type="text"
-                  placeholder="Full Name"
-                  required
-                  name="Full Name"
-                />
+          <div className={Style.contact1} className="w3-modal">
+            <div className="w3-modal-content w3-animate-zoom allow">
+              <div className="w3-container us">
+                <span className="w3-button w3-display-topright w3-large">
+                  <h2
+                    id="xee"
+                    style={{ color: "maroon" }}
+                    onClick={toggleModal}
+                  >
+                    X
+                  </h2>
+                </span>
+                <h1 style={{ color: "maroon", textAlign: "center" }}>
+                  Contact Us
+                </h1>
+              </div>
+              <div id="formdiv">
+                <form method="POST" data-netlify="true" name="Contact Form">
+                  <input type="hidden" name="form-name" value="Contact Form" />
+                  <input
+                    className=" in w3-padding-16 w3-border"
+                    type="text"
+                    placeholder="Full Name"
+                    required
+                    name="Full Name"
+                  />
 
-                <input
-                  className="in w3-padding-16 w3-border"
-                  type="text"
-                  placeholder="Email"
-                  required
-                  name="Email"
-                  pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$"
-                />
+                  <input
+                    className="in w3-padding-16 w3-border"
+                    type="text"
+                    placeholder="Email"
+                    required
+                    name="Email"
+                    pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$"
+                  />
 
-                <input className = "in w3-padding-16 w3-border" type="number" name = "Phone Number "placeholder="Phone Number" required/>
-                <input className = "in w3-padding-16 w3-border" type="text" name = "Location" placeholder="Location (City and Country)" required /> 
-                <input
-                  className=" in twe w3-padding-16 w3-border"
-                  type="text"
-                  placeholder="Message"
-                  required
-                  name="Message"
-                />
-                <button className={Style.button2} type="submit">
-                  Send <i className="far fa-arrow-alt-circle-right"></i>
-                </button>
-              </form>
+                  <input
+                    className="in w3-padding-16 w3-border"
+                    type="number"
+                    name="Phone Number "
+                    placeholder="Phone Number"
+                    required
+                  />
+                  <input
+                    className="in w3-padding-16 w3-border"
+                    type="text"
+                    name="Location"
+                    placeholder="Location (City and Country)"
+                    required
+                  />
+                  <input
+                    className=" in twe w3-padding-16 w3-border"
+                    type="text"
+                    placeholder="Message"
+                    required
+                    name="Message"
+                  />
+                  <button className={Style.button2} type="submit">
+                    Send <i className="far fa-arrow-alt-circle-right"></i>
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
 
@@ -926,16 +944,16 @@ export default function Fullpage() {
       </div>
 
       <style jsx>{`
-    #gome{
-        padding-top:10%;
-      }
-      .w3-button{
-        color:#c0c0c0 !important;
-      }
-     
-        .twe{
-          height:50px !important;
-          padding: 5px 0px 0px  15px !important;
+        #gome {
+          padding-top: 10%;
+        }
+        .w3-button {
+          color: #c0c0c0 !important;
+        }
+
+        .twe {
+          height: 50px !important;
+          padding: 5px 0px 0px 15px !important;
         }
         input {
           width: 500px;
@@ -952,10 +970,13 @@ export default function Fullpage() {
         .whole {
           width: 100%;
         }
-        .w3-modal{
-          display:block;
+        .w3-modal {
+          display: block;
         }
-        .w3-button:hover{color:white!important;background-color:transparent !important};
+        .w3-button:hover {
+          color: white !important;
+          background-color: transparent !important;
+        }
         @media screen and (max-width: 900px) {
           .w3-hide-small {
             display: none;
@@ -1061,7 +1082,7 @@ export default function Fullpage() {
         }
         .xee {
           padding: 10px;
-        
+
           margin-left: 30px;
         }
 
@@ -1085,9 +1106,8 @@ export default function Fullpage() {
           .un5 {
             font-size: 15px;
           }
-          un3{
-              font-size: 20px;
-            
+          un3 {
+            font-size: 20px;
           }
         }
       `}</style>
