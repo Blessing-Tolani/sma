@@ -64,7 +64,7 @@ export default function Volunteer() {
             <div className = "w3-container  cont flex items-center ">
                 <div className = "w3-col s6  formdiv flex "> 
                    
-                    <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteer Form">
+                    <form action = "/success" className = " formhead " method = "POST" data-netlify = "true" name ="Volunteer Form">
                         <input type = "hidden" name = "form-name" value ="Volunteer Form" />
                         <input type="text" name = "Firstname Surname" placeholder="Firstname Surname" required="" className = "input"/> 
                         <input className = "input" type="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />

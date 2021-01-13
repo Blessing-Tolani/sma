@@ -281,7 +281,7 @@ export default function Program() {
       </div>
 
       <header className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full ">
-        <img ref={imgRef} className="star " src="images/Star.svg" />
+        <img ref={imgRef} className="star " src="images/Star.svg" alt= ""/>
       </header>
       <div className="w3-container" ref={whatRef}>
         <div className="fix  w-full">

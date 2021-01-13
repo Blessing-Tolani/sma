@@ -816,7 +816,7 @@ export default function Fullpage() {
                 </h1>
               </div>
               <div id="formdiv">
-                <form method="POST" data-netlify="true" name="Contact Form">
+                <form action = "/success" method="POST" data-netlify="true" name="Contact Form">
                   <input type="hidden" name="form-name" value="Contact Form" />
                   <input
                     className=" in w3-padding-16 w3-border"
