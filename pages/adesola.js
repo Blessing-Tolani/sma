@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Style from '../styles/index.module.css'
 import React, { useState } from "react";
+import { gsap } from "gsap/dist/gsap";
 
 
 
@@ -59,7 +60,7 @@ export default function AdesolaInfo() {
         
         <div className="w3-container bg-gray-200" >
             <div className="w3-col m6  flex justify-center">
-                <img className = " w-2/3  sm:w-1/2 lg:w-2/3 rounded-full" src="/images/adesola.jpg" alt="" />
+                <img className = "boya w-2/3  sm:w-1/2 lg:w-2/3 rounded-full" src="/images/adesola.jpg" alt="" />
             
             </div>
             <div className="w3-col m6 ">

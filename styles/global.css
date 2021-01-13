@@ -26,6 +26,22 @@ input[type=number]{
     scroll-behavior: smooth;
     outline:none !important;
   }
+  @keyframes flip-vertical-right {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+    }
+  }
+  .boya{
+   
+      -webkit-animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+              animation: flip-vertical-right 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    
+  }
   .mug{
     border-radius:50%;
     padding:8px 16px;

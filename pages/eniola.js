@@ -59,7 +59,7 @@ export default function EniolaInfo() {
         
         <div className="w3-container bg-gray-200" >
             <div className="w3-col m6  flex justify-center">
-                <img className = " w-2/3  sm:w-1/2 lg:w-2/3 rounded-full" src="/images/eniola.jpg" alt="" />
+                <img className = "boya w-2/3  sm:w-1/2 lg:w-2/3 rounded-full" src="/images/eniola.jpg" alt="" />
             
             </div>
             <div className="w3-col m6 ">
