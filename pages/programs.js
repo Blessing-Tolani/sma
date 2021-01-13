@@ -169,7 +169,7 @@ export default function Program() {
           toggleActions: "play none none reverse",
           start: "top 70%",
           end: "bottom top",
-          markers: true,
+        
         },
       }
     );
@@ -391,7 +391,7 @@ export default function Program() {
         </svg>
       </div>
 
-      <footer className="w3-black w3-padding-64">
+      <footer className="w3-black w3-padding-64" >
         <div className={Style.footer}>
           <div>
             <h3>
@@ -414,31 +414,47 @@ export default function Program() {
             <h3>
               <a href="https://twitter.com/TheSMA_Impact?s=09">
                 <i className="fab fa-twitter fa-1x"></i>
+            
               </a>
-              Twitter
+                  Twitter
+              
             </h3>
+            <a href="https://twitter.com/TheSMA_Impact?s=09">
             <p>@TheSMA_Impact</p>
+            
+              </a>
+           
           </div>
 
           <div>
             <h3>
               {" "}
               <a href="https://www.instagram.com/the_sma__/">
-                <i className="fab fa-instagram fa-1x"></i>
+                <i className="fab fa-instagram fa-1"></i>
+              
               </a>
               Instagram
             </h3>
+            <a href="https://www.instagram.com/the_sma__/">
             <p>@the_sma__</p>
+              
+              </a>
+            
           </div>
 
           <div>
             <h3>
               <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
                 <i className="fab fa-facebook-f fa-1x"></i>
+              
               </a>
               Facebook
             </h3>
+            <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
             <p>@The S.M.A Impact Network</p>
+              
+              </a>
+            
           </div>
         </div>
       </footer>

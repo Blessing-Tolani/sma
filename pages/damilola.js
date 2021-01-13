@@ -92,41 +92,72 @@ export default function DamilolaInfo() {
             </div>
 
             <footer className="w3-black w3-padding-64">
+        <div className={Style.footer}>
+          <div>
+            <h3>
+              <i className="fas fa-map-marker-alt"></i>Address
+            </h3>
+            <p>
+              University Road, Tanke, <br />
+              Ilorin, Kwara State
+            </p>
+          </div>
+
+          <div>
+            <h3>
+              <i className="fas fa-phone-alt"></i>Phone
+            </h3>
+            <p>+234 814 529 3779</p>
+          </div>
+
+          <div>
+            <h3>
+              <a href="https://twitter.com/TheSMA_Impact?s=09">
+                <i className="fab fa-twitter fa-1x"></i>
             
+              </a>
+                  Twitter
+              
+            </h3>
+            <a href="https://twitter.com/TheSMA_Impact?s=09">
+            <p>@TheSMA_Impact</p>
+            
+              </a>
+           
+          </div>
 
-            <div className = {Style.footer}>
-            <div>
-                <h3><i className = "fas fa-map-marker-alt"></i>Address</h3>
-                <p>University Road, Tanke, <br /> 
-                Ilorin, Kwara State
-                </p>
-            </div>
+          <div>
+            <h3>
+              {" "}
+              <a href="https://www.instagram.com/the_sma__/">
+                <i className="fab fa-instagram fa-1"></i>
+              
+              </a>
+              Instagram
+            </h3>
+            <a href="https://www.instagram.com/the_sma__/">
+            <p>@the_sma__</p>
+              
+              </a>
+            
+          </div>
 
-
-            <div>
-                <h3><i className = "fas fa-phone-alt"></i>Phone</h3>
-                <p>+234 814 529 3779</p>
-            </div>
-
-
-            <div>
-                <h3><a href="https://twitter.com/TheSMA_Impact?s=09"><i className="fab fa-twitter fa-1x"></i></a>Twitter</h3>
-                <p>@TheSMA_Impact</p>
-                </div>
-
-
-                <div>
-                <h3> <a href="https://www.instagram.com/the_sma__/"><i className="fab fa-instagram fa-1x"></i></a>Instagram</h3>
-                <p>@the_sma__</p>
-                </div>
-
-
-                <div>
-                <h3><a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/"><i className="fab fa-facebook-f fa-1x"></i></a>Facebook</h3>
-                <p>@The S.M.A Impact Network</p>
-                </div>
-            </div>
-            </footer>
+          <div>
+            <h3>
+              <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
+                <i className="fab fa-facebook-f fa-1x"></i>
+              
+              </a>
+              Facebook
+            </h3>
+            <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
+            <p>@The S.M.A Impact Network</p>
+              
+              </a>
+            
+          </div>
+        </div>
+      </footer>
             <div className = {Style.lil}>
             <a href="#home" className="mug w3-button" style = {{backgroundColor:"#5e0505;"}}><i className=" fa fa-arrow-up" style = {{color:"white"}}></i></a>
             <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2021, SMA Impact Network</span></p>
