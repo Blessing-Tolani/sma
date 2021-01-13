@@ -150,13 +150,11 @@
     background-repeat: no-repeat;
   }
   
- 
+ .cont{
+   text-align:center;
+ }
   
-  .cont {
-    text-align: center;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
-  }
+  
   
   .cont > h2 {
     font-family: 'Lato', sans-serif;
@@ -597,8 +595,8 @@
     }
     .cont {
       text-align: center;
-      -webkit-transform: translateY(10%);
-              transform: translateY(10%);
+      /* -webkit-transform: translateY(10%);
+              transform: translateY(10%); */
     }
     .cont > h2 {
       font-size: 25px;
