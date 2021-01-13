@@ -6,6 +6,7 @@ import Carousel from "react-elastic-carousel";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const breakPoints = [
@@ -820,9 +821,9 @@ export default function Fullpage() {
                   <input
                     className=" in w3-padding-16 w3-border"
                     type="text"
-                    placeholder="Full Name"
+                    placeholder="Firstname Surname"
                     required
-                    name="Full Name"
+                    name="Full name"
                   />
 
                   <input
@@ -872,7 +873,7 @@ export default function Fullpage() {
             fill=""
             fill-opacity="1"
             d="M0,192L80,213.3C160,235,320,277,480,272C640,267,800,213,960,213.3C1120,213,1280,267,1360,
-  293.3L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+           293.3L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
           ></path>
         </svg>
       </div>

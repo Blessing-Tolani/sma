@@ -467,7 +467,7 @@ export default function Program() {
           <i className=" fa fa-arrow-up" style={{ color: "white" }}></i>
         </a>
         <p>
-          <span style={{ color: "rgb(255, 255, 255)" }}>
+          <span style={{ color: "#a9a9a9" }}>
             &copy; 2021, SMA Impact Network
           </span>
         </p>

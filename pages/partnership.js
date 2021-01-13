@@ -65,17 +65,17 @@ export default function Partner() {
                    
                     <form className = " formhead " method = "POST" data-netlify = "true" name ="Partnership Form">
                         <input type = "hidden" name = "form-name" value ="Partnership Form" />
-                        <input type="text" name = "Firstname Surname" placeholder="Firstname Surname" required="" className = "input"/> 
+                        <input type="text" name = "Full name" placeholder="Firstname Surname" required="" className = "input"/> 
                         <input className = "input" type="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
                         <input className = "input" type="text" name = "Location" placeholder="Location (City and Country)" required /> 
                         <input className = "input" type="number" name = "Phone Number "placeholder="Phone Number" required/> <br className = "br" />
-                        <textarea placeholder="Type of Partnership - Organization or Personal?" name = "Type of Organization ?" required ></textarea>    
+                        <textarea placeholder="Type of Partnership - Organization or Personal?" name = "Type of Partnership" required ></textarea>    
                        
                        
                         <textarea placeholder="Name of Organization" name = "Name of Organization"  ></textarea> <br className = "br" />                        
                         <textarea placeholder="Vision of Organization" name = "Vision of Organization"  ></textarea> 
                         <textarea placeholder="Brief Details about Partnership" name = "Brief Details about Partnership"  required></textarea> <br className = "br" /> 
-                        <textarea className = "special" placeholder="Purpose of Partnership" name = "Brief Details about Partnership"  required></textarea>  <br className = "br" />
+                        <textarea className = "special" placeholder="Purpose of Partnership" name = "Purpose of Partnership"  required></textarea>  <br className = "br" />
 
                         
                         <div className = "text-center">
@@ -168,7 +168,7 @@ export default function Partner() {
       </footer>
             <div className = {Style.lil}>
             <a href="#home" className="mug w3-button" style = {{backgroundColor:"#5e0505;"}}><i className=" fa fa-arrow-up" style = {{color:"white"}}></i></a>
-            <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2021, SMA Impact Network</span></p>
+            <p ><span style={{color:"#a9a9a9"}}>&copy; 2021, SMA Impact Network</span></p>
             </div>
             
 

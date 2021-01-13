@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Style from '../styles/index.module.css'
 import React, { useState } from "react";
 
+
 export default function Volunteer() {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
   
@@ -63,8 +64,8 @@ export default function Volunteer() {
             <div className = "w3-container  cont flex items-center ">
                 <div className = "w3-col s6  formdiv flex "> 
                    
-                    <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteering Form">
-                        <input type = "hidden" name = "form-name" value ="Volunteering Form" />
+                    <form className = " formhead " method = "POST" data-netlify = "true" name ="Volunteer Form">
+                        <input type = "hidden" name = "form-name" value ="Volunteer Form" />
                         <input type="text" name = "Firstname Surname" placeholder="Firstname Surname" required="" className = "input"/> 
                         <input className = "input" type="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
                         <input className = "input" type="text" name = "Location" placeholder="Location (City and Country)" required /> 
@@ -234,7 +235,7 @@ export default function Volunteer() {
       </footer>
             <div className = {Style.lil}>
             <a href="#home" className="mug w3-button" style = {{backgroundColor:"#5e0505;"}}><i className=" fa fa-arrow-up" style = {{color:"white"}}></i></a>
-            <p ><span style={{color:"rgb(255, 255, 255)"}}>&copy; 2021, SMA Impact Network</span></p>
+            <p ><span style={{color:"#a9a9a9"}}>&copy; 2021, SMA Impact Network</span></p>
             </div>
             
 
