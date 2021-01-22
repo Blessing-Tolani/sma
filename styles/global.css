@@ -42,6 +42,9 @@ input[type=number]{
               animation: flip-vertical-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
   }
+  .un4 {
+    font-family: "Noto Serif JP", serif;
+  }
   .imageo{
     width:500px;
     height:500px;
@@ -182,11 +185,23 @@ input[type=number]{
     border: 1px solid #e6eaf3;
     border-radius: 1em;
   }
+  .whole {
+    width: 100%;
+  }
+  .whole:hover .text {
+    background: rgb(91, 5, 5);
+  }
+  .whole:hover .text {
+    color: white;
+  }
   .hr{
     border-top: 3px solid maroon;
     width: 20%;
     margin:0 auto;
     transform:translateY(-10px);
+    }
+    .text {
+      background-color: white;
     }
   .text {
     /* opacity: 0; */
@@ -225,6 +240,13 @@ input[type=number]{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
   }
+  .imgdiv {
+    width: 80%;
+  }
+  .img {
+    width: 100%;
+    border-radius: 50% 50% 0% 0%;
+  }
   
  
   .article {
@@ -254,6 +276,18 @@ input[type=number]{
     height:300px;
   }
     
+  }
+  @media screen and (max-width: 400px) {
+    .imgdiv {
+      width: 100%;
+    }
+    .un4,
+    .un5 {
+      font-size: 15px;
+    }
+    un3 {
+      font-size: 20px;
+    }
   }
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}

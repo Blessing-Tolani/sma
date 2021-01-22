@@ -2,7 +2,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Style from "../styles/index.module.css";
 import React, { useState, useRef, useEffect } from "react";
-import Carousel from "react-elastic-carousel";
+import Carousel from "../components/Carousel";
+import Footer from "../components/footer";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -38,28 +39,22 @@ export default function Fullpage() {
   const helpdiv2Ref = useRef(null);
   const helpdiv3Ref = useRef(null);
   const boardRef = useRef(null);
-  const sliderRef = useRef(null);
   const teeRef = useRef(null);
   const contactRef = useRef(null);
-  const footerRef = useRef(null);
   const slimRef = useRef(null);
 
-  // gsap header animation
+  // gsap  animation
   useEffect(() => {
     gsap.from(headerRef.current, {
       y: -40,
       duration: 3,
-    });
-  }, []);
-
-  useEffect(() => {
+    }); 
+    
     gsap.from(normRef.current, {
       y: 20,
       duration: 3,
     });
-  }, []);
 
-  useEffect(() => {
     gsap.fromTo(
       speechRef.current,
       {
@@ -79,9 +74,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-
-  useEffect(() => {
+    
     gsap.fromTo(
       image1Ref.current,
       {
@@ -99,9 +92,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
 
-  useEffect(() => {
     gsap.fromTo(
       [informRef.current, aboutRef.current],
       {
@@ -119,9 +110,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
 
-  useEffect(() => {
     gsap.fromTo(
       visionRef.current,
       {
@@ -140,8 +129,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  useEffect(() => {
+
     gsap.fromTo(
       missionRef.current,
       {
@@ -160,8 +148,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  useEffect(() => {
+
     gsap.fromTo(
       valuesRef.current,
       {
@@ -180,8 +167,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  useEffect(() => {
+
     gsap.fromTo(
       helpRef.current,
       {
@@ -200,8 +186,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  useEffect(() => {
+
     gsap.fromTo(
       helpdiv1Ref.current,
       {
@@ -221,8 +206,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  useEffect(() => {
+
     gsap.fromTo(
       helpdiv2Ref.current,
       {
@@ -242,8 +226,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  useEffect(() => {
+
     gsap.fromTo(
       helpdiv3Ref.current,
       {
@@ -263,9 +246,7 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
 
-  useEffect(() => {
     gsap.fromTo(
       boardRef.current,
       {
@@ -282,39 +263,10 @@ export default function Fullpage() {
         },
       }
     );
-  }, []);
-  // useEffect(() => {
-  //   gsap.to(sliderRef.current, {
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: sliderRef.current,
-  //       start: "top 40%",
-  //       end: "bottom -50%",
-  //       toggleAction: "play none none reverse",
-  //       pin: true,
-  //       markers: true,
-  //     },
-  //   });
-  // }, []);
 
-  // useEffect(() => {
-  //   gsap.fromTo(
-  //     sliderRef.current,
-  //     {
-  //       opacity: 0,
-  //     },
-  //     {
-  //       ease: "power2.out",
-  //       duration: 2,
-  //       opacity: 1,
-  //       scrollTrigger: {
-  //         trigger: sliderRef.current,
-  //         toggleActions: "play none none reverse",
-  //         start: "top 70%",
-  //       },
-  //     }
-  //   );
-  // }, []);
+  }, []);
+
+
 
   return (
     <div className="body">
@@ -474,8 +426,8 @@ export default function Fullpage() {
 
       <header
         ref={headerRef}
-        className="bgimg-1 w3-display-container w3-grayscale-min"
-        style={{ backgroundImage: "url('images/women.jpg')" }}
+        className={Style.bgimg-1}
+      
       ></header>
 
       {/* Director's Biography */}
@@ -692,99 +644,7 @@ export default function Fullpage() {
           </h2>
         </div>
 
-        <Carousel breakPoints={breakPoints} className="py-14">
-          <div className="imgdiv">
-            <a href="/marvellous">
-              <div className="w3-card whole ">
-                <img className="img" src="images/marvy.jpg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4"> Marvellous Sunmiboye</h4>
-                  <p className="w3-center un5">Director</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Information on Testimony */}
-          <div className="imgdiv">
-            <a href="/testimony">
-              <div className="w3-card whole">
-                <img className="img" src="images/test.jpg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4">Testimony Adebiyi</h4>
-                  <p className="w3-center un5">Administrator</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Info for Eniola */}
-          <div className="imgdiv">
-            <a href="/eniola">
-              <div className="w3-card whole">
-                <img className="img" src="images/eniola.jpg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4">Eniola Olasogba</h4>
-                  <p className="w3-center un5">
-                    Head, Contents and Communications
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Info for sam */}
-          <div className="imgdiv">
-            <a href="/sam">
-              <div className="w3-card whole">
-                <img className="img" src="images/sam.jpg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4">Samuel Adekunle</h4>
-                  <p className="w3-center un5">Head, Strategy and Logistics</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Information on damilola daniel */}
-          <div className="imgdiv">
-            <a href="/damilola">
-              <div className="w3-card whole">
-                <img className="img" src="images/st.jpeg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4">Damilola Daniel</h4>
-                  <p className="w3-center un5">Head, Media</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-          {/* Information on doyinsolami */}
-          <div className="imgdiv">
-            <a href="/doyin">
-              <div className="w3-card whole">
-                <img className="img" src="images/doyin.jpg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4">Doyinsolami Olatunji</h4>
-                  <p className="w3-center un5">
-                    Deputy Head, Strategy and Logistics
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="imgdiv">
-            <a href="/adesola">
-              <div className="w3-card whole">
-                <img className="img" src="images/adesola.jpg" alt="" />
-                <div className="w3-container text">
-                  <h4 className="w3-center un4">Adesola Oyewole</h4>
-                  <p className="w3-center un5">Head, Finance</p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </Carousel>
+        <Carousel breakPoints={breakPoints} />
       </div>
 
       {/* Contact Section  */}
@@ -867,84 +727,8 @@ export default function Fullpage() {
       </div>
 
       {/* Footer  */}
-      <div className="PD ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill=""
-            fill-opacity="1"
-            d="M0,192L80,213.3C160,235,320,277,480,272C640,267,800,213,960,213.3C1120,213,1280,267,1360,
-           293.3L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
 
-      <footer className="w3-black w3-padding-64" ref={footerRef}>
-        <div className={Style.footer}>
-          <div>
-            <h3>
-              <i className="fas fa-map-marker-alt"></i>Address
-            </h3>
-            <p>
-              University Road, Tanke, <br />
-              Ilorin, Kwara State
-            </p>
-          </div>
-
-          <div>
-            <h3>
-              <i className="fas fa-phone-alt"></i>Phone
-            </h3>
-            <p>+234 814 529 3779</p>
-          </div>
-
-          <div>
-            <h3>
-              <a href="https://twitter.com/TheSMA_Impact?s=09">
-                <i className="fab fa-twitter fa-1x"></i>
-            
-              </a>
-                  Twitter
-              
-            </h3>
-            <a href="https://twitter.com/TheSMA_Impact?s=09">
-            <p>@TheSMA_Impact</p>
-            
-              </a>
-           
-          </div>
-
-          <div>
-            <h3>
-              {" "}
-              <a href="https://www.instagram.com/the_sma__/">
-                <i className="fab fa-instagram fa-1"></i>
-              
-              </a>
-              Instagram
-            </h3>
-            <a href="https://www.instagram.com/the_sma__/">
-            <p>@the_sma__</p>
-              
-              </a>
-            
-          </div>
-
-          <div>
-            <h3>
-              <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
-                <i className="fab fa-facebook-f fa-1x"></i>
-              
-              </a>
-              Facebook
-            </h3>
-            <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
-            <p>@The S.M.A Impact Network</p>
-              
-              </a>
-            
-          </div>
-        </div>
-      </footer>
+     <Footer />
       <div className={Style.lil}>
         <a
           href="#home"
