@@ -1,0 +1,64 @@
+.bside{
+    width:22%;
+    background-color:#2e3841;
+}
+.bmain{
+    width:78%;
+    background-color:#192841;
+}
+.inuse{
+    font-family: 'ABeeZee', sans-serif;
+}
+.bheading{
+    font-family: 'Bodoni Moda', serif;
+    font-size: calc(20px + 3*(100vw - 400px)/1000)
+}
+.downpost{
+    width:80%;
+    margin:0 auto;
+}
+.divuppost, .divdownpost{
+    display:none;
+}
+@media screen and (max-width:1024px){
+    .bside{
+        width:30%;
+       
+    }
+    .bmain{
+        width:70%;
+       
+    }
+}
+
+@media screen and (max-width:900px){
+    .bside{
+        display:none;
+    }
+    .divdownpost{
+        display:block;
+    }
+    .bmain{
+        width:100%;
+       
+    }
+    .divuppost{
+        display:flex;
+    }
+    .downpost{
+        width:90%;
+       
+    }
+
+}
+@media screen and (max-width:700px){
+    .downpost{
+        flex-direction:column;
+       
+    }
+}
+@media screen and (max-width:600px){
+    .blog2{
+        margin-top:10px;
+    }
+}

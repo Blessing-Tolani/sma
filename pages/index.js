@@ -6,6 +6,7 @@ import Carousel from "../components/Carousel";
 import Footer from "../components/footer";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+ import {   FaRegHandPaper, FaDonate, FaRegHandshake } from 'react-icons/fa';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -289,25 +290,18 @@ export default function Fullpage() {
           rel="stylesheet"
         />
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
         />
       </Head>
-      <div className="w3-top" id="home" ref={homeRef}>
-        <div
-          className="w3-bar w3-card"
-          className="myNavbar"
-          style={{ boxShadow: "none" }}
-        >
-          <div className={Style.fulldiv}>
-            <img className={Style.pub} src="images/loog2.png" />
-          </div>
-          <div className={Style.textdiv}>
+      <div className="w3-top " id="home" ref={homeRef}>
+        
+      <div className={Style.textdiv}>
             <div className={Style.norm} ref={normRef}>
               <h3>
-                We <span style={{ color: "#EC0000" }}>Help</span> People
+                We Help People
                 <br /> Build Capacity to Influence Their World
               </h3>
               <p>
@@ -316,12 +310,21 @@ export default function Fullpage() {
               </p>
             </div>
           </div>
-
+        <div
+          className="myNavBar px-8 w-full flex flex-row justify-between items-center "
+          style={{ boxShadow: "none" }}
+        >
+         
+          <div className="hhh">
+              <img className={Style.pub} src="images/loog2.png" />
+          </div>
+        
           <div
-            className="w3-right w3-hide-small"
-            style={{ padding: "10px 80px 0px 0px;" }}
+            className="w3-hide-small "
+         
           >
-            <a href="#" className="w3-bar-item w3-button xee bg-gray-300">
+          
+            <a href="#" className="w3-bar-item w3-button xee ">
               {" "}
               Home
             </a>
@@ -329,15 +332,15 @@ export default function Fullpage() {
               {" "}
               About
             </a>
-            <a href="/programs" className="w3-bar-item w3-button xee">
+            <a href="/works/programs" className="w3-bar-item w3-button xee">
               {" "}
               Programs
             </a>
-            <a href="/blog" className="w3-bar-item w3-button xee">
+            <a href="/entertainment/blog" className="w3-bar-item w3-button xee">
               {" "}
               Blog
             </a>
-            <a href="/gallery" className="w3-bar-item w3-button xee">
+            <a href="/entertainment/gallery" className="w3-bar-item w3-button xee">
               {" "}
               Gallery
             </a>
@@ -363,7 +366,7 @@ export default function Fullpage() {
         </div>
 
         <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
-          <nav class="w3-sidebar fro w3-bar-block w3-animate-left flex flex-col justify-around w3-hide-medium w3-hide-large w3-center">
+          <nav className="w3-sidebar fro w3-bar-block w3-animate-left flex flex-col justify-around w3-hide-medium w3-hide-large w3-center">
             <a
               href="#"
               onClick={toggleMenu}
@@ -381,7 +384,7 @@ export default function Fullpage() {
               <p> About</p>
             </a>
             <a
-              href="/programs"
+              href="/works/programs"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
@@ -389,7 +392,7 @@ export default function Fullpage() {
               <p>Programs</p>
             </a>
             <a
-              href="/blog"
+              href="/entertainment/blog"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
@@ -397,7 +400,7 @@ export default function Fullpage() {
               <p>Blog</p>
             </a>
             <a
-              href="/gallery"
+              href="/entertainment/gallery"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
@@ -426,7 +429,7 @@ export default function Fullpage() {
 
       <header
         ref={headerRef}
-        className={Style.bgimg-1}
+        className={Style.bgimg}
       
       ></header>
 
@@ -556,75 +559,85 @@ export default function Fullpage() {
 
           <div className="container" style={{ marginTop: "64px" }}>
             <div className="row">
-              <div className="w3-col s4 helpdiv" ref={helpdiv1Ref}>
-                <div>
-                  <div className="helpline">
-                    <i className="far fa-hand-paper w3-margin-bottom iconv"></i>
-                    <div style={{ lineHeight: " 0.5" }}>
-                      <h3>Volunteering</h3>
+              <div className="w3-col s4 helpdiv " ref={helpdiv1Ref}>
+                <div className = "flex items-center">
+                  <div>
+                    <div className="helpline ">
+                     
+                   <span className="iconv text-xl"> <FaRegHandPaper /></span>
+                     
+                      <div style={{ lineHeight: " 0.5" }}>
+                        <h3>Volunteering</h3>
+                      </div>
                     </div>
+                    <p style={{ textAlign: "left" }}>
+                      {" "}
+                      You have the power to build people up, Your support can help
+                      young people positively influence their generation. <br />
+                      <i>
+                        "Alone we can do so little; together we can do so much"
+                      </i>
+                    </p>
+                    <a href="/works/volunteer" className={Style.helplink}>
+                      Volunteer
+                    </a>
                   </div>
-                  <p style={{ textAlign: "left" }}>
-                    {" "}
-                    You have the power to build people up, Your support can help
-                    young people positively influence their generation. <br />
-                    <i>
-                      "Alone we can do so little; together we can do so much"
-                    </i>
-                  </p>
-                  <a href="/volunteer" className={Style.helplink}>
-                    Volunteer
-                  </a>
                 </div>
               </div>
 
               <div className="w3-col s4  helpdiv" ref={helpdiv2Ref}>
-                <div>
-                  <div className="helpline">
-                    <i className="fas fa-donate w3-margin-bottom iconv"></i>
-                    <div style={{ lineHeight: "0.5" }}>
-                      <h3>Donation</h3>
+                <div className = " flex items-center">
+                  <div>
+                    <div className="helpline">
+                      <span className=" iconv text-xl" ><FaDonate /></span>
+                    
+                      <div style={{ lineHeight: "0.5" }}>
+                        <h3>Donation</h3>
+                      </div>
                     </div>
+                    <p style={{ textAlign: "left" }}>
+                      {" "}
+                      Help sponsor our events and programs via donation. Create an
+                      impact and help reach thousands of people. <br />{" "}
+                      <i>
+                        "There could be no definition of a successful life that
+                        does not include service to others"
+                      </i>
+                    </p>
+                    <a
+                      href="https://dashboard.flutterwave.com/donate/nrsfxenl4oyz"
+                      className={Style.helplink}
+                    >
+                      Donate
+                    </a>
                   </div>
-                  <p style={{ textAlign: "left" }}>
-                    {" "}
-                    Help sponsor our events and programs via donation. Create an
-                    impact and help reach thousands of people. <br />{" "}
-                    <i>
-                      "There could be no definition of a successful life that
-                      does not include service to others"
-                    </i>
-                  </p>
-                  <a
-                    href="https://dashboard.flutterwave.com/donate/nrsfxenl4oyz"
-                    className={Style.helplink}
-                  >
-                    Donate
-                  </a>
                 </div>
               </div>
 
-              <div className="w3-col s4  helpdiv" ref={helpdiv3Ref}>
-                <div>
-                  <div className="helpline">
-                    <i className="far fa-handshake w3-margin-bottom iconv"></i>
-                    <div style={{ lineHeight: "0.5" }}>
-                      <h3>Partnership</h3>
+              <div className="w3-col s4 helpdiv flex items-center" ref={helpdiv3Ref}>
+                <div  className = " flex items-center">
+                  <div>
+                    <div className="helpline">
+                      <span className="iconv text-xl" >  <FaRegHandshake /></span>
+                 
+                      <div style={{ lineHeight: "0.5" }}>
+                        <h3>Partnership</h3>
+                      </div>
                     </div>
+                    <p style={{ textAlign: "left" }}>
+                      {" "}
+                      Partner with our vision of people finding their place in the
+                      world which brings the transformation we want.
+                      <br />
+                      <i>
+                        "Unity is strength; when there is partnership, we can
+                        achieve uncommon results"
+                      </i>
+                    </p>
+                    <a href="/works/partnership" className={Style.helplink}>
+                      Partner
+                    </a>
                   </div>
-                  <p style={{ textAlign: "left" }}>
-                    {" "}
-                    Partner with our vision of people finding their place in the
-                    world which brings the transformation we want.
-                    <br />
-                    <i>
-                      "Unity is strength; when there is partnership, we can
-                      achieve uncommon results"
-                    </i>
-                  </p>
-                  <a href="/partnership" className={Style.helplink}>
-                    Partner
-                  </a>
                 </div>
               </div>
             </div>
@@ -745,11 +758,17 @@ export default function Fullpage() {
       </div>
 
       <style jsx>{`
+      .myNavBar{
+        height:100px;
+       
+      }
+   
         #gome {
           padding-top: 10%;
         }
         .w3-button {
-          color: #c0c0c0 !important;
+          color: white !important;
+        
         }
 
         .twe {
@@ -775,7 +794,7 @@ export default function Fullpage() {
           display: block;
         }
         .w3-button:hover {
-          color: white !important;
+          color: #c0c0c0 !important;
           background-color: transparent !important;
         }
         @media screen and (max-width: 900px) {
@@ -802,9 +821,7 @@ export default function Fullpage() {
           }
         }
 
-        .w3-card {
-          box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.16);
-        }
+     
 
         .h4 {
           margin-bottom: 5px;
@@ -882,9 +899,8 @@ export default function Fullpage() {
           padding: 18px;
         }
         .xee {
-          padding: 10px;
 
-          margin-left: 30px;
+          margin-left: 20px;
         }
 
         .xee,

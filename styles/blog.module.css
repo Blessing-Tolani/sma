@@ -1,0 +1,78 @@
+.img{
+    width:80%;
+    height:40%;
+    border-radius:2px;
+}
+.img2{
+    width:300px;
+    height:200px;
+    border-radius:2px;
+}
+.blogtitle{
+    font-family: 'Bodoni Moda', serif;
+    font-size: calc(18px + 1*(100vw - 400px)/1000);
+    text-align:center;
+   
+}
+.next{
+    font-family: 'Bodoni Moda', serif;
+    font-size:21px;
+    text-align:center;
+}
+.picture{
+    width:800px;
+    height:400px;
+}
+@media screen and (max-width:1160px){
+    .picture{
+        width:600px;
+        height:400px;
+    }
+}
+@media screen and (max-width:1000px){
+    .picture{
+        width:500px;
+        height:300px;
+    }
+}
+@media screen and (max-width:900px){
+    .next{
+       
+        font-size:23px;
+        
+    }
+    .picture{
+        width:700px;
+        height:400px;
+    }
+}
+@media screen and (max-width:800px){
+   
+    .picture{
+        width:600px;
+        height:400px;
+    }
+}
+@media screen and (max-width:700px){
+   
+    .picture{
+        width:500px;
+        height:300px;
+    }
+}
+@media screen and (max-width:600px){
+   
+    .picture{
+        width:400px;
+        height:250px;
+    }
+   
+}
+@media screen and (max-width:450px){
+   
+    .picture{
+        width:300px;
+        height:200px;
+    }
+   
+}

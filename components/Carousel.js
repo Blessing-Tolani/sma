@@ -4,10 +4,13 @@ const team = [
     {name: "Marvellous Sunmiboye", role: "Director", image: "images/marvy.jpg", link: "/marvellous"},
     {name: "Testimony Adebiyi", role: "Administrator", image: "images/test.jpg", link: "/testimony"},
     {name: "Eniola Olasogba", role: "Head, Contents and Communications", image: "images/eniola.jpg", link: "/eniola"},
-    {name: "Samuel Adekunle", role: "Head, Strategy and Logistics", image: "images/sam.jpg", link: "/sam"},
-    {name: "Damilola Daniel", role: "Head, Media", image: "images/st.jpeg", link: "/damilola"},
+    {name: "Samuel Adekunle", role: "Head, Strategy and Logistics", image: "images/sam2.jpeg", link: "/sam"},
     {name: "Doyinsolami Olatunji", role: "Deputy Head, Strategy and Logistics", image: "images/doyin.jpg", link: "/doyin"},
-    {name: "Adesola Oyewole", role: "Head, Finance", image: "images/adesola.jpg", link: "/adesola"},
+    {name: "Damilola Daniel", role: "Head, Media", image: "images/st.jpeg", link: "/damilola"},
+    {name: "Joshua Badejo", role: "Deputy Head, Media", image: "images/badejo.jpeg", link: "/badejo"},
+    {name: "Adesola Oyewole", role: "Head, Finance/Ife Chapter Coordinator 1", image: "images/adesola.jpg", link: "/adesola"},
+    {name: "Oladapo Olatunbosun", role: "Ife Chapter Coordinator 2", image: "images/daniel.jpeg", link: "/daniel"},
+  
 ]
 
 

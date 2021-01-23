@@ -18,6 +18,18 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
 input[type=number]{
   -moz-appearance:textfield;
 }
+.footer p{
+  color:#a9a9a9 ;
+}
+.lew{
+  margin-left:10%;
+}
+.reach > a{
+  margin-left:5px;
+}
+.w3-card {
+  box-shadow: none !important;
+}
 *{
     margin:0;
     padding:0;
@@ -120,23 +132,42 @@ input[type=number]{
     height : 394px;
    
   }
+  @media screen and (max-width:900px){
+  
+      .lew{
+  margin-left:7%;
+}
+  }
 
   @media screen and (max-width:800px){
     .bioimage1{
         width :600px ;
         height : 394px;
       }
+      .lew{
+  margin-left:5%;
+}
+  }
+  @media screen and (max-width:700px){
+    .lew{
+      margin:10px 0px;
+  }
   }
   @media screen and (max-width:600px){
     .bioimage1{
         width :400px ;
         height : 294px;
       }
+      .first{
+       margin-bottom:10px;
+       
+      }
+      .lew{
+    margin:10px 0px;
+}
+     
   }
-  .fab, .fas {
-    margin-right: 10px;
-    color: #5e0505;
-  }
+ 
   
 
   .in {
@@ -178,12 +209,15 @@ input[type=number]{
     background-position: left bottom;
     color: black;
   }
+
   .helpdiv > div {
+    height:300px;
     margin: 10px;
-    padding: 30px 15px;
+    padding:0px 15px;
     background-color: #e6eaf3;
     border: 1px solid #e6eaf3;
     border-radius: 1em;
+   
   }
   .whole {
     width: 100%;
@@ -213,7 +247,7 @@ input[type=number]{
       font-size:16px;
   }
   .iconv {
-    font-size: 25px;
+    
     padding-right: 10px;
     color: black;
   }
@@ -228,12 +262,9 @@ input[type=number]{
     font-size: 16px;
   }
   .helpline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+   display:flex;
+   align-items:center;
+
   }
   
   .helpline h3 {
