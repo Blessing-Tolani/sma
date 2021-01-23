@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Style from '../styles/index.module.css'
+import Style from '../../styles/index.module.css'
 import React, { useState } from "react";
 
 

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import Style from "../styles/index.module.css";
+import Style from "../../styles/index.module.css";
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
