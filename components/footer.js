@@ -1,6 +1,7 @@
 import Style from "../styles/index.module.css";
 import {  FaTwitter, FaInstagram, FaFacebookF,FaPhoneAlt } from 'react-icons/fa';
-import { faDivide } from "@fortawesome/free-solid-svg-icons";
+import {IoArrowUpCircleSharp} from 'react-icons/io5';
+
 
 export default function Footer(){
     return(
@@ -16,7 +17,7 @@ export default function Footer(){
             </svg>
         </div>
 
-        <footer className="w3-black w3-padding-64" >
+        <footer className="w3-black w3-padding-16" >
           <div className = {Style.footer}>
             <div className = {Style.foot}>
               <div className = "first">
@@ -29,7 +30,7 @@ export default function Footer(){
               
               </div>
               <div className = "first">
-                <h3 className = "text-base">Location, ILe- Ife branch</h3>
+                <h3 className = "text-base">Location, ILe - Ife branch</h3>
               
                   <p className = "text-sm">
                   Obafemi Awolowo University,  <br /> Ile-Ife,
@@ -67,6 +68,20 @@ export default function Footer(){
           </div>
        
         </footer>
+        <div className = 'text-center bg-black' >
+        <a
+          href="#top"
+          style={{ color: '#a9a9a9'}}
+          className = "text-3xl pb-10"
+        >
+          <span><IoArrowUpCircleSharp className = "inline" /></span>
+        </a>
+        <p className={Style.lil}>
+          <span  style={{ color: "#a9a9a9" }} className = "text-sm">
+            &copy; 2021, SMA Impact Network
+          </span>
+        </p>
+      </div>
         </>
         
     )

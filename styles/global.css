@@ -61,11 +61,7 @@ input[type=number]{
     width:500px;
     height:500px;
   }
-  .mug{
-    border-radius:50%;
-    padding:8px 16px;
-
-  }
+ 
   a:hover{
     text-decoration: none;
   }
@@ -76,7 +72,7 @@ input[type=number]{
      display:none;
    }
    .fro{
-    margin-top:70px;
+    top:70px;
    
    }
    div.PD{
@@ -86,15 +82,13 @@ input[type=number]{
     background-color: #e8e8e8;
     border-radius: 50%;
     padding: 5px;
-    margin:20px 12px 0px 0px;
     cursor:pointer;
   }
 
   .newclass {
-    background-color: #12262D;
+    background-color: #152238;
     border-radius: 50%;
     padding: 5px;
-    margin:20px 12px 0px 0px;
     cursor:pointer;
   }
   
@@ -149,25 +143,29 @@ input[type=number]{
 }
   }
   @media screen and (max-width:700px){
-    .lew{
-      margin:10px 0px;
-  }
+    .first{
+      margin-bottom:3px;
+      
+     }
+     .lew{
+      margin-left:0%;
+      
+    }
   }
   @media screen and (max-width:600px){
     .bioimage1{
         width :400px ;
         height : 294px;
       }
-      .first{
-       margin-bottom:10px;
-       
-      }
-      .lew{
-    margin:10px 0px;
-}
-     
+    
   }
- 
+  @media screen and (max-width:400px){
+    .first{
+      margin-bottom:5px;
+      
+     }
+    
+  }
   
 
   .in {
@@ -316,6 +314,9 @@ input[type=number]{
     .un5 {
       font-size: 15px;
     }
+    .fro{
+      top:50px;
+    }
     un3 {
       font-size: 20px;
     }
@@ -372,7 +373,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
 .w3-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
 .w3-check,.w3-radio{width:24px;height:24px;position:relative;top:6px}
-.w3-sidebar{height:70%;width:250px;background-color:#12262D; color:white; position:fixed!important;z-index:1;overflow:auto}
+.w3-sidebar{height:70%;width:250px;background-color:#152238; color:white; position:fixed!important;z-index:1;overflow:auto}
 .w3-bar-block .w3-dropdown-hover,.w3-bar-block .w3-dropdown-click{width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-dropdown-content,.w3-bar-block .w3-dropdown-click .w3-dropdown-content{min-width:100%}
 .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}

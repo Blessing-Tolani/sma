@@ -10,7 +10,7 @@ export default function Nav(){
 
     return(
       <>
-         <div className="w3-top bg-gray-200" id="home">
+         <div className="w3-top bg-gray-200" id="top">
         
           <div
             className="myNavBar px-8 w-full flex flex-row justify-between items-center bg-gray-200 "
@@ -111,14 +111,12 @@ export default function Nav(){
         .w3-top{
           position:relative !important;
         }
+        
           .w3-button:hover {
             color: #a9a9a9 !important;
             background-color: transparent !important;
           }
-          .fro{
-            margin-top:15px;
-           
-           }
+         
            .pub {
             width: 70px ;
             height: 70px;

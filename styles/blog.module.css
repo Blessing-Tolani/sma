@@ -10,7 +10,7 @@
 }
 .blogtitle{
     font-family: 'Bodoni Moda', serif;
-    font-size: calc(18px + 1*(100vw - 400px)/1000);
+    font-size: calc(18px + 1*(100vw - 400px)/2000);
     text-align:center;
    
 }
@@ -44,6 +44,12 @@
     .picture{
         width:700px;
         height:400px;
+    }
+    .blogtitle{
+        font-family: 'Bodoni Moda', serif;
+        font-size: calc(20px + 1*(100vw - 400px)/2000);
+        text-align:center;
+       
     }
 }
 @media screen and (max-width:800px){

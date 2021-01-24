@@ -1,12 +1,13 @@
 import Style from "../styles/index.module.css";
 import {  FaTwitter, FaInstagram, FaFacebookF,FaPhoneAlt } from 'react-icons/fa';
+import {IoArrowUpCircleSharp} from 'react-icons/io5';
 
 
 export default function Footer(){
     return(
         <>
         
-        <footer className="bg-gray-200 w3-padding-64" id = "contact">
+        <footer className="bg-gray-200 w3-padding-16" id = "contact">
           <div className = {Style.footer}>
             <div className = {Style.foot}>
               <div className = "first">
@@ -57,9 +58,16 @@ export default function Footer(){
           </div>
        
         </footer>
-        <div className = 'bg-gray-200' >
-        <p className={Style.lil} style = {{marginTop:'0px'}}>
-          <span className = ' text-gray-800'>
+        <div className = 'bg-gray-200 text-center' >
+        <a
+          href="#top"
+          style={{ color: '#1f2937'}}
+          className = "text-3xl pb-10"
+        >
+          <span><IoArrowUpCircleSharp className = "inline" /></span>
+        </a>
+        <p className={Style.lil} >
+          <span className = ' text-gray-800' className = "text-sm">
             &copy; 2021, SMA Impact Network
           </span>
         </p>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import BlogStyle from "../../styles/blog.module.css";
 import Footer from "../../components/footer3";
 import Nav from "../../components/nav2";
@@ -12,7 +13,7 @@ export default function Art() {
             <div className = "body">
                 <Head>
                 <title>The Equanimity Of Arts & Entertainment</title>
-                <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Bodoni+Moda&family=Noto+Serif+JP&family=Amaranth&family=Source+Sans+Pro&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Bodoni+Moda&display=swap" rel="stylesheet" />
                 <meta charSet="UTF-8" />
                 <meta
                 name="viewport"
@@ -43,22 +44,22 @@ export default function Art() {
                         <div className = " mt-8 text-gray-400">
                             <h2 className = {BlogStyle.next}>Read next post</h2>
                             <div className = "mt-8">
-                                <a href = "#">
+                                <Link href = "The-Right-Relationship"><a >
                                    
                                     <div >
                                         <h2 className = {BlogStyle.blogtitle}>The Right Relationship</h2>
                                     </div>
                                     <div className =  'flex justify-center ' ><img src = "/images/relationship.jpg" className = {BlogStyle.img} /></div>
-                                </a>
+                                </a></Link>
                             </div>
                             <div className = "mt-10">
-                                <a href = "#">
+                                <Link href = "Depression-The-Subtle-Enemy"><a >
                                    
                                     <div >
                                         <h2 className = {BlogStyle.blogtitle}>Depression -The Subtle Enemy</h2>
                                     </div>
                                     <div className =  'flex justify-center ' ><img src = "/images/depression.jpg" className = {BlogStyle.img} /></div>
-                                </a>
+                                </a></Link>
                             </div>
                         </div>
                     </div>
@@ -86,7 +87,7 @@ export default function Art() {
                                 </div>
                                 <h3 className = "mb-4 bheading  text-center">The Equanimity Of Arts & Entertainment</h3>
                             </div>
-                            <div className = " text-sm mobile:text-base px-4 mobile:px-8 lg:px-14 my-4 ">
+                            <div className = "btext text-sm mobile:text-base px-4 mobile:px-8 lg:px-14 my-4 ">
                                 <p>
                                 Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight. 
                                 Art is something that is created with imagination and skill and that is beautiful or that expresses important ideas or feelings.
@@ -109,22 +110,22 @@ export default function Art() {
                             <h2 className = {BlogStyle.next}>Read next post</h2>
                             <div className = "flex justify-around downpost mt-4  pt-10">
                                 <div>
-                                    <a href = "#">
+                                    <Link href = "The-Right-Relationship"><a >
                                         <div className =  'flex justify-center ' ><img src = "/images/relationship.jpg" className = {BlogStyle.img2} /></div>
                                         <div >
                                             <h2 className = {BlogStyle.blogtitle}>The Right Relationship</h2>
                                         </div>
                                        
-                                    </a>
+                                    </a></Link>
                                 </div>
                                 <div className = "blog2">
-                                    <a href = "#">
+                                    <Link href = "Depression-The-Subtle-Enemy"><a>
                                         <div className =  'flex justify-center ' ><img src = "/images/depression.jpg" className = {BlogStyle.img2} /></div>
                                         <div >
                                             <h2 className = {BlogStyle.blogtitle}>Depression -The Subtle Enemy</h2>
                                         </div>
                                       
-                                    </a>
+                                    </a></Link>
                                 </div>
                             </div>
                         </div>

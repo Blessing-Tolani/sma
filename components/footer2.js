@@ -16,7 +16,7 @@ export default function Footer(){
             </svg>
         </div>
 
-        <footer className="w3-black w3-padding-64" id = "contact">
+        <footer className="w3-black w3-padding-16" id = "contact">
           <div className = {Style.footer}>
             <div className = {Style.foot}>
               <div className = "first">
@@ -68,8 +68,8 @@ export default function Footer(){
        
         </footer>
         <div className={Style.lil} >
-        <p style = {{marginTop:'0px'}}>
-          <span style={{ color: "#a9a9a9" }}>
+        <p>
+          <span style={{ color: "#a9a9a9" }} className = "text-sm">
             &copy; 2021, SMA Impact Network
           </span>
         </p>

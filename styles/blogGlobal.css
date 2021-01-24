@@ -6,7 +6,7 @@
     width:78%;
     background-color:#192841;
 }
-.inuse{
+.inuse, .btext{
     font-family: 'ABeeZee', sans-serif;
 }
 .bheading{
@@ -56,9 +56,12 @@
         flex-direction:column;
        
     }
+    .blog2{
+        margin-top:12px;
+    }
 }
 @media screen and (max-width:600px){
     .blog2{
-        margin-top:10px;
+        margin-top:12px;
     }
 }

@@ -9,45 +9,45 @@ const blogInformation = [
         alt:'article 1',
         blogImage:'/images/art.jpg',
         blogTitle:'The Equanimity Of Arts & Entertainment',
-        blogText:'Entertainment is a form of activity that holds the attention and interest of an audience. Art is something that is created with imagination and skill that expresses important ideas '
+        blogText:'Entertainment is a form of activity that holds the attention and interest of an audience '
      
     },
     {
-        fullBlog:'',
+        fullBlog:'/blogpages/The-Right-Relationship',
         alt:'article 2',
         blogImage:'/images/relationship.jpg',
         blogTitle:'The Right Relationship',
-        blogText:'Relation"ships" are transportation devices that move you from your current location to your preferred destination. These "ships" will either lead you to prosperity or poverty '
+        blogText:'Relation"ships" are transportation devices that move you from your current location to your preferred destination '
      
     },
     {
-        fullBlog:'',
+        fullBlog:'/blogpages/Depression-The-Subtle-Enemy',
         alt:'article 3',
         blogImage:'/images/depression.jpg',
         blogTitle:'Depression -The Subtle Enemy',
-        blogText:"Most times, we are faced with vast circumstances which warrant speeches like, oh, I am tired, it's like I'm depressed or probably, we lost a loved one and our countenance change "
+        blogText:"Most times, we are faced with vast circumstances which warrant speeches like, oh, I am tired, it's like I'm depressed or probably "
      
     },
     {
-        fullBlog:'',
+        fullBlog:'/blogpages/Tangible-impact-and-relevance',
         alt:'article 4',
         blogImage:'/images/skills.jpg',
-        blogTitle:'Tangible Impact And Relevance - The Product Of Skills And Personal Development',
+        blogTitle:'Tangible Impact And Relevance',
         blogText:"Impact and relevance bring about ANNOUNCEMENT via CHANGE and SOLUTIONS, whether wanted or not "
     },
     {
-        fullBlog:'',
+        fullBlog:'/blogpages/Self-Worth',
         alt:'article 5',
         blogImage:'/images/worth.jpg',
         blogTitle:'Self Worth',
-        blogText:"My dad once told me the reason why the Agama Lizard nods it's head frequently is a way of congratulating itself when ever he jumps down from a high place or climbs a high place. It is saying 'Weldone, I have done well' "
+        blogText:"My dad once told me the reason why the Agama Lizard nods it's head frequently is a way of congratulating itself "
     },
     {
-        fullBlog:'',
+        fullBlog:'/blogpages/The-Gum-on-the-Rock',
         alt:'article 6',
         blogImage:'/images/gum.jpg',
         blogTitle:'The Gum on the Rock',
-        blogText:"Life is only meaningful when you do things with it. Impact is not just about breaking records or setting landmarks, it's about dropping life and light wherever you go or whomever you meet "
+        blogText:"Life is only meaningful when you do things with it. Impact is not just about breaking records or setting landmarks "
     },
 
 ]
@@ -136,10 +136,18 @@ export default function Blog() {
             }
           
             }
+            @media screen and (max-width: 500px){
+                .blog{
+                    height:50%;
+                  
+                }
+                }
+              
           
         @media screen and (max-width: 400px){
-            .w3-col.s3{width:90%;}
+            .w3-col.s3{width:95%;}
             .blog{
+                height:50%;
                 margin:5% 5% 8% 4%;
                 
             }
