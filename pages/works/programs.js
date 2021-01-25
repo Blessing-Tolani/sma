@@ -740,7 +740,7 @@ export default function Program() {
           }
 
           #toppo h3 {
-            font-weight: 500;
+            font-weight: 600;
           }
           .over {
             font-size: 17px;
@@ -751,8 +751,8 @@ export default function Program() {
             font-size: 17px;
           }
           #toppo h3 {
-            font-weight: 500px;
-            font-size: 16px;
+            font-weight: 600px;
+            font-size: 15px;
           }
         }
       `}</style>

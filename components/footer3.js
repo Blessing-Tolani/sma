@@ -62,7 +62,7 @@ export default function Footer(){
         <a
           href="#top"
           style={{ color: '#1f2937'}}
-          className = "text-3xl pb-10"
+          className = "text-3xl mb-14"
         >
           <span><IoArrowUpCircleSharp className = "inline" /></span>
         </a>

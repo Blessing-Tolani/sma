@@ -1,5 +1,6 @@
 import Style from "../styles/index.module.css";
 import {  FaTwitter, FaInstagram, FaFacebookF,FaPhoneAlt } from 'react-icons/fa';
+import {IoArrowUpCircleSharp} from 'react-icons/io5';
 
 
 export default function Footer(){
@@ -67,14 +68,19 @@ export default function Footer(){
           </div>
        
         </footer>
-        <div className = 'overflow-y-hidden'>
-        <div className={Style.lil} >
-        <p>
-          <span style={{ color: "#a9a9a9" }} className = "text-sm">
+        <div className = 'text-center bg-black overflow-y-hidden' >
+        <a
+          href="#top"
+          style={{ color: '#a9a9a9'}}
+          className = "text-3xl mb-14"
+        >
+          <span><IoArrowUpCircleSharp className = "inline" /></span>
+        </a>
+        <p className={Style.lil}>
+          <span  style={{ color: "#a9a9a9" }} className = "text-sm">
             &copy; 2021, SMA Impact Network
           </span>
         </p>
-      </div>
       </div>
         </>
         

@@ -234,12 +234,11 @@ input[type=number]{
     }
     .text {
       background-color: white;
+      text-align: center;
+      padding-top: 50px;
+      height:80px;
     }
-  .text {
-    /* opacity: 0; */
-    text-align: center;
-    padding-top: 50px;
-  }
+ 
   .text > p{
    
       font-size:16px;
@@ -304,13 +303,17 @@ input[type=number]{
     width:300px;
     height:300px;
   }
+  .un4
+   {
+    font-size: 15px;
+  }
     
   }
   @media screen and (max-width: 400px) {
     .imgdiv {
       width: 100%;
     }
-    .un4,
+  
     .un5 {
       font-size: 15px;
     }
@@ -320,9 +323,7 @@ input[type=number]{
     .un3 {
       font-size: 20px;
     }
-    .lew{
-      margin-right:20px;
-    }
+   
   }
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}

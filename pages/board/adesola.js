@@ -83,14 +83,7 @@ export default function AdesolaInfo() {
            
         }
       
-        div.PD{
-            margin-bottom: -9px;
-        }
-        .mug{
-            border-radius:50%;
-            padding:8px 16px;
-       
-          }
+        
         body, html {
             height: 100%;
             line-height: 1.8;

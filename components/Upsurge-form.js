@@ -181,7 +181,7 @@ export default function Upsurge(){
                     .tagwrapper{
                         width:80%;
                         margin:0 auto;
-                        background-color:red;
+                       
                     }
                     .br{
                         display:none;

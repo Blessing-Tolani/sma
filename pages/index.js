@@ -662,7 +662,7 @@ export default function Fullpage() {
 
       {/* Contact Section  */}
 
-      <div className="w3-container " id="#getinTouch" ref={contactRef}>
+      <div className="w3-container " id="getinTouch" ref={contactRef}>
         <div className={Style.cont} ref={slimRef} id="gome">
           <h2 className="greet">Lets get in touch</h2>
           <button className="come greet" onClick={toggleModal}>
@@ -699,7 +699,7 @@ export default function Fullpage() {
                   <input
                     className=" in w3-padding-16"
                     type="text"
-                    placeholder="Firstname Surname"
+                    placeholder="Full name"
                     required
                     name="Full name"
                   />
@@ -825,8 +825,8 @@ export default function Fullpage() {
           .w3-hide-small {
             display: none !important;
           }
-         
-          .w3-sidebar{display:block!important}}
+        
+          .w3-hide-large{display:flex!important}} 
         }
         @media screen and (max-width: 800px) {
           .pause {
