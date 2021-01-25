@@ -293,14 +293,14 @@ export default function Fullpage() {
         />
       </Head>
       <div className="w3-top " id="home" ref={homeRef}>
-        <div className={Style.textdiv}>
+        <div className={Style.textdiv} id = "textdiv">
           <div className={Style.norm} ref={normRef}>
-            <h3>
+            <h3 className = "mount">
               We Help People
-              <br /> Build Capacity to Influence Their World
+              <br className = "br"/> Build  <br className = "br2"/> Capacity to Influence Their World
             </h3>
             <p>
-              Everyone has potentials for influence and it can be developed
+              Everyone has potentials for influence and it can be developed <br className = "br3"/>
               under the right atmosphere
             </p>
           </div>
@@ -341,7 +341,7 @@ export default function Fullpage() {
               {" "}
               Donate
             </a>
-            <a href="#contact" className="w3-bar-item w3-button xee">
+            <a href="#getinTouch" className="w3-bar-item w3-button xee">
               Contact
             </a>
           </div>
@@ -627,7 +627,7 @@ export default function Fullpage() {
                     <p style={{ textAlign: "left" }}>
                       {" "}
                       Partner with our vision of people finding their place in
-                      the world which brings the transformation we want.
+                      the world which bring the transformation we want.
                       <br />
                       <i>
                         "Unity is strength; when there is partnership, we can
@@ -751,6 +751,9 @@ export default function Fullpage() {
       <Footer />
 
       <style jsx>{`
+      .br2, .br3{
+        display:none;
+      }
        .w3-modal-content {
         padding: 15px 0px;
       
@@ -847,6 +850,9 @@ export default function Fullpage() {
             display: block;
 
             }
+            .br3{
+              display:block;
+            }
         }
 
      
@@ -940,6 +946,11 @@ export default function Fullpage() {
             margin-top: 20px;
           }
         }
+        @media screen and (max-width:450px){
+          #textdiv{
+            align-items:center !important;
+          }
+        }
         @media screen and (max-width: 400px) {
           .imgdiv {
             width: 100%;
@@ -950,6 +961,12 @@ export default function Fullpage() {
          
           un3 {
             font-size: 20px;
+          }
+          .br2{
+            display:block;
+          }
+          .br, .br3{
+            display:none;
           }
         }
       `}</style>

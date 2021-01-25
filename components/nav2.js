@@ -116,6 +116,13 @@ export default function Nav(){
             color: #a9a9a9 !important;
             background-color: transparent !important;
           }
+          .burger {
+            background-color: #e8e8e8;
+            border-radius: 50%;
+            padding: 5px;
+            cursor:pointer;
+          }
+        
          
            .pub {
             width: 70px ;
