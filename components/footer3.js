@@ -58,7 +58,7 @@ export default function Footer(){
           </div>
        
         </footer>
-        <div className = 'bg-gray-200 text-center' >
+        <div className = 'bg-gray-200 text-center overflow-y-hidden' >
         <a
           href="#top"
           style={{ color: '#1f2937'}}

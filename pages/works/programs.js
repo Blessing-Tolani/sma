@@ -1,7 +1,9 @@
 import Head from "next/head";
-import Link from "next/link";
 import Style from "../../styles/index.module.css";
 import React, { useState, useEffect, useRef } from "react";
+import Footer from "../../components/footer";
+import Upsurge from "../../components/Upsurge-form";
+import Ignition from "../../components/Ignition-form";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
@@ -11,6 +13,12 @@ export default function Program() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const toggleModal = () => setModalIsOpen(!modalIsOpen);
+
+  const [IgnitionmodalIsOpen, setIgnitionModalIsOpen] = useState(false);
+  const toggleIgnitionModal = () => setIgnitionModalIsOpen(!IgnitionmodalIsOpen);
 
   const whatRef = useRef(null);
   const imgRef = useRef(null);
@@ -169,7 +177,6 @@ export default function Program() {
           toggleActions: "play none none reverse",
           start: "top 70%",
           end: "bottom top",
-        
         },
       }
     );
@@ -199,40 +206,46 @@ export default function Program() {
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
         />
       </Head>
-      <div className="w3-top" id="home">
+      <div className="w3-top " id="home">
+        <div className={Style.textdiv} id="toppo">
+          <div>
+            <h3 className="over">GROWTH, IMPACT, RELEVANCE</h3>
+            <p>
+              Everyone has potentials for influence and it can be developed
+              under the right atmosphere
+            </p>
+          </div>
+        </div>
         <div
-          className="w3-bar w3-card"
-          className="myNavbar"
+          className="myNavBar px-8 w-full flex flex-row justify-between items-center "
           style={{ boxShadow: "none" }}
         >
-          <div className={Style.fulldiv}>
-            <img className={Style.pub} src="images/loog2.png" />
-          </div>
-          <div className={Style.textdiv} id="toppo">
-            <div>
-              <h3 className="over">
-                We Organize <span style={{ color: "#EC0000" }}>Training </span>{" "}
-                <br /> Programs as a means of fulfilling our mission
-              </h3>
-              {/* <p>Everyone has potentials for influence and it can be developed under the right atmosphere</p> */}
-            </div>
+          <div className="hhh">
+            <img className={Style.pub} src="/images/loog2.png" />
           </div>
 
-          <div
-            className="w3-right w3-hide-small boye"
-            style={{ display: "block !important" }}
-          >
-            <a href="/" className="w3-bar-item w3-button xee">
+          <div className="w3-hide-small ">
+            <a href="#" className="w3-bar-item w3-button xee ">
               {" "}
               Home
             </a>
-            <a href="/blog" className="w3-bar-item w3-button xee">
+            <a href="/works/programs" className="w3-bar-item w3-button xee">
+              {" "}
+              Programs
+            </a>
+            <a href="/entertainment/blog" className="w3-bar-item w3-button xee">
               {" "}
               Blog
             </a>
-            <a href="/gallery" className="w3-bar-item w3-button xee">
+            <a
+              href="/entertainment/gallery"
+              className="w3-bar-item w3-button xee"
+            >
               {" "}
               Gallery
+            </a>
+            <a href="#contact" className="w3-bar-item w3-button xee">
+              Contact
             </a>
           </div>
 
@@ -249,9 +262,9 @@ export default function Program() {
         </div>
 
         <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
-          <nav class="w3-sidebar fro w3-bar-block w3-animate-left w3-hide-medium w3-hide-large w3-center">
+          <nav className="w3-sidebar fro w3-bar-block w3-animate-left flex flex-col justify-around w3-hide-medium w3-hide-large w3-center">
             <a
-              href="/"
+              href="#"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
@@ -259,29 +272,43 @@ export default function Program() {
               <p>Home</p>
             </a>
             <a
-              href="/blog"
+              href="/works/programs"
+              onClick={toggleMenu}
+              className="w3-button w3-hover-white"
+              style={{ width: "100%", color: "white" }}
+            >
+              <p>Programs</p>
+            </a>
+            <a
+              href="/entertainment/blog"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
             >
               <p>Blog</p>
             </a>
-            <br />
             <a
-              href="/gallery"
+              href="/entertainment/gallery"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
             >
               <p>Gallery</p>
             </a>
-            <br />
+            <a
+              href="#contact"
+              onClick={toggleMenu}
+              className="w3-button  w3-hover-white"
+              style={{ width: "100%", color: "white" }}
+            >
+              <p>Contact</p>
+            </a>
           </nav>
         </span>
       </div>
 
       <header className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full ">
-        <img ref={imgRef} className="star " src="images/Star.svg" alt= ""/>
+        <img ref={imgRef} className="star " src="/images/Star.svg" alt="" />
       </header>
       <div className="w3-container" ref={whatRef}>
         <div className="fix  w-full">
@@ -294,28 +321,28 @@ export default function Program() {
           </div>
           <div className="w3-col m6 px-0  sm:pr-20 pt-0 sm:px-12 lg:px-0 lg:pt-16 why">
             <p className="add">
-              <img src="images/dot1.svg" className="inline pr-2" /> We hold
+              <img src="/images/dot1.svg" className="inline pr-2" /> We hold
               capacity building conferences, seminar and webinars{" "}
             </p>
             <p className="add">
-              <img src="images/dot2.svg" className="inline pr-2" /> We train
+              <img src="/images/dot2.svg" className="inline pr-2" /> We train
               young ones on social impact, social entrepreneurship and community
               influence
             </p>
             <p className="add">
-              <img src="images/dot3.svg" className="inline pr-2" /> We train
+              <img src="/images/dot3.svg" className="inline pr-2" /> We train
               (our members and volunteers) on key issues pertaining to Impact,
               Relevance and Influence{" "}
             </p>
             <p className="add">
               {" "}
-              <img src="images/dot4.svg" className="inline pr-2" /> We train
+              <img src="/images/dot4.svg" className="inline pr-2" /> We train
               secondary school students on Career Pathway and Development,
               Financial Intelligence and the need for early social impact
             </p>
             <p className="add">
               {" "}
-              <img src="images/dot5.svg" className="inline pr-2" /> We organize
+              <img src="/images/dot5.svg" className="inline pr-2" /> We organize
               social/ community outreaches in a bid to reach out to people in
               need as touching different areas of influence
             </p>
@@ -334,7 +361,7 @@ export default function Program() {
         <div className="w3-col s9 cop  flex items-center  pl-0 sm:pl-10 md:pl-20">
           <img
             className="crop rounded-r-full"
-            src="images/up.jpg"
+            src="/images/up.jpg"
             ref={img1Ref}
           />
           <p
@@ -351,7 +378,35 @@ export default function Program() {
             individuals on different spheres of influence. Previous editions
             have paid attention to Self Awareness, Journey to Purpose Discovery,
             Career Development, Entrepreneurship to mention a few.
+            <div className="mt-2">
+              <button id="button" className="onebutton" onClick={toggleModal}>
+                Register
+              </button>
+            </div>
           </p>
+        </div>
+        {/* Upsurge Modal  */}
+        <div className={`${modalIsOpen ? "open" : "closed"} ...rest`}>
+          <div  className="w3-modal flex justify-center items-center">
+            <div className="w3-modal-content w3-animate-zoom allow">
+              <div className="w3-container us">
+                <span className="w3-button w3-display-topright w3-large">
+                  <h3
+                    id="xee"
+                    style={{ color: "maroon" }}
+                    onClick={toggleModal}
+                    
+                  >
+                    X
+                  </h3>
+                </span>
+                <h3 style={{ color: "maroon", textAlign: "center" }} className = "pt-6">
+                  Register for Upsurge
+                </h3>
+              </div>
+              <Upsurge />
+            </div>
+          </div>
         </div>
 
         <div className="w3-col s9 flew  cop  flex items-center lg:pr-20 mt-10 ">
@@ -370,118 +425,107 @@ export default function Program() {
             Intelligence, Advocacy and many other areas as a strategy of
             building these students to become effective changemakers in their
             local communities and the world at large.
+            <div className="mt-2">
+              <button id="button" className="onebutton" onClick={toggleIgnitionModal}>
+                Register
+              </button>
+            </div>
           </p>
 
           <img
             className="crop rounded-l-full bom"
-            src="images/ignite.jpg"
+            src="/images/ignite.jpg"
             ref={img2Ref}
           />
         </div>
-        {/* Footer   */}
-      </div>
-      <div className="PD ">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path
-            fill=""
-            fill-opacity="1"
-            d="M0,192L80,213.3C160,235,320,277,480,272C640,267,800,213,960,213.3C1120,213,1280,267,1360,
-                293.3L1440,320L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
-      </div>
-
-      <footer className="w3-black w3-padding-64" >
-        <div className={Style.footer}>
-          <div>
-            <h3>
-              <i className="fas fa-map-marker-alt"></i>Address
-            </h3>
-            <p>
-              University Road, Tanke, <br />
-              Ilorin, Kwara State
-            </p>
-          </div>
-
-          <div>
-            <h3>
-              <i className="fas fa-phone-alt"></i>Phone
-            </h3>
-            <p>+234 814 529 3779</p>
-          </div>
-
-          <div>
-            <h3>
-              <a href="https://twitter.com/TheSMA_Impact?s=09">
-                <i className="fab fa-twitter fa-1x"></i>
-            
-              </a>
-                  Twitter
-              
-            </h3>
-            <a href="https://twitter.com/TheSMA_Impact?s=09">
-            <p>@TheSMA_Impact</p>
-            
-              </a>
-           
-          </div>
-
-          <div>
-            <h3>
-              {" "}
-              <a href="https://www.instagram.com/the_sma__/">
-                <i className="fab fa-instagram fa-1"></i>
-              
-              </a>
-              Instagram
-            </h3>
-            <a href="https://www.instagram.com/the_sma__/">
-            <p>@the_sma__</p>
-              
-              </a>
-            
-          </div>
-
-          <div>
-            <h3>
-              <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
-                <i className="fab fa-facebook-f fa-1x"></i>
-              
-              </a>
-              Facebook
-            </h3>
-            <a href="https://www.facebook.com/The-S-M-A-Impact-Network-108033684355867/">
-            <p>@The S.M.A Impact Network</p>
-              
-              </a>
-            
+         {/* Ignition Modal  */}
+         <div className={`${IgnitionmodalIsOpen ? "open" : "closed"} ...rest`}>
+          <div  className="w3-modal flex justify-center items-center">
+            <div className="w3-modal-content w3-animate-zoom allow">
+              <div className="w3-container us">
+                <span className="w3-button w3-display-topright w3-large">
+                  <h3
+                    id="xee"
+                    style={{ color: "maroon" }}
+                    onClick={toggleIgnitionModal}
+                    
+                  >
+                    X
+                  </h3>
+                </span>
+                <h3 style={{ color: "maroon", textAlign: "center" }} className = "pt-6">
+                  Register for Ignition
+                </h3>
+              </div>
+              <Ignition />
+            </div>
           </div>
         </div>
-      </footer>
-      <div className={Style.lil}>
-        <a
-          href="#home"
-          className="mug w3-button"
-          style={{ backgroundColor: "#5e0505;" }}
-        >
-          <i className=" fa fa-arrow-up" style={{ color: "white" }}></i>
-        </a>
-        <p>
-          <span style={{ color: "#a9a9a9" }}>
-            &copy; 2021, SMA Impact Network
-          </span>
-        </p>
       </div>
+      <Footer />
 
       <style jsx>{`
+      .us > h3 {
+        font-family: 'Sofia';
+        letter-spacing: 1px;
+       
+        color: black;
+      }
+        #formdiv {
+          width: 90%;
+          margin: 0 auto;
+        }
+       
+
+        .w3-modal {
+          padding-top: 0px;
+         
+        }
+        @media screen and (min-width: 900px) {
+          .w3-modal-content {
+            padding: 20px 0px;
+            width: 800px;
+          }
+        }
+        @media screen and (max-width: 900px) {
+          .w3-modal-content {
+            padding: 20px 0px;
+            width: 90%;
+          }
+        }
+
+        .onebutton {
+          margin: 0 auto;
+          font-family: "ABeeZee";
+          color: #053d59;
+          font-size: 15px;
+          padding: 6px 19px;
+          border-top: 1px solid #053d59;
+          border-right: 1px solid #053d59;
+          border-bottom: 1px solid #053d59;
+          border-top-right-radius: 50%;
+          border-bottom-right-radius: 50%;
+        }
+        .onebutton:hover,
+        .onebutton:focus {
+          border-top: 1px solid #808080;
+          border-right: 1px solid #808080;
+          border-bottom: 1px solid #808080;
+          color: #808080;
+        }
+
+        .w3-button:hover {
+          color: #c0c0c0 !important;
+          background-color: transparent !important;
+        }
+        .block {
+          display: block;
+        }
         .boye {
           padding: 10px 80px 0px 0px;
         }
         .pro {
           font-family: "Pacifico", cursive;
-        }
-        .w3-hide-large {
-          display: none;
         }
         .beyhead {
           display: flex;
@@ -545,15 +589,12 @@ export default function Program() {
         }
         .bgimg-1 {
           background-image: linear-gradient(
-              rgba(0, 0, 0, 0.5),
-              rgba(0, 0, 0, 0.5)
+              rgba(0, 0, 0, 0.3),
+              rgba(0, 0, 0, 0.3)
             ),
-            url("images/sticky.jpg");
+            url("/images/sticky.jpg");
         }
 
-        #toppo h3 {
-          font-weight: 600;
-        }
         @media screen and (max-width: 1024px) {
           .over {
             font-size: 30px;
@@ -566,7 +607,9 @@ export default function Program() {
           .w3-col.s9 {
             width: 100%;
           }
-
+          #toppo p {
+            display: none;
+          }
           .w3-col {
             float: none !important;
           }
@@ -618,32 +661,20 @@ export default function Program() {
           .over {
             font-size: 25px;
           }
+          input {
+            width: 80%;
+          }
         }
         @media screen and (max-width: 750px) {
-          #toppo {
-            display: none;
+          .block {
+            display: inline;
           }
-          .bgimg-1 {
-            background-image: url("images/sticky.jpg");
-          }
+
           .xee {
             color: black;
           }
           .bom {
             margin-left: 17%;
-          }
-          .newclass {
-            background-color: #e8e8e8;
-          }
-
-          .burger {
-            background-color: #12262d;
-          }
-          .newclass div {
-            background-color: #191820;
-          }
-          .burger div {
-            background-color: white;
           }
         }
 
@@ -651,7 +682,17 @@ export default function Program() {
         .w3-button {
           transition: background 0.5s;
         }
+        @media screen and (max-width: 600px) {
+          .over {
+            padding-right: 5px;
+            font-size: 20px;
+          }
+          .w3-modal {
+            padding-top: 70px;
+            display: block;
 
+            }
+        }
         @media screen and (max-width: 500px) {
           .crop {
             width: 300px;
@@ -696,6 +737,22 @@ export default function Program() {
           .bgimg-1 {
             background-size: 100% 100%;
             height: 300px;
+          }
+
+          #toppo h3 {
+            font-weight: 500;
+          }
+          .over {
+            font-size: 17px;
+          }
+        }
+        @media screen and (max-width: 330px) {
+          .over {
+            font-size: 17px;
+          }
+          #toppo h3 {
+            font-weight: 500px;
+            font-size: 16px;
           }
         }
       `}</style>

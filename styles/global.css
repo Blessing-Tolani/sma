@@ -284,7 +284,7 @@ input[type=number]{
   .bgimg-1 {
     background-position: center;
     background-size: 100% 100%;
-    height: 700px;
+    height: 600px;
     background-repeat: no-repeat;
     } 
  
@@ -317,8 +317,11 @@ input[type=number]{
     .fro{
       top:50px;
     }
-    un3 {
+    .un3 {
       font-size: 20px;
+    }
+    .lew{
+      margin-right:20px;
     }
   }
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -406,10 +409,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.w3-auto{max-width:95%}}
 @media (max-width:800px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}.w3-col.s4{width:49.999%}.w3-col.m6{width:49.999%}.w3-col.s6{width:90%}}
-@media (min-width:993px){.w3-modal-content{width:700px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+@media (min-width:993px){.w3-modal-content{width:700px}}
+@media (min-width:700px){.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
 /* @media (max-width:992px) and (min-width:900px){.w3-hide-medium{display:none!important}} */
 @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
-@media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}.w3-col.s4{width:99.999%}.w3-col.m6{width:100%}.w3-col.s6{width:100%}
+@media (max-width:700px){.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}.w3-col.s4{width:99.999%}.w3-col.m6{width:100%}.w3-col.s6{width:100%}
 .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
 .w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
 .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}

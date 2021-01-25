@@ -17,7 +17,7 @@ export default function Footer(){
             </svg>
         </div>
 
-        <footer className="w3-black w3-padding-16" >
+        <footer className="w3-black w3-padding-16" id = "contact" >
           <div className = {Style.footer}>
             <div className = {Style.foot}>
               <div className = "first">
@@ -68,7 +68,7 @@ export default function Footer(){
           </div>
        
         </footer>
-        <div className = 'text-center bg-black' >
+        <div className = 'text-center bg-black overflow-y-hidden' >
         <a
           href="#top"
           style={{ color: '#a9a9a9'}}

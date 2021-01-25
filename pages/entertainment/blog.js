@@ -17,13 +17,13 @@ export default function article() {
             <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Bodoni+Moda&family=Noto+Serif+JP&family=Amaranth&family=Source+Sans+Pro&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
             <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Old+Standard+TT&family=Roboto+Slab&family=Lato:ital@1&display=swap" rel="stylesheet" />
             <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
-            <meta charset="UTF-8" />
+            <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
         </Head>
         {/* Nav section */}
         <Nav />
         {/* Blog Section */}
-        <div class = "w3-container">
+        <div className = "w3-container">
             <div className = "blog-title-head">
                 <h1 className = "blog-title text-gray-800">View our Blog</h1>
             </div>

@@ -67,12 +67,14 @@ export default function Footer(){
           </div>
        
         </footer>
+        <div className = 'overflow-y-hidden'>
         <div className={Style.lil} >
         <p>
           <span style={{ color: "#a9a9a9" }} className = "text-sm">
             &copy; 2021, SMA Impact Network
           </span>
         </p>
+      </div>
       </div>
         </>
         

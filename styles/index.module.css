@@ -468,10 +468,8 @@
   }
   
   @media screen and (max-width: 600px) {
+   
   
-    .textdiv {
-      padding: 0px 30px;
-    }
     .pub {
       width: 70px;
       height: 70px;
@@ -542,7 +540,7 @@
       height: 400px;
     }
     .textdiv  h3 {
-      font-weight: 800;
+      font-weight: 400;
       font-size: 18px;
       letter-spacing: 0.05em;
       margin-bottom: 10px;
@@ -569,11 +567,15 @@
       font-size: 25px;
     }
     .textdiv {
-      padding: 0px 10px;
+      padding: 0px 0px;
     }
   }
   
-  
+  @media screen and (max-width:450px){
+    .textdiv{
+      align-items:flex-end;
+    }
+  }
   @media screen and (max-width: 400px) { 
     .footer{
     flex-direction:column;
@@ -585,7 +587,8 @@
       height: 350px;
     }
     .textdiv{
-      height: 350px;
+      height: 300px;
+      font-size: 16px;
     }
     .pub {
       width: 50px;

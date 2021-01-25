@@ -85,7 +85,7 @@ export default function Art() {
                     <div className = "bmain  text-gray-200">
                         <div className = " px-4 mobile:px-8 lg:px-14 flex   h-40 pt-10 items-center divuppost">
                             <div className = "">
-                                <img src = "/images/elizabeth.jpeg" alt = "writer"   className=" w-24 tablet:w-32 rounded-full"/>
+                                <img src = "/images/peace.jpeg" alt = "writer"   className=" w-24 tablet:w-32 rounded-full"/>
                             </div>
                             <div className = " text-gray-500  ml-2">
                                 <div className = "mb-2">

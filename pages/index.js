@@ -6,8 +6,7 @@ import Carousel from "../components/Carousel";
 import Footer from "../components/footer";
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
- import {   FaRegHandPaper, FaDonate, FaRegHandshake } from 'react-icons/fa';
-
+import { FaRegHandPaper, FaDonate, FaRegHandshake } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -49,8 +48,8 @@ export default function Fullpage() {
     gsap.from(headerRef.current, {
       y: -40,
       duration: 3,
-    }); 
-    
+    });
+
     gsap.from(normRef.current, {
       y: 20,
       duration: 3,
@@ -75,7 +74,7 @@ export default function Fullpage() {
         },
       }
     );
-    
+
     gsap.fromTo(
       image1Ref.current,
       {
@@ -264,10 +263,7 @@ export default function Fullpage() {
         },
       }
     );
-
   }, []);
-
-
 
   return (
     <div className="body">
@@ -297,33 +293,27 @@ export default function Fullpage() {
         />
       </Head>
       <div className="w3-top " id="home" ref={homeRef}>
-        
-      <div className={Style.textdiv}>
-            <div className={Style.norm} ref={normRef}>
-              <h3>
-                We Help People
-                <br /> Build Capacity to Influence Their World
-              </h3>
-              <p>
-                Everyone has potentials for influence and it can be developed
-                under the right atmosphere
-              </p>
-            </div>
+        <div className={Style.textdiv}>
+          <div className={Style.norm} ref={normRef}>
+            <h3>
+              We Help People
+              <br /> Build Capacity to Influence Their World
+            </h3>
+            <p>
+              Everyone has potentials for influence and it can be developed
+              under the right atmosphere
+            </p>
           </div>
+        </div>
         <div
           className="myNavBar px-8 w-full flex flex-row justify-between items-center "
           style={{ boxShadow: "none" }}
         >
-         
           <div className="hhh">
-              <img className={Style.pub} src="images/loog2.png" />
+            <img className={Style.pub} src="images/loog2.png" />
           </div>
-        
-          <div
-            className="w3-hide-small "
-         
-          >
-          
+
+          <div className="w3-hide-small ">
             <a href="#" className="w3-bar-item w3-button xee ">
               {" "}
               Home
@@ -340,7 +330,10 @@ export default function Fullpage() {
               {" "}
               Blog
             </a>
-            <a href="/entertainment/gallery" className="w3-bar-item w3-button xee">
+            <a
+              href="/entertainment/gallery"
+              className="w3-bar-item w3-button xee"
+            >
               {" "}
               Gallery
             </a>
@@ -416,7 +409,7 @@ export default function Fullpage() {
               <p>Donate</p>
             </a>
             <a
-              href="#contact"
+              href="#getinTouch"
               onClick={toggleMenu}
               className="w3-button  w3-hover-white"
               style={{ width: "100%", color: "white" }}
@@ -427,11 +420,7 @@ export default function Fullpage() {
         </span>
       </div>
 
-      <header
-        ref={headerRef}
-        className={Style.bgimg}
-      
-      ></header>
+      <header ref={headerRef} className={Style.bgimg}></header>
 
       {/* Director's Biography */}
       <div className="w3-container article">
@@ -560,20 +549,23 @@ export default function Fullpage() {
           <div className="container" style={{ marginTop: "64px" }}>
             <div className="row">
               <div className="w3-col s4 helpdiv " ref={helpdiv1Ref}>
-                <div className = "flex items-center">
+                <div className="flex items-center">
                   <div>
                     <div className="helpline ">
-                     
-                   <span className="iconv text-xl"> <FaRegHandPaper /></span>
-                     
+                      <span className="iconv text-xl">
+                        {" "}
+                        <FaRegHandPaper />
+                      </span>
+
                       <div style={{ lineHeight: " 0.5" }}>
                         <h3>Volunteering</h3>
                       </div>
                     </div>
                     <p style={{ textAlign: "left" }}>
                       {" "}
-                      You have the power to build people up, Your support can help
-                      young people positively influence their generation. <br />
+                      You have the power to build people up, Your support can
+                      help young people positively influence their generation.{" "}
+                      <br />
                       <i>
                         "Alone we can do so little; together we can do so much"
                       </i>
@@ -586,19 +578,21 @@ export default function Fullpage() {
               </div>
 
               <div className="w3-col s4  helpdiv" ref={helpdiv2Ref}>
-                <div className = " flex items-center">
+                <div className=" flex items-center">
                   <div>
                     <div className="helpline">
-                      <span className=" iconv text-xl" ><FaDonate /></span>
-                    
+                      <span className=" iconv text-xl">
+                        <FaDonate />
+                      </span>
+
                       <div style={{ lineHeight: "0.5" }}>
                         <h3>Donation</h3>
                       </div>
                     </div>
                     <p style={{ textAlign: "left" }}>
                       {" "}
-                      Help sponsor our events and programs via donation. Create an
-                      impact and help reach thousands of people. <br />{" "}
+                      Help sponsor our events and programs via donation. Create
+                      an impact and help reach thousands of people. <br />{" "}
                       <i>
                         "There could be no definition of a successful life that
                         does not include service to others"
@@ -614,20 +608,26 @@ export default function Fullpage() {
                 </div>
               </div>
 
-              <div className="w3-col s4 helpdiv flex items-center" ref={helpdiv3Ref}>
-                <div  className = " flex items-center">
+              <div
+                className="w3-col s4 helpdiv flex items-center"
+                ref={helpdiv3Ref}
+              >
+                <div className=" flex items-center">
                   <div>
                     <div className="helpline">
-                      <span className="iconv text-xl" >  <FaRegHandshake /></span>
-                 
+                      <span className="iconv text-xl">
+                        {" "}
+                        <FaRegHandshake />
+                      </span>
+
                       <div style={{ lineHeight: "0.5" }}>
                         <h3>Partnership</h3>
                       </div>
                     </div>
                     <p style={{ textAlign: "left" }}>
                       {" "}
-                      Partner with our vision of people finding their place in the
-                      world which brings the transformation we want.
+                      Partner with our vision of people finding their place in
+                      the world which brings the transformation we want.
                       <br />
                       <i>
                         "Unity is strength; when there is partnership, we can
@@ -662,7 +662,7 @@ export default function Fullpage() {
 
       {/* Contact Section  */}
 
-      <div className="w3-container " id="contact" ref={contactRef}>
+      <div className="w3-container " id="#getinTouch" ref={contactRef}>
         <div className={Style.cont} ref={slimRef} id="gome">
           <h2 className="greet">Lets get in touch</h2>
           <button className="come greet" onClick={toggleModal}>
@@ -672,27 +672,32 @@ export default function Fullpage() {
 
         {/* Register Modal  */}
         <div className={`${modalIsOpen ? "open" : "closed"} ...rest`}>
-          <div className={Style.contact1} className="w3-modal">
+          <div className="w3-modal flex">
             <div className="w3-modal-content w3-animate-zoom allow">
               <div className="w3-container us">
                 <span className="w3-button w3-display-topright w3-large">
-                  <h2
+                  <h3
                     id="xee"
                     style={{ color: "maroon" }}
                     onClick={toggleModal}
                   >
                     X
-                  </h2>
+                  </h3>
                 </span>
-                <h1 style={{ color: "maroon", textAlign: "center" }}>
+                <h3 style={{ color: "maroon", textAlign: "center" }}  className = "pt-6">
                   Contact Us
-                </h1>
+                </h3>
               </div>
-              <div id="formdiv">
-                <form action = "/success" method="POST" data-netlify="true" name="Contact Form">
+              <div id="formdiv" >
+                <form
+                  action="/success"
+                  method="POST"
+                  data-netlify="true"
+                  name="Contact Form"
+                >
                   <input type="hidden" name="form-name" value="Contact Form" />
                   <input
-                    className=" in w3-padding-16 w3-border"
+                    className=" in w3-padding-16"
                     type="text"
                     placeholder="Firstname Surname"
                     required
@@ -700,7 +705,7 @@ export default function Fullpage() {
                   />
 
                   <input
-                    className="in w3-padding-16 w3-border"
+                    className="in w3-padding-16 "
                     type="text"
                     placeholder="Email"
                     required
@@ -709,28 +714,30 @@ export default function Fullpage() {
                   />
 
                   <input
-                    className="in w3-padding-16 w3-border"
+                    className="in w3-padding-16 "
                     type="number"
                     name="Phone Number "
                     placeholder="Phone Number"
                     required
                   />
                   <input
-                    className="in w3-padding-16 w3-border"
+                    className="in w3-padding-16 "
                     type="text"
                     name="Location"
                     placeholder="Location (City and Country)"
                     required
                   />
-                  <input
-                    className=" in twe w3-padding-16 w3-border"
-                    type="text"
+                  <div className = " flex justify-center mb-8">
+                  <textarea
                     placeholder="Message"
-                    required
                     name="Message"
-                  />
+                    required
+                  ></textarea>
+                  </div>
+                 
+
                   <button className={Style.button2} type="submit">
-                    Send <i className="far fa-arrow-alt-circle-right"></i>
+                    Send
                   </button>
                 </form>
               </div>
@@ -741,15 +748,23 @@ export default function Fullpage() {
 
       {/* Footer  */}
 
-     <Footer />
-      
+      <Footer />
 
       <style jsx>{`
+       .w3-modal-content {
+        padding: 15px 0px;
+      
+      }
       .burger {
         background-color: #c0c0c0 !important;
        
       }
-
+      .us > h3 {
+        font-family: 'Sofia';
+        letter-spacing: 1px;
+       
+        color: black;
+      }
       .myNavBar{
         height:100px;
        
@@ -763,19 +778,28 @@ export default function Fullpage() {
         
         }
 
-        .twe {
-          height: 50px !important;
-          padding: 5px 0px 0px 15px !important;
-        }
         input {
           width: 500px;
-          height: 40px;
+          height: 50px;
           background-color: #f3f3f3;
           border-radius: 0.6em;
           padding: 20px;
           font-size: 14px;
           color: #053d59;
+          font-family: "ABeeZee";
         }
+        textarea {
+          
+          color: #053d59;
+          font-family: "ABeeZee";
+          background-color: #f3f3f3;
+          padding: 20px;
+          width: 500px;
+          height: 130px;
+          font-size: 14px;
+          border-radius: 0.6em;
+          margin:0 auto;
+      }
         .imgdiv {
           width: 80%;
         }
@@ -783,23 +807,33 @@ export default function Fullpage() {
           width: 100%;
         }
         .w3-modal {
-          display: block;
+         
+          padding-top: 0px;
         }
+      
         .w3-button:hover {
           color: #c0c0c0 !important;
           background-color: transparent !important;
         }
+        @media screen and (min-width: 900px) {
+          .w3-hide-large {
+            display: none !important;
+          }
+        }
+        
         @media screen and (max-width: 900px) {
           .w3-hide-small {
-            display: none;
+            display: none !important;
           }
+         
+          .w3-sidebar{display:block!important}}
         }
         @media screen and (max-width: 800px) {
           .pause {
             float: none;
             margin: 0 auto;
           }
-          input {
+          input , textarea{
             width: 80%;
           }
         }
@@ -811,6 +845,11 @@ export default function Fullpage() {
           .mission {
             padding-top: 20px;
           }
+          .w3-modal {
+            padding-top: 70px;
+            display: block;
+
+            }
         }
 
      
