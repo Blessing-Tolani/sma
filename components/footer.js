@@ -46,7 +46,7 @@ export default function Footer(){
              <h4 className = "text-sm">Marvellous (Director)</h4>
              <div className = "flex items-center text-sm">
                 <FaPhoneAlt/> 
-                <p className = "pl-2">  +234 814 529 3779</p>
+                <p className = "pl-2"> +234 816 958 2279</p>
              </div>
                 
               </div>
@@ -54,7 +54,7 @@ export default function Footer(){
                 <h4 className = "text-sm">Elizabeth (Communications)</h4>
                 <div className = "flex items-center text-sm">
                   <FaPhoneAlt/> 
-                  <p className = "pl-2"> +234 816 958 2279</p>
+                  <p className = "pl-2">+234 814 529 3779</p>
                 </div>
                
               </div>

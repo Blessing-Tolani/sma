@@ -36,7 +36,7 @@ export default function Footer(){
              <h4 className = "text-sm  text-gray-800">Marvellous (Director)</h4>
              <div className = "flex items-center text-sm " style = {{color:'#1f2937'}}>
                 <FaPhoneAlt/> 
-                <p className = "pl-2  " style = {{color:'#1f2937'}}>  +234 814 529 3779</p>
+                <p className = "pl-2  " style = {{color:'#1f2937'}}> +234 816 958 2279</p>
              </div>
                 
               </div>
@@ -44,7 +44,7 @@ export default function Footer(){
                 <h4 className = "text-sm  text-gray-800">Elizabeth (Communications)</h4>
                 <div className = "flex items-center text-sm" style = {{color:'#1f2937'}}>
                   <FaPhoneAlt/> 
-                  <p className = "pl-2 " style = {{color:'#1f2937'}}> +234 816 958 2279</p>
+                  <p className = "pl-2 " style = {{color:'#1f2937'}}> +234 814 529 3779</p>
                 </div>
                
               </div>
