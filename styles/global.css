@@ -54,9 +54,17 @@ input[type=number]{
               animation: flip-vertical-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
   }
-  .un4 {
-    font-family: "Noto Serif JP", serif;
+  .un4
+   {
+    font-size: 17px;
   }
+  .un5{
+    font-size:15px;
+  }
+  .un4, .un5 {
+    font-family: "ABeeZee";
+  }
+ 
   .imageo{
     width:500px;
     height:500px;
@@ -235,14 +243,10 @@ input[type=number]{
     .text {
       background-color: white;
       text-align: center;
-      padding-top: 50px;
       height:80px;
     }
  
-  .text > p{
-   
-      font-size:16px;
-  }
+
   .iconv {
     
     padding-right: 10px;
@@ -303,19 +307,20 @@ input[type=number]{
     width:300px;
     height:300px;
   }
-  .un4
-   {
-    font-size: 15px;
-  }
+ 
     
   }
   @media screen and (max-width: 400px) {
     .imgdiv {
       width: 100%;
     }
+    .un4
+    {
+     font-size: 16px;
+   }
   
     .un5 {
-      font-size: 15px;
+      font-size: 14px;
     }
     .fro{
       top:50px;

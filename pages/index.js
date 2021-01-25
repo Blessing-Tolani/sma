@@ -647,7 +647,7 @@ export default function Fullpage() {
 
       {/* Board Section */}
       <div
-        className="w3-container"
+        className="w3-container removep"
         style={{ backgroundColor: "#e6eaf3" }}
         ref={boardRef}
       >
@@ -892,9 +892,6 @@ export default function Fullpage() {
           font-family: "Roboto Slab", serif;
           font-size: 30px;
         }
-        .un4 {
-          font-family: "Noto Serif JP", serif;
-        }
         .body,
         html {
           height: 100%;
@@ -950,10 +947,10 @@ export default function Fullpage() {
           .imgdiv {
             width: 100%;
           }
-          .un4,
-          .un5 {
-            font-size: 15px;
+          .removep{
+            padding:0;
           }
+         
           un3 {
             font-size: 20px;
           }
