@@ -111,7 +111,7 @@ export default function Nav(){
         .w3-top{
           position:relative !important;
         }
-          .w3-button:hover {
+          .w3-button:hover, .w3-button:focus {
             color: #a9a9a9 !important;
             background-color: transparent !important;
           }

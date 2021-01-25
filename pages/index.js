@@ -309,7 +309,7 @@ export default function Fullpage() {
           className="myNavBar px-8 w-full flex flex-row justify-between items-center "
           style={{ boxShadow: "none" }}
         >
-          <div className="hhh">
+          <div className={Style.norm2}>
             <img className={Style.pub} src="images/loog2.png" />
           </div>
 
@@ -684,7 +684,7 @@ export default function Fullpage() {
                     X
                   </h3>
                 </span>
-                <h3 style={{ color: "maroon", textAlign: "center" }}  className = "pt-6">
+                <h3 style={{ textAlign: "center" }}  className = "pt-6">
                   Contact Us
                 </h3>
               </div>
@@ -755,10 +755,7 @@ export default function Fullpage() {
         padding: 15px 0px;
       
       }
-      .burger {
-        background-color: #c0c0c0 !important;
-       
-      }
+     
       .us > h3 {
         font-family: 'Sofia';
         letter-spacing: 1px;
@@ -811,7 +808,7 @@ export default function Fullpage() {
           padding-top: 0px;
         }
       
-        .w3-button:hover {
+        .w3-button:hover,.w3-button:focus {
           color: #c0c0c0 !important;
           background-color: transparent !important;
         }

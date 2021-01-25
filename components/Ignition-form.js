@@ -82,7 +82,7 @@ export default function Ignition(){
                     
                 
                     <div className="inliner">
-                        <p>Class</p>
+                        <p className = "text-base">Class</p>
                         <div className = "ellow" >
                             <input type="radio" name="Class" value="JSS1" />
                             <label for="JSS1"> JSS1</label>

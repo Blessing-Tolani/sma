@@ -108,7 +108,7 @@ export default function Nav(){
           </span>
         </div>
         <style jsx>{`
-          .w3-button:hover {
+          .w3-button:hover ,  .w3-button:focus{
             color: #a9a9a9 !important;
             background-color: transparent !important;
           }

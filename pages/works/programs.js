@@ -208,7 +208,7 @@ export default function Program() {
       </Head>
       <div className="w3-top " id="home">
         <div className={Style.textdiv} id="toppo">
-          <div>
+          <div className = {Style.norm3}>
             <h3 className="over">GROWTH, IMPACT, RELEVANCE</h3>
             <p>
               Everyone has potentials for influence and it can be developed
@@ -220,12 +220,12 @@ export default function Program() {
           className="myNavBar px-8 w-full flex flex-row justify-between items-center "
           style={{ boxShadow: "none" }}
         >
-          <div className="hhh">
+          <div className = {Style.norm2}>
             <img className={Style.pub} src="/images/loog2.png" />
           </div>
 
           <div className="w3-hide-small ">
-            <a href="#" className="w3-bar-item w3-button xee ">
+            <a href="/" className="w3-bar-item w3-button xee ">
               {" "}
               Home
             </a>
@@ -264,7 +264,7 @@ export default function Program() {
         <span className={`${menuIsOpen ? "open" : "closed"} ...rest`}>
           <nav className="w3-sidebar fro w3-bar-block w3-animate-left flex flex-col justify-around w3-hide-medium w3-hide-large w3-center">
             <a
-              href="#"
+              href="/"
               onClick={toggleMenu}
               className="w3-button w3-hover-white"
               style={{ width: "100%", color: "white" }}
@@ -400,7 +400,7 @@ export default function Program() {
                     X
                   </h3>
                 </span>
-                <h3 style={{ color: "maroon", textAlign: "center" }} className = "pt-6">
+                <h3 style={{ textAlign: "center" }} className = "pt-6">
                   Register for Upsurge
                 </h3>
               </div>
@@ -453,7 +453,7 @@ export default function Program() {
                     X
                   </h3>
                 </span>
-                <h3 style={{ color: "maroon", textAlign: "center" }} className = "pt-6">
+                <h3 style={{  textAlign: "center" }} className = "pt-6">
                   Register for Ignition
                 </h3>
               </div>
@@ -514,7 +514,7 @@ export default function Program() {
           color: #808080;
         }
 
-        .w3-button:hover {
+        .w3-button:hover, .w3-button:focus {
           color: #c0c0c0 !important;
           background-color: transparent !important;
         }
