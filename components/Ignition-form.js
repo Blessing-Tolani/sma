@@ -4,7 +4,7 @@ export default function Ignition(){
 
     return(
         <>
-            <div id="formdiv" className = ''>
+            <div id="formdiv">
                 <form
                   action="/success"
                   method="POST"
@@ -118,6 +118,9 @@ export default function Ignition(){
               <style jsx>{`
               .ellow{
                   display:inline-block;
+              }
+              input:focus,  textarea:focus {
+                background-color:#e8f0fe;
               }
             #formdiv{
                 width:90%;

@@ -1,66 +1,132 @@
-import Head from 'next/head'
+import Head from "next/head";
 import React from "react";
 import Nav from "../../components/nav3";
 import Footer from "../../components/footer";
 
 export default function Partner() {
-  
-    
-    return (
-        <div className = "body">
-            <Head>
-              <title>Partner with us</title>
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-             
-              <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Bodoni+Moda&family=Noto+Serif+JP&family=Amaranth&family=Source+Sans+Pro&family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet" />
-              <link href="https://fonts.googleapis.com/css2?family=Sofia&family=Old+Standard+TT&family=Roboto+Slab&family=Lato:ital@1&display=swap" rel="stylesheet" />
-              <script src = "https://kit.fontawesome.com/a076d05399.js"></script>
-              <meta charset="UTF-8" />
-              <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-            </Head>
-            <Nav />
-            <div className = "w3-container ">
-                <h2 id = "touch" className = "text-center">Partner with our Vision</h2>
+  return (
+    <div className="body">
+      <Head>
+        <title>Partner with us</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <link
+          href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Pacifico&family=Bodoni+Moda&family=Noto+Serif+JP&family=Amaranth&family=Source+Sans+Pro&family=Open+Sans&family=Playfair+Display&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sofia&family=Old+Standard+TT&family=Roboto+Slab&family=Lato:ital@1&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="UTF-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+      </Head>
+      <Nav />
+      <div className="w3-container ">
+        <h2 id="touch" className="text-center">
+          Partner with our Vision
+        </h2>
+      </div>
+      {/* Volunteer form */}
+      <div className="w3-container  cont flex items-center ">
+        <div className="w3-col s6  formdiv flex ">
+          <form
+            action="/success"
+            className=" formhead "
+            method="POST"
+            data-netlify="true"
+            name="Partnership Form"
+          >
+            <input type="hidden" name="form-name" value="Partnership Form" />
+            <input
+              type="text"
+              name="Full name"
+              placeholder="Firstname Surname"
+              required=""
+              className="input"
+            />
+            <input
+              className="input"
+              type="email"
+              name="Email"
+              placeholder="Email"
+              required=""
+              pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$"
+            />{" "}
+            <br className="br" />
+            <input
+              className="input"
+              type="text"
+              name="Location"
+              placeholder="Location (City and Country)"
+              required
+            />
+            <input
+              className="input"
+              type="number"
+              name="Phone Number "
+              placeholder="Phone Number"
+              required
+            />{" "}
+            <br className="br" />
+            <textarea
+              placeholder="Type of Partnership - Organization or Personal?"
+              name="Type of Partnership"
+              required
+            ></textarea>
+            <textarea
+              placeholder="Name of Organization"
+              name="Name of Organization"
+            ></textarea>{" "}
+            <br className="br" />
+            <textarea
+              placeholder="Vision of Organization"
+              name="Vision of Organization"
+            ></textarea>
+            <textarea
+              placeholder="Brief Details about Partnership"
+              name="Brief Details about Partnership"
+              required
+            ></textarea>{" "}
+            <br className="br" />
+            <textarea
+              className="special"
+              placeholder="Purpose of Partnership"
+              name="Purpose of Partnership"
+              required
+            ></textarea>{" "}
+            <br className="br" />
+            <div className="text-center">
+              <button type="submit" id="button" className="onebutton">
+                Submit
+              </button>
             </div>
-            {/* Volunteer form */}
-            <div className = "w3-container  cont flex items-center ">
-                <div className = "w3-col s6  formdiv flex "> 
-                   
-                    <form action = "/success" className = " formhead " method = "POST" data-netlify = "true" name ="Partnership Form">
-                        <input type = "hidden" name = "form-name" value ="Partnership Form" />
-                        <input type="text" name = "Full name" placeholder="Firstname Surname" required="" className = "input"/> 
-                        <input className = "input" type="email" name="Email" placeholder="Email" required="" pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$" /> <br className = "br" />
-                        <input className = "input" type="text" name = "Location" placeholder="Location (City and Country)" required /> 
-                        <input className = "input" type="number" name = "Phone Number "placeholder="Phone Number" required/> <br className = "br" />
-                        <textarea placeholder="Type of Partnership - Organization or Personal?" name = "Type of Partnership" required ></textarea>    
-                       
-                       
-                        <textarea placeholder="Name of Organization" name = "Name of Organization"  ></textarea> <br className = "br" />                        
-                        <textarea placeholder="Vision of Organization" name = "Vision of Organization"  ></textarea> 
-                        <textarea placeholder="Brief Details about Partnership" name = "Brief Details about Partnership"  required></textarea> <br className = "br" /> 
-                        <textarea className = "special" placeholder="Purpose of Partnership" name = "Purpose of Partnership"  required></textarea>  <br className = "br" />
+          </form>
+        </div>
+        <div className="w3-col s6 flex items-center order">
+          <img src="/images/partner.jpg" alt="" />
+        </div>
+      </div>
 
-                        
-                        <div className = "text-center">
-                        <button type="submit" id="button" className = "onebutton">Submit</button>
-                        </div>
-                    </form>
-                </div>
-                <div className = "w3-col s6 flex items-center order">
-                    <img src = "/images/partner.jpg" alt = ""/>
-                </div>
-            </div>
+      {/* Footer   */}
+      <Footer />
 
-
-            {/* Footer   */}
-            <Footer />
-
-        <style jsx>{`
+      <style jsx>{`
          .w3-button:hover{color:white!important;background-color:black !important};
         #touch{
             font-family: 'Sofia', cursive;
           
         }
+        input:focus,  textarea:focus {
+            background-color:#e8f0fe;
+          }
         .onebutton{
             margin:0 auto;
             font-family: 'ABeeZee';
@@ -266,8 +332,6 @@ export default function Partner() {
                 }
             }
         `}</style>
-        </div>
-       
-
-    )
+    </div>
+  );
 }

@@ -4,7 +4,7 @@ export default function Upsurge(){
 
     return(
         <>
-            <div id="formdiv" className = ''>
+            <div id="formdiv" >
                 <form
                   action="/success"
                   method="POST"
@@ -97,6 +97,9 @@ export default function Upsurge(){
             }
             .send{
                 margin-top:5px;
+            }
+            input:focus,  textarea:focus {
+              background-color:#e8f0fe;
             }
             .in {
                 width: 42%;

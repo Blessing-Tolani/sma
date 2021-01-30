@@ -758,6 +758,9 @@ export default function Fullpage() {
         padding: 15px 0px;
       
       }
+      input:focus,  textarea:focus {
+        background-color:#e8f0fe;
+      }
      
       .us > h3 {
         font-family: 'Sofia';

@@ -94,6 +94,9 @@ export default function Volunteer() {
             font-family: 'Sofia', cursive;
           
         }
+        input:focus,  textarea:focus {
+            background-color:#e8f0fe;
+        }
         .onebutton{
             margin:0 auto;
             font-family: 'ABeeZee';
