@@ -19,7 +19,8 @@ export default function Program() {
 
   const [IgnitionmodalIsOpen, setIgnitionModalIsOpen] = useState(false);
   const toggleIgnitionModal = () => setIgnitionModalIsOpen(!IgnitionmodalIsOpen);
-
+  const headerRef = useRef(null);
+  const normRef = useRef(null);
   const whatRef = useRef(null);
   const imgRef = useRef(null);
   const progRef = useRef(null);
@@ -30,6 +31,19 @@ export default function Program() {
   const p2Ref = useRef(null);
 
   useEffect(() => {
+    gsap.from(headerRef.current, {
+      y: -40,
+      duration: 3,
+    });
+
+    gsap.fromTo(normRef.current, {
+      y: 20,
+      opacity:0,
+      duration: 3
+    },
+    {
+       opacity:1
+    });
     gsap.fromTo(
       whatRef.current,
       {
@@ -105,6 +119,7 @@ export default function Program() {
         ease: "power2.out",
         x: 0,
         duration: 2,
+        delay:1,
         opacity: 1,
         scrollTrigger: {
           trigger: progRef.current,
@@ -149,6 +164,7 @@ export default function Program() {
         ease: "power2.out",
         x: 0,
         duration: 2,
+        delay:1,
         opacity: 1,
         scrollTrigger: {
           trigger: p2Ref.current,
@@ -208,7 +224,7 @@ export default function Program() {
       </Head>
       <div className="w3-top " id="home">
         <div className={Style.textdiv} id="toppo">
-          <div className = {Style.norm3}>
+          <div className = {Style.norm3}  ref={normRef}>
             <h3 className="over">GROWTH, IMPACT, RELEVANCE</h3>
             <p>
               Everyone has potentials for influence and it can be developed
@@ -307,7 +323,7 @@ export default function Program() {
         </span>
       </div>
 
-      <header className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full ">
+      <header className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full " ref={headerRef}>
         <img ref={imgRef} className="star " src="/images/Star.svg" alt="" />
       </header>
       <div className="w3-container" ref={whatRef}>

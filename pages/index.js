@@ -50,9 +50,13 @@ export default function Fullpage() {
       duration: 3,
     });
 
-    gsap.from(normRef.current, {
+    gsap.fromTo(normRef.current, {
       y: 20,
-      duration: 3,
+      opacity:0,
+      duration: 3
+    },
+    {
+       opacity:1
     });
 
     gsap.fromTo(
