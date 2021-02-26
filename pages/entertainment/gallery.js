@@ -62,6 +62,7 @@ export default function Gallery() {
             transition:.5s ease;
             opacity:1;
             backface-visibility:hidden;
+             filter:brightness(40%);
         }
         .middle{
             transition:.5s ease;
