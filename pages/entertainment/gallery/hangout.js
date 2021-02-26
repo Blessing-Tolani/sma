@@ -25,7 +25,7 @@ export default function Gallery() {
             </div>
             <div className = "blog-container">
             <div className="w3-col s3 blog" >
-                    <div><img src = "/images/hangout1.jpg" alt = "" /></div>
+                    <div><img src = "/images/hangout1-Copy.jpg" alt = "" /></div>
                    
                 </div>
                 <div className="w3-col s3 blog" >
