@@ -1,15 +1,15 @@
 import Head from 'next/head'
-import Link from 'next/link'
+import IfeTour from '../../../components/Ife-February-School-Tour'
 import React  from "react";
-import Footer from "../../components/footer";
-import Nav from "../../components/nav3";
+import Footer from "../../../components/footer";
+import Nav from "../../../components/nav3";
 
-export default function Gallery() {
+export default function FebruarySchoolTour() {
  
   return (
     <div className = "body">
         <Head>
-            <title>Gallery</title>
+            <title>Ile-Ife February School Tour</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
            
             <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Sofia&family=Bodoni+Moda&display=swap" rel="stylesheet" />
@@ -21,32 +21,11 @@ export default function Gallery() {
 
         {/* Blog Section */}
         <div className = "w3-container">
-            <div className = "blog-title-head">
-                <h2 className = "blog-title text-gray-800">EXPLORE</h2>
+            <div className = "blog-title-head cursor-default">
+                <h2 className = "blog-title text-gray-800">Ile-Ife February School Tour</h2>
             </div>
             <div className = "blog-container">
-                <Link href = "/entertainment/gallery/hangout">
-                    <a>
-                        <div className="w3-col s3 blog" >
-                            <div><img className = "image" src = "/images/hangout1.jpg" alt = "" /></div>
-                            <div><h2>SMA Network Hangout</h2></div>
-                            {/* <div className = "middle">
-                                <div ><p className = "text">Check more Pictures</p></div>
-                            </div> */}
-                        </div>  
-                    </a>
-                </Link>
-                <Link href = "/entertainment/gallery/Ife-February-School-Tour">
-                    <a>
-                        <div className="w3-col s3 blog " >
-                            <div><img className = "image" src = "/images/IleIfeSchoolTour1/ifetour1a.jpeg" alt = "" /></div>
-                            <div><h2>Ile-Ife February School Tour</h2></div>
-                        </div>  
-                        {/* <div className = "middle2">
-                                <div><p className = "text">Check more Pictures</p></div>
-                        </div> */}
-                    </a>
-                </Link>
+               <IfeTour />
                
             </div>
         </div>
@@ -58,40 +37,8 @@ export default function Gallery() {
         .blog-container{
             margin-left:1.666% !important;
         }
-        .image{
-            transition:.5s ease;
-            opacity:1;
-            backface-visibility:hidden;
-        }
-        .middle{
-            transition:.5s ease;
-            opacity:0;
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            text-align:center;
-          
-        }
         
-        .text{
-            background-color:transparent;
-            color:black;
-            font-size:20px;
-            font-weight:500;
-        }
         
-        .blog:hover .image{
-            opacity:0.6;
-        }
-         .blog:hover .middle{
-            opacity:1;
-        } 
-        .blog{
-            margin:1.66%;
-            height:50%;
-            position:relative;
-        }
 
         .blog-title{
             padding-top:10px;
@@ -157,20 +104,13 @@ export default function Gallery() {
                 margin:5% 10% 8% 10%;
               
             }
-            img{
-                height:300px;
-            }
+            
             .blog-title{
                 margin-left:10% !important;
             }
         
             }
-            @media screen and (max-width: 500px){
-              
-                img{
-                    height:300px;
-                }
-            }
+           
         @media screen and (max-width: 400px){
             .w3-col.s3{width:90%;}
             .blog{

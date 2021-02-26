@@ -114,7 +114,6 @@ export default function Upsurge(){
                 margin:1.5% 4%;
               
             }
-
             textarea {
                 color: #053d59;
                 font-family: "ABeeZee";
@@ -126,11 +125,9 @@ export default function Upsurge(){
                 font-size: 14px;
                 border-radius: 0.6em;
             }
-
                 .w3-modal {
                 padding-top: 100px;
                 display: block;
-
                 }
               
             

@@ -25,8 +25,8 @@ export default function Carousel({breakPoints}) {
                         <div className="w3-card whole">
                             <img className="img" src={image} alt="" />
                             <div className="w3-container text flex flex-col justify-center">
-                            <p className="w3-center un4 ">{name}</p>
-                            <p className="w3-center un5 font-thin">{role}</p>
+                                <p className="w3-center un4 ">{name}</p>
+                                <p className="w3-center un5 font-thin">{role}</p>
                             </div>
                         </div>
                         </a>

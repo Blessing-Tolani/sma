@@ -1,15 +1,14 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import React  from "react";
-import Footer from "../../components/footer";
-import Nav from "../../components/nav3";
+import Footer from "../../../components/footer";
+import Nav from "../../../components/nav3";
 
 export default function Gallery() {
  
   return (
     <div className = "body">
         <Head>
-            <title>Gallery</title>
+            <title>SMA Network Hangout</title>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
            
             <link href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Sofia&family=Bodoni+Moda&display=swap" rel="stylesheet" />
@@ -21,32 +20,22 @@ export default function Gallery() {
 
         {/* Blog Section */}
         <div className = "w3-container">
-            <div className = "blog-title-head">
-                <h2 className = "blog-title text-gray-800">EXPLORE</h2>
+            <div className = "blog-title-head cursor-default">
+                <h2 className = "blog-title text-gray-800">SMA Network Hangout</h2>
             </div>
             <div className = "blog-container">
-                <Link href = "/entertainment/gallery/hangout">
-                    <a>
-                        <div className="w3-col s3 blog" >
-                            <div><img className = "image" src = "/images/hangout1.jpg" alt = "" /></div>
-                            <div><h2>SMA Network Hangout</h2></div>
-                            {/* <div className = "middle">
-                                <div ><p className = "text">Check more Pictures</p></div>
-                            </div> */}
-                        </div>  
-                    </a>
-                </Link>
-                <Link href = "/entertainment/gallery/Ife-February-School-Tour">
-                    <a>
-                        <div className="w3-col s3 blog " >
-                            <div><img className = "image" src = "/images/IleIfeSchoolTour1/ifetour1a.jpeg" alt = "" /></div>
-                            <div><h2>Ile-Ife February School Tour</h2></div>
-                        </div>  
-                        {/* <div className = "middle2">
-                                <div><p className = "text">Check more Pictures</p></div>
-                        </div> */}
-                    </a>
-                </Link>
+            <div className="w3-col s3 blog" >
+                    <div><img src = "/images/hangout1.jpg" alt = "" /></div>
+                   
+                </div>
+                <div className="w3-col s3 blog" >
+                    <div><img src = "/images/hangout2.jpg" alt = "" /></div>
+                  
+                </div>
+                <div className="w3-col s3 blog" >
+                    <div><img src = "/images/hangout3.jpg" alt = "" /></div>
+                   
+                </div>
                
             </div>
         </div>
@@ -58,48 +47,18 @@ export default function Gallery() {
         .blog-container{
             margin-left:1.666% !important;
         }
-        .image{
-            transition:.5s ease;
-            opacity:1;
-            backface-visibility:hidden;
-        }
-        .middle{
-            transition:.5s ease;
-            opacity:0;
-            position:absolute;
-            top:50%;
-            left:50%;
-            transform:translate(-50%,-50%);
-            text-align:center;
-          
-        }
-        
-        .text{
-            background-color:transparent;
-            color:black;
-            font-size:20px;
-            font-weight:500;
-        }
-        
-        .blog:hover .image{
-            opacity:0.6;
-        }
-         .blog:hover .middle{
-            opacity:1;
-        } 
         .blog{
             margin:1.66%;
             height:50%;
-            position:relative;
+         
         }
-
         .blog-title{
             padding-top:10px;
             font-family: 'Sofia', cursive;
         }
         .blog h2{
             font-family: 'Bodoni Moda', serif;
-            font-size: calc(18px + 5*(100vw - 400px)/1000);
+            font-size: calc(20px + 5*(100vw - 400px)/1000);
         }
         .blog p{
             font-family: 'ABeeZee', sans-serif;
@@ -107,8 +66,7 @@ export default function Gallery() {
         .w3-col.s3{width:30%;}
         img{
             width:100%;
-            height:300px;
-            object-fit:fill;
+            height:500px;
         }
         @media screen and (min-width: 600px){
         .blog-title {
@@ -123,7 +81,7 @@ export default function Gallery() {
           
         }
         img{
-            height:300px;
+            height:400px;
         }
         .blog-container{
             margin-left:4% !important;
@@ -139,13 +97,13 @@ export default function Gallery() {
                 margin-left:3% !important;
             }
             img{
-                height:300px;
+                height:400px;
             }
             }
             @media screen and (max-width: 650px){
                 
                 img{
-                    height:300px;
+                    height:350px;
                 }
                 }
         @media screen and (max-width: 600px){
@@ -158,7 +116,7 @@ export default function Gallery() {
               
             }
             img{
-                height:300px;
+                height:500px;
             }
             .blog-title{
                 margin-left:10% !important;
@@ -168,7 +126,7 @@ export default function Gallery() {
             @media screen and (max-width: 500px){
               
                 img{
-                    height:300px;
+                    height:400px;
                 }
             }
         @media screen and (max-width: 400px){
