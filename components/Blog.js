@@ -4,6 +4,14 @@ import React  from "react";
 
 
 const blogInformation = [
+     {
+        fullBlog:'/blogpages/ile-ife-school-tour-1',
+        alt:'Ile-Ife School tour',
+        blogImage:'/images/IleIfeSchoolTour1/ifetour1a.jpeg',
+        blogTitle:'School Tour at Seventh Day Adventist Secondary School Lagere, Ile Ife Osun State',
+        blogText:'A School Tour Adventure '
+     
+    },
     {
         fullBlog:'/blogpages/The-Equanimity-Of-Arts-Entertainment',
         alt:'article 1',

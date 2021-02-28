@@ -1,3 +1,9 @@
+.gallerylink{
+    color:#f5e830;
+}
+.gallerylink:hover{
+    text-decoration:underline ;
+}
 .bside{
     width:22%;
     background-color:#2e3841;
