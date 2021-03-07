@@ -696,7 +696,6 @@ export default function Fullpage() {
                 <form
                   action="/success"
                   method="POST"
-                  data-netlify="true"
                   name="Contact Form"
                 >
                   <input type="hidden" name="form-name" value="Contact Form" />

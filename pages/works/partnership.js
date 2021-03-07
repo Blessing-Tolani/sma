@@ -41,7 +41,6 @@ export default function Partner() {
             action="/success"
             className=" formhead "
             method="POST"
-            data-netlify="true"
             name="Partnership Form"
           >
             <input type="hidden" name="form-name" value="Partnership Form" />

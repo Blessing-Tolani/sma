@@ -8,7 +8,7 @@ export default function Ignition(){
                 <form
                   action="/success"
                   method="POST"
-                  data-netlify="true"
+                  
                   name="Ignition Form"
                 >
                   <input type="hidden" name="form-name" value="Ignition Form" />

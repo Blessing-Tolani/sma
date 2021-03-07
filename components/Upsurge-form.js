@@ -8,7 +8,6 @@ export default function Upsurge(){
                 <form
                   action="/success"
                   method="POST"
-                  data-netlify="true"
                   name="Upsurge Form"
                 >
                   <input type="hidden" name="form-name" value="Upsurge Form" />
