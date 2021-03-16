@@ -1,9 +1,48 @@
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../../components/nav3";
 import Footer from "../../components/footer";
 
 export default function Partner() {
+  const [Fullname, setFullname] = useState("");
+  const [Email, setEmail] = useState("");
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [Location, setLocation] = useState("");
+  const [TypeOfPartnership, setTypeOfPartnership] = useState("");
+  const [NameOfOrganization, setNameOfOrganization] = useState("");
+  const [VisionOfOrganization, setVisionOfOrganization] = useState("");
+  const [DetailsAboutPartnership, setDetailsAboutPartnership] = useState("");
+  const [PurposeOfPartnership, setPurposeOfPartnership] = useState("");
+
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/ErPSfYWV";
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await fetch(FORMSPARK_ACTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          Full_name: Fullname,
+          Email_Address: Email,
+          Phone_Number: PhoneNumber,
+          Contact_Address: Location,
+          Type_of_partnership: TypeOfPartnership,
+          Name_of_organization: NameOfOrganization,
+          Vision_of_organization: VisionOfOrganization,
+          Details_about_partnership: DetailsAboutPartnership,
+          Purpose_of_partnership: PurposeOfPartnership,
+        }),
+      });
+      alert("Form submitted");
+    } catch (err) {
+      alert(err);
+    }
+  };
+
   return (
     <div className="body">
       <Head>
@@ -42,14 +81,16 @@ export default function Partner() {
             className=" formhead "
             method="POST"
             name="Partnership Form"
+            onSubmit={onSubmit}
           >
-            <input type="hidden" name="form-name" value="Partnership Form" />
             <input
               type="text"
               name="Full name"
               placeholder="Firstname Surname"
               required=""
               className="input"
+              value={Fullname}
+              onChange={(e) => setFullname(e.target.value)}
             />
             <input
               className="input"
@@ -58,6 +99,8 @@ export default function Partner() {
               placeholder="Email"
               required=""
               pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$"
+              value={Email}
+              onChange={(e) => setEmail(e.target.value)}
             />{" "}
             <br className="br" />
             <input
@@ -66,6 +109,8 @@ export default function Partner() {
               name="Location"
               placeholder="Location (City and Country)"
               required
+              value={Location}
+              onChange={(e) => setLocation(e.target.value)}
             />
             <input
               className="input"
@@ -73,26 +118,36 @@ export default function Partner() {
               name="Phone Number "
               placeholder="Phone Number"
               required
+              value={PhoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
             />{" "}
             <br className="br" />
             <textarea
               placeholder="Type of Partnership - Organization or Personal?"
               name="Type of Partnership"
               required
+              value={TypeOfPartnership}
+              onChange={(e) => setTypeOfPartnership(e.target.value)}
             ></textarea>
             <textarea
               placeholder="Name of Organization"
               name="Name of Organization"
+              value={NameOfOrganization}
+              onChange={(e) => setNameOfOrganization(e.target.value)}
             ></textarea>{" "}
             <br className="br" />
             <textarea
               placeholder="Vision of Organization"
               name="Vision of Organization"
+              value={VisionOfOrganization}
+              onChange={(e) => setVisionOfOrganization(e.target.value)}
             ></textarea>
             <textarea
               placeholder="Brief Details about Partnership"
               name="Brief Details about Partnership"
               required
+              value={DetailsAboutPartnership}
+              onChange={(e) => setDetailsAboutPartnership(e.target.value)}
             ></textarea>{" "}
             <br className="br" />
             <textarea
@@ -100,6 +155,8 @@ export default function Partner() {
               placeholder="Purpose of Partnership"
               name="Purpose of Partnership"
               required
+              value={PurposeOfPartnership}
+              onChange={(e) => setPurposeOfPartnership(e.target.value)}
             ></textarea>{" "}
             <br className="br" />
             <div className="text-center">

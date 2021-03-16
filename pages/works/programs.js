@@ -18,7 +18,8 @@ export default function Program() {
   const toggleModal = () => setModalIsOpen(!modalIsOpen);
 
   const [IgnitionmodalIsOpen, setIgnitionModalIsOpen] = useState(false);
-  const toggleIgnitionModal = () => setIgnitionModalIsOpen(!IgnitionmodalIsOpen);
+  const toggleIgnitionModal = () =>
+    setIgnitionModalIsOpen(!IgnitionmodalIsOpen);
   const headerRef = useRef(null);
   const normRef = useRef(null);
   const whatRef = useRef(null);
@@ -36,14 +37,17 @@ export default function Program() {
       duration: 3,
     });
 
-    gsap.fromTo(normRef.current, {
-      y: 20,
-      opacity:0,
-      duration: 3
-    },
-    {
-       opacity:1
-    });
+    gsap.fromTo(
+      normRef.current,
+      {
+        y: 20,
+        opacity: 0,
+        duration: 3,
+      },
+      {
+        opacity: 1,
+      }
+    );
     gsap.fromTo(
       whatRef.current,
       {
@@ -119,7 +123,7 @@ export default function Program() {
         ease: "power2.out",
         x: 0,
         duration: 2,
-        delay:1,
+        delay: 1,
         opacity: 1,
         scrollTrigger: {
           trigger: progRef.current,
@@ -164,7 +168,7 @@ export default function Program() {
         ease: "power2.out",
         x: 0,
         duration: 2,
-        delay:1,
+        delay: 1,
         opacity: 1,
         scrollTrigger: {
           trigger: p2Ref.current,
@@ -212,7 +216,7 @@ export default function Program() {
           rel="stylesheet"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Sofia&family=Old+Standard+TT&&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Lato:ital@1&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Sofia&family=Old+Standard+TT&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Lato:ital@1&display=swap"
           rel="stylesheet"
         />
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -224,7 +228,7 @@ export default function Program() {
       </Head>
       <div className="w3-top " id="home">
         <div className={Style.textdiv} id="toppo">
-          <div className = {Style.norm3}  ref={normRef}>
+          <div className={Style.norm3} ref={normRef}>
             <h3 className="over">GROWTH, IMPACT, RELEVANCE</h3>
             <p>
               Everyone has potentials for influence and it can be developed
@@ -236,7 +240,7 @@ export default function Program() {
           className="myNavBar px-8 w-full flex flex-row justify-between items-center "
           style={{ boxShadow: "none" }}
         >
-          <div className = {Style.norm2}>
+          <div className={Style.norm2}>
             <img className={Style.pub} src="/images/loog2.png" />
           </div>
 
@@ -323,7 +327,10 @@ export default function Program() {
         </span>
       </div>
 
-      <header className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full " ref={headerRef}>
+      <header
+        className="bgimg-1 w3-display-container w3-grayscale-min rounded-bl-full "
+        ref={headerRef}
+      >
         <img ref={imgRef} className="star " src="/images/Star.svg" alt="" />
       </header>
       <div className="w3-container" ref={whatRef}>
@@ -403,7 +410,7 @@ export default function Program() {
         </div>
         {/* Upsurge Modal  */}
         <div className={`${modalIsOpen ? "open" : "closed"} ...rest`}>
-          <div  className="w3-modal flex justify-center items-center">
+          <div className="w3-modal flex justify-center items-center">
             <div className="w3-modal-content w3-animate-zoom allow">
               <div className="w3-container us">
                 <span className="w3-button w3-display-topright w3-large">
@@ -411,12 +418,11 @@ export default function Program() {
                     id="xee"
                     style={{ color: "maroon" }}
                     onClick={toggleModal}
-                    
                   >
                     X
                   </h3>
                 </span>
-                <h3 style={{ textAlign: "center" }} className = "pt-6">
+                <h3 style={{ textAlign: "center" }} className="pt-6">
                   Register for Upsurge
                 </h3>
               </div>
@@ -442,7 +448,11 @@ export default function Program() {
             building these students to become effective changemakers in their
             local communities and the world at large.
             <div className="mt-2">
-              <button id="button" className="onebutton" onClick={toggleIgnitionModal}>
+              <button
+                id="button"
+                className="onebutton"
+                onClick={toggleIgnitionModal}
+              >
                 Register
               </button>
             </div>
@@ -454,9 +464,9 @@ export default function Program() {
             ref={img2Ref}
           />
         </div>
-         {/* Ignition Modal  */}
-         <div className={`${IgnitionmodalIsOpen ? "open" : "closed"} ...rest`}>
-          <div  className="w3-modal flex justify-center items-center">
+        {/* Ignition Modal  */}
+        <div className={`${IgnitionmodalIsOpen ? "open" : "closed"} ...rest`}>
+          <div className="w3-modal flex justify-center items-center">
             <div className="w3-modal-content w3-animate-zoom allow">
               <div className="w3-container us">
                 <span className="w3-button w3-display-topright w3-large">
@@ -464,12 +474,11 @@ export default function Program() {
                     id="xee"
                     style={{ color: "maroon" }}
                     onClick={toggleIgnitionModal}
-                    
                   >
                     X
                   </h3>
                 </span>
-                <h3 style={{  textAlign: "center" }} className = "pt-6">
+                <h3 style={{ textAlign: "center" }} className="pt-6">
                   Register for Ignition
                 </h3>
               </div>
@@ -481,21 +490,19 @@ export default function Program() {
       <Footer />
 
       <style jsx>{`
-      .us > h3 {
-        font-family: 'Sofia';
-        letter-spacing: 1px;
-       
-        color: black;
-      }
+        .us > h3 {
+          font-family: "Sofia";
+          letter-spacing: 1px;
+
+          color: black;
+        }
         #formdiv {
           width: 90%;
           margin: 0 auto;
         }
-       
 
         .w3-modal {
           padding-top: 0px;
-         
         }
         @media screen and (min-width: 900px) {
           .w3-modal-content {
@@ -530,7 +537,8 @@ export default function Program() {
           color: #808080;
         }
 
-        .w3-button:hover, .w3-button:focus {
+        .w3-button:hover,
+        .w3-button:focus {
           color: #c0c0c0 !important;
           background-color: transparent !important;
         }
@@ -706,8 +714,7 @@ export default function Program() {
           .w3-modal {
             padding-top: 70px;
             display: block;
-
-            }
+          }
         }
         @media screen and (max-width: 500px) {
           .crop {

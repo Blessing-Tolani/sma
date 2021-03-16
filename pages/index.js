@@ -18,6 +18,37 @@ const breakPoints = [
 ];
 
 export default function Fullpage() {
+  const [Fullname, setFullname] = useState("");
+  const [Email, setEmail] = useState("");
+  const [PhoneNumber, setPhoneNumber] = useState("");
+  const [Location, setLocation] = useState("");
+  const [Message, setMessage] = useState("");
+
+  const FORMSPARK_ACTION_URL = "https://submit-form.com/JcytuXPi";
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await fetch(FORMSPARK_ACTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          Full_name: Fullname,
+          Email_Address: Email,
+          Phone_Number: PhoneNumber,
+          Contact_Address: Location,
+          Message: Message,
+        }),
+      });
+      alert("Form submitted");
+    } catch (err) {
+      alert(err);
+    }
+  };
+
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const toggleMenu = () => setMenuIsOpen(!menuIsOpen);
 
@@ -50,14 +81,17 @@ export default function Fullpage() {
       duration: 3,
     });
 
-    gsap.fromTo(normRef.current, {
-      y: 20,
-      opacity:0,
-      duration: 3
-    },
-    {
-       opacity:1
-    });
+    gsap.fromTo(
+      normRef.current,
+      {
+        y: 20,
+        opacity: 0,
+        duration: 3,
+      },
+      {
+        opacity: 1,
+      }
+    );
 
     gsap.fromTo(
       speechRef.current,
@@ -297,14 +331,16 @@ export default function Fullpage() {
         />
       </Head>
       <div className="w3-top " id="home" ref={homeRef}>
-        <div className={Style.textdiv} id = "textdiv">
+        <div className={Style.textdiv} id="textdiv">
           <div className={Style.norm} ref={normRef}>
-            <h3 className = "mount">
+            <h3 className="mount">
               We Help People
-              <br className = "br"/> Build  <br className = "br2"/> Capacity to Influence Their World
+              <br className="br" /> Build <br className="br2" /> Capacity to
+              Influence Their World
             </h3>
             <p>
-              Everyone has potentials for influence and it can be developed <br className = "br3"/>
+              Everyone has potentials for influence and it can be developed{" "}
+              <br className="br3" />
               under the right atmosphere
             </p>
           </div>
@@ -688,23 +724,25 @@ export default function Fullpage() {
                     X
                   </h3>
                 </span>
-                <h3 style={{ textAlign: "center" }}  className = "pt-6">
+                <h3 style={{ textAlign: "center" }} className="pt-6">
                   Contact Us
                 </h3>
               </div>
-              <div id="formdiv" >
+              <div id="formdiv">
                 <form
                   action="/success"
                   method="POST"
                   name="Contact Form"
+                  onSubmit={onSubmit}
                 >
-                  <input type="hidden" name="form-name" value="Contact Form" />
                   <input
                     className=" in w3-padding-16"
                     type="text"
                     placeholder="Full name"
                     required
                     name="Full name"
+                    value={Fullname}
+                    onChange={(e) => setFullname(e.target.value)}
                   />
 
                   <input
@@ -714,6 +752,8 @@ export default function Fullpage() {
                     required
                     name="Email"
                     pattern="^([a-zA-Z0-9_\.]+)@([a-zA-Z0-9_\.]+)\.([A-Za-z]{3})$"
+                    value={Email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
 
                   <input
@@ -722,6 +762,8 @@ export default function Fullpage() {
                     name="Phone Number "
                     placeholder="Phone Number"
                     required
+                    value={PhoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
                   />
                   <input
                     className="in w3-padding-16 "
@@ -729,15 +771,18 @@ export default function Fullpage() {
                     name="Location"
                     placeholder="Location (City and Country)"
                     required
+                    value={Location}
+                    onChange={(e) => setLocation(e.target.value)}
                   />
-                  <div className = " flex justify-center mb-8">
-                  <textarea
-                    placeholder="Message"
-                    name="Message"
-                    required
-                  ></textarea>
+                  <div className=" flex justify-center mb-8">
+                    <textarea
+                      placeholder="Message"
+                      name="Message"
+                      required
+                      value={Message}
+                      onChange={(e) => setMessage(e.target.value)}
+                    ></textarea>
                   </div>
-                 
 
                   <button className={Style.button2} type="submit">
                     Send
