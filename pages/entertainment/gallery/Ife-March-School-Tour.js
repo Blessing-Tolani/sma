@@ -1,5 +1,5 @@
 import Head from "next/head";
-import IfeTour from "../../../components/Ife-February-School-Tour";
+import IfeTour from "../../../components/Ife-March-School-Tour";
 import React from "react";
 import Footer from "../../../components/footer";
 import Nav from "../../../components/nav3";
@@ -8,7 +8,7 @@ export default function FebruarySchoolTour() {
   return (
     <div className="body">
       <Head>
-        <title>Ile-Ife February School Tour</title>
+        <title>Ile-Ife March School Tour</title>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -31,7 +31,7 @@ export default function FebruarySchoolTour() {
       <div className="w3-container">
         <div className="blog-title-head cursor-default">
           <h2 className="blog-title text-gray-800">
-            Ile-Ife February School Tour
+            Ile-Ife March School Tour
           </h2>
         </div>
         <div className="blog-container">

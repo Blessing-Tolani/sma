@@ -3,55 +3,36 @@ import Link from "next/link";
 
 const tourPictures = [
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1a.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2g.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1b.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2c.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1c.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2h.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1d.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2i.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1e.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2j.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1f.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2e.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1g.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2a.jpeg",
   },
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1h.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2b.jpeg",
   },
+
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1i.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2d.jpeg",
   },
+
   {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1j.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1k.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1l.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1m.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1n.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1o.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1p.jpeg",
-  },
-  {
-    tourImage: "/images/IleIfeSchoolTour1/ifetour1q.jpeg",
+    tourImage: "/images/IleIfeSchoolTour2/ifetour2f.jpeg",
   },
 ];
 

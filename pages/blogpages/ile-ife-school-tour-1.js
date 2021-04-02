@@ -80,7 +80,7 @@ export default function Art() {
                                 </div>
                             </div>
                         </div>
-                        <h6 className = "px-4 mobile:px-8 lg:pl-14">IMPACT & RELEVANCE</h6>
+                        <h6 className = "px-4 mobile:px-8 lg:pl-14">SCHOOL TOUR</h6>
                         <div className = "pt-4">
                             <div>                              
                                 <div className = "flex justify-center">
@@ -97,7 +97,7 @@ export default function Art() {
 
                                 </p>
                                 <p className = "mt-2">
-                                Shortly after that, Ifeoluwa (Communications Department) took the Q&A session by asking three  students where they see themselves in the next two years? - 
+                                Shortly after that, Ifeoluwa (Communications Department) took the Q&A session by asking three  students where they see themselves in the next two years - 
                                 Most of the students mentioned that they'll be at an higher institution of learning. Ife furthermore explained to them that beyond just going into higher institutions, they should begin to identify problems in their environments and make plans on how to solve them. He stressed that's a pathway to impact and relevance.
                                 We were able to curate the level of engagements of these students with  their future. We saw a need for career development in secondary schools.
                                 </p>
