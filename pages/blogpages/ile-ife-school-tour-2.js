@@ -50,13 +50,18 @@ export default function Art() {
           <div className=" mt-8 text-gray-400">
             <h2 className={BlogStyle.next}>Read next post</h2>
             <div className="mt-8">
-              <Link href="Self-Worth">
+              <Link href="ile-ife-school-tour-1">
                 <a>
                   <div>
-                    <h2 className={BlogStyle.blogtitle}>Self Worth</h2>
+                    <h2 className={BlogStyle.blogtitle}>
+                      School Tour at Seventh Day Adventist School
+                    </h2>
                   </div>
                   <div className="flex justify-center ">
-                    <img src="/images/worth.jpg" className={BlogStyle.img} />
+                    <img
+                      src="/images/IleIfeSchoolTour1/ifetour1a.jpeg"
+                      className={BlogStyle.img}
+                    />
                   </div>
                 </a>
               </Link>
@@ -158,6 +163,23 @@ export default function Art() {
             <h2 className={BlogStyle.next}>Read next post</h2>
             <div className="flex justify-around downpost mt-4  pt-10">
               <div>
+                <Link href="ile-ife-school-tour-1">
+                  <a>
+                    <div className="flex justify-center ">
+                      <img
+                        src="/images/IleIfeSchoolTour1/ifetour1a.jpeg"
+                        className={BlogStyle.img2}
+                      />
+                    </div>
+                    <div>
+                      <h2 className={BlogStyle.blogtitle}>
+                        School Tour at Seventh Day Adventist School
+                      </h2>
+                    </div>
+                  </a>
+                </Link>
+              </div>
+              <div className="blog2">
                 <Link href="Tangible-impact-and-relevance">
                   <a>
                     <div className="flex justify-center ">
@@ -170,18 +192,6 @@ export default function Art() {
                       <h2 className={BlogStyle.blogtitle}>
                         Tangible Impact And Relevance
                       </h2>
-                    </div>
-                  </a>
-                </Link>
-              </div>
-              <div className="blog2">
-                <Link href="Self-Worth">
-                  <a>
-                    <div className="flex justify-center ">
-                      <img src="/images/worth.jpg" className={BlogStyle.img2} />
-                    </div>
-                    <div>
-                      <h2 className={BlogStyle.blogtitle}>Self Worth</h2>
                     </div>
                   </a>
                 </Link>
